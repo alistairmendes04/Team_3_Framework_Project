@@ -29,7 +29,22 @@ automatically .
 3. Once u create Module Add .iml file to .gitignore file. Procedure> hover ur mouse over .iml file and click right button>click
 Add to .gitignore file.
 4. hoe to push in github branch
+ >git branch (Ensure * is in your branch, which ensures you current branch)
  >git status(check for modified file)
  >git add . (add all file)
- >
+ >git commit -m "meaningful message"
+ >git push origin branchName
+
+ *****Special condition*****
+ if window changed to shell prompt do following
+ > press A
+ > write message
+ > esc > : > wq
+ It shall take you cmd/git bash
+ ****************************
+ 
+
+
+
+
 
