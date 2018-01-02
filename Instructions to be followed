@@ -42,7 +42,18 @@ Add to .gitignore file.
  > esc > : > wq
  It shall take you cmd/git bash
  ****************************
- 
+ 5. How to Merge file in Master form Branch
+
+ Step 1: From your project repository, bring in the changes and test.
+ git fetch origin
+ git checkout -b Md_Jahidul_Islam origin/Md_Jahidul_Islam
+ git merge master
+
+ Step 2: Merge the changes and update on GitHub.
+ git checkout master
+ git merge --no-ff Md_Jahidul_Islam
+ git push origin master
+
 
 
 

@@ -11,6 +11,7 @@
     <modules>
         <module>Generic</module>
         <module>AliBaba</module>
+        <module>maersk_line_com</module>
     </modules>
     <dependencyManagement>
         <dependencies>

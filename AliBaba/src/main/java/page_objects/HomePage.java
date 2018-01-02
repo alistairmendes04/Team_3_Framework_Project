@@ -1,27 +1,56 @@
 package page_objects;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class HomePage extends CommonAPI {
 
-    @FindBy( name = "SearchText")
+    @FindBy(name = "SearchText")
     public static WebElement searchBox;
 
-   /* @FindBy (how = How.NAME, using = "SearchText")
-    public static  WebElement menu;*/
+    @FindBy (xpath = "//div[@id=\"J_SC_header\"]//form/div[1]/div/div/span[1]")
+    public static WebElement productSearchOption;
 
+    @FindBy(xpath = "//div[@id=\"J_SC_header\"]//form/div[1]/div/div/span[1]")
+    public static WebElement suppliersSearchOption;
 
-    /*public  static WebElement getSearchBox(){
-        return searchBox;*//*
-    }*/
-    public void searchProduct(){
+    @FindBy(xpath = "//*[@id=\"J_SC_header\"]//input[4]")
+    public static WebElement searchButton;
+
+    @FindBy(xpath = "//*[@id=\"J_SC_header\"]/header/div[1]/div[3]/ul/li[1]/span")
+    public static WebElement sourcingSolutions;
+
+    @FindBy(xpath = "//*[@id=\"J_SC_header\"]/header//div/ul[1]/li[2]/a/text()")
+    public static WebElement topSelectedSuppliers;
+
+    public void searchProduct() {
+        // search by product search option
         searchBox.sendKeys("I phone", Keys.ENTER);
-        // driver.findElement(By.name("hhh")).sendKeys("I phone", Keys.ENTER);
+        System.out.println("Get Product Search Page Title: " + driver.getTitle());
     }
 
+    public void searchSuppliers() {
+        productSearchOption.click();
+        suppliersSearchOption.click();
+        searchBox.sendKeys("laptop i7");
+        searchButton.click();
+        System.out.println("Get Suppliers Search Page Titel: " + driver.getTitle());
+
+    }
+
+   /* public void sourcingSolutions() {
+        //click Sourcing Solutions
+        sourcingSolutions.click();
+
+        Actions act = new Actions(driver);
+        act.moveToElement(topSelectedSuppliers).build().perform();
+        topSelectedSuppliers.click();
+    }*/
 
 
 }

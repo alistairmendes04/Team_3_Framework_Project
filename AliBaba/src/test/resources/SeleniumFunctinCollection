@@ -1,0 +1,2 @@
+Select dropDown = new Select(driver.findElement(By.id("billing:region_id")));
+        dropDown.selectByIndex(42);

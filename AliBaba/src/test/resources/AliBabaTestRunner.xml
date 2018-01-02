@@ -12,7 +12,7 @@
 
 <test name = "Alibaba Home">
     <classes>
-         <class name="testCases.testHomePage.TestSearchOption"/>
+         <class name="testCases.TestSearchOption"/>
     </classes>
 </test>
 
