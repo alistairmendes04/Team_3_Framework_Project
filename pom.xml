@@ -15,6 +15,7 @@
         <module>maersk_line_com</module>
 
         <module>HomeDepot</module>
+        <module>Cigna</module>
 
     </modules>
     <dependencyManagement>
