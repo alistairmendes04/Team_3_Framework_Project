@@ -11,7 +11,11 @@
     <modules>
         <module>Generic</module>
         <module>AliBaba</module>
+
         <module>maersk_line_com</module>
+
+        <module>HomeDepot</module>
+
     </modules>
     <dependencyManagement>
         <dependencies>

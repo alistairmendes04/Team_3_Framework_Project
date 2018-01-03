@@ -19,7 +19,7 @@ public class CommonAPI {
     @Parameters({"browserName", "os", "url"})
     @BeforeMethod
     public void setUp(@Optional("chrome") String browserName, @Optional("windows") String os, @Optional("http:\\www.amazon.com") String url) {
-        getLoaclDriver(browserName, os);
+        getLocalDriver(browserName, os);
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
@@ -34,7 +34,7 @@ public class CommonAPI {
     }
 
 
-    public WebDriver getLoaclDriver(String browserName, String os) {
+    public WebDriver getLocalDriver(String browserName, String os) {
         if (browserName.equalsIgnoreCase("chrome")) {
             if (os.equalsIgnoreCase("windows")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/drivers/windows/chromedriver.exe");
