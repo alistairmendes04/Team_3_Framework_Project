@@ -1,4 +1,4 @@
 package page_objects;
 
-public class ForBuyrs {
+public class HomePage {
 }

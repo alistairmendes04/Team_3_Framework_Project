@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HomeDepot Automation Test" parallel="false">
+
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.homedepot.com/"/>
+
+
+    <test name = "Home Depot">
+        <classes>
+            <class name="testCases.TestSearchPage"/>
+        </classes>
+    </test>
+
+</suite>
