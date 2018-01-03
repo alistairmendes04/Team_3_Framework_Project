@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="AliBaba Automation Test" parallel="false">
+<suite name="Cigna Automation Test" parallel="false">
 
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="os" value="windows"/>
     <parameter name="browserName" value="chrome"/>
-    <parameter name="url" value="https://www.alibaba.com/"/>
+    <parameter name="url" value="https://www.cigna.com/"/>
 
-
-<test name = "Alibaba Home">
+<test name = "Cigna">
     <classes>
-         <class name="testCases.TestSearchOption"/>
+         <class name="testCases.TestPersonalPage"/>
     </classes>
 </test>
 
