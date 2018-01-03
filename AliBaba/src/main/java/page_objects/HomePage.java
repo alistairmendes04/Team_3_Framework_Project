@@ -1,12 +1,12 @@
 package page_objects;
 
 import base.CommonAPI;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+
 
 public class HomePage extends CommonAPI {
 
@@ -25,8 +25,10 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//*[@id=\"J_SC_header\"]/header/div[1]/div[3]/ul/li[1]/span")
     public static WebElement sourcingSolutions;
 
-    @FindBy(xpath = "//*[@id=\"J_SC_header\"]/header//div/ul[1]/li[2]/a/text()")
+    @FindBy(partialLinkText = "Top Selected")
     public static WebElement topSelectedSuppliers;
+
+
 
     public void searchProduct() {
         // search by product search option
@@ -43,14 +45,14 @@ public class HomePage extends CommonAPI {
 
     }
 
-   /* public void sourcingSolutions() {
+    public void sourcingSolutions() {
         //click Sourcing Solutions
-        sourcingSolutions.click();
+        //sourcingSolutions.click();
 
         Actions act = new Actions(driver);
-        act.moveToElement(topSelectedSuppliers).build().perform();
+        act.moveToElement(sourcingSolutions).build().perform();
         topSelectedSuppliers.click();
-    }*/
+    }
 
 
 }
