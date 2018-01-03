@@ -19,6 +19,9 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//div[@id=\"J_SC_header\"]//form/div[1]/div/div/span[1]")
     public static WebElement suppliersSearchOption;
 
+    @FindBy (xpath = "//div[@id=\"J_SC_header\"]//form/div[1]/div/div/span[2]")
+    public static WebElement quotesSearchOptin;
+
     @FindBy(xpath = "//*[@id=\"J_SC_header\"]//input[4]")
     public static WebElement searchButton;
 
@@ -41,8 +44,14 @@ public class HomePage extends CommonAPI {
         suppliersSearchOption.click();
         searchBox.sendKeys("laptop i7");
         searchButton.click();
-        System.out.println("Get Suppliers Search Page Titel: " + driver.getTitle());
+        System.out.println("Suppliers Search Page Titel: " + driver.getTitle());
 
+    }
+    public void  quotesSearchOption(){
+        productSearchOption.click();
+        quotesSearchOptin.click();
+        searchBox.sendKeys("laptop bag");
+        System.out.println("Quotes page Title: " + driver.getTitle());
     }
 
     public void sourcingSolutions() {
@@ -52,6 +61,7 @@ public class HomePage extends CommonAPI {
         Actions act = new Actions(driver);
         act.moveToElement(sourcingSolutions).build().perform();
         topSelectedSuppliers.click();
+        System.out.println("Page titel for Sourcing Solutions: " + driver.getTitle());
     }
 
 

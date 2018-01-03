@@ -18,10 +18,15 @@ public class TestSearchOption extends CommonAPI {
         HomePage sr1 = PageFactory.initElements(driver, HomePage.class);
         sr1.searchSuppliers();
     }
+    @Test (priority = 3)
+    public void  testQuotesSearch(){
+        HomePage sr2 = PageFactory.initElements(driver, HomePage.class);
+        sr2.quotesSearchOption();
+    }
     @Test
     public void sourcingSolutions(){
-        HomePage sr2 = PageFactory.initElements(driver, HomePage.class);
-        sr2.sourcingSolutions();
+        HomePage sr3 = PageFactory.initElements(driver, HomePage.class);
+        sr3.sourcingSolutions();
     }
 
 }
