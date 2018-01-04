@@ -5,6 +5,8 @@
 
 
     <parameter name="useCloudEnv" value="false"/>
+    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <!--<parameter name="browserVersion" value="53.0"/>-->
     <parameter name="os" value="windows"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="url" value="https://www.alibaba.com/"/>
@@ -12,8 +14,9 @@
 
 <test name = "Alibaba Home">
     <classes>
-         <class name="testCases.TestSearchOption"/>
+         <class name="testCases.TestHomePage"/>
     </classes>
+
 </test>
 
 </suite>
