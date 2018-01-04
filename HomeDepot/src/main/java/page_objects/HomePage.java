@@ -36,6 +36,9 @@ public class HomePage extends CommonAPI {
     public static WebElement bathroomTextLink;
     //*[@id="roomFlyout"]/section/div[1]/div/div[1]/div/a/span
 
+    @FindBy(xpath = "//*[@id='container']/div[2]/div[3]/div[1]/div//a/img")
+    public static WebElement heroImage;
+
         //check if the search button is displayed
     public static boolean isSearchButtonDisplay() {
         boolean disp = searchBoxButton.isDisplayed();
@@ -43,7 +46,7 @@ public class HomePage extends CommonAPI {
     }
 
     //hover over All Department tab and click 1st item and navigate back to home page
-    public static void returnbackAfterClickingAllDept(){
+    public static void returnBackAllDept(){
      /*   Actions ac = new Actions(driver);
         ac.moveToElement(allDepartmentTab).build().perform();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -58,7 +61,7 @@ public class HomePage extends CommonAPI {
     }
 
     //Click on shopeByRoom tab and click image of bathroom and navigate back to home page
-    public static void returnbackAfterClickingShopRoomImg(){
+    public static String returnbackShopRoomImg(){
         shopRoomTab.click();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         bathroomImgLink.click();
@@ -66,10 +69,11 @@ public class HomePage extends CommonAPI {
         System.out.println("Title of the page: "+imgLinkTitle);
         driver.navigate().back();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        return imgLinkTitle;
     }
 
     //Click on shopeByRoom tab and click text link of bathroom and navigate back to home page
-    public static void returnbackAfterClickingShopRoomTxt(){
+    public static String returnbackShopRoomTxt(){
         shopRoomTab.click();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         bathroomTextLink.click();
@@ -77,13 +81,22 @@ public class HomePage extends CommonAPI {
         System.out.println("Title of the page: "+textLinkTitle);
         driver.navigate().back();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        return textLinkTitle;
+
     }
 
     //check if the text link and image link of same item opens same page in Shop by Room tab
     public static void compareImageNTextLink(){
-
+        if(returnbackShopRoomImg().equals(returnbackShopRoomTxt())){
+            System.out.println("Both links take to the same page");
+        }
     }
 
+    //capture the text of hero image
+    public static void captureTextHeroImage(){
+        String text = heroImage.getAttribute("title");
+            System.out.println("Text of the Hero Image is: "+ text);
+        }
 
   //shows all Search product
     public static void searchProduct(){
@@ -91,4 +104,7 @@ public class HomePage extends CommonAPI {
         System.out.println("Current Title: "+driver.getTitle());
 
     }
+
+
+
 }

@@ -11,8 +11,10 @@ public class TestHomePage extends HomePage {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         System.out.println("Search button Displayed: "+sr.isSearchButtonDisplay()); //test Search button for Display status
       //  sr.searchProduct();
-        sr.returnbackAfterClickingAllDept(); //navigate back to home page after clicking in AllDepartment tab
-        sr.returnbackAfterClickingShopRoomImg();
-        sr.returnbackAfterClickingShopRoomTxt();
+        sr.returnBackAllDept(); //navigate back to home page after clicking in AllDepartment tab
+        sr.returnbackShopRoomImg();
+        sr.returnbackShopRoomTxt();
+        sr.compareImageNTextLink();
+        sr.captureTextHeroImage();
     }
 }
