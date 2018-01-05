@@ -28,32 +28,16 @@ import java.util.concurrent.TimeUnit;
 public class CommonAPI {
 
     public static WebDriver driver = null;
-    /*@Parameters({"browserName", "os", "url"})
-    @BeforeMethod
-    public void setUp(@Optional("chrome") String browserName, @Optional("windows") String os, @Optional("http:\\www.amazon.com") String url) {
-        getLocalDriver(browserName, os);
-        driver.get(url);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-    }
-
-    @AfterMethod
-    public void closeOut() {
-        driver.manage().deleteAllCookies();
-        driver.close();
-        driver.quit();
-    }
-*/
-    private String saucelabs_username = "mrahman";
-    private String browserstack_username = "matiurrahman3";
-    private String saucelabs_accesskey = "ssh key";
-    private String browserstack_accesskey = "V66sY7ZtcQFksB1YC14z";
+    
+    private String saucelabs_username = "jahidul2543";
+    private String browserstack_username = "mjislam1";
+    private String saucelabs_accesskey = "c59131c9-8821-4a81-b468-90769d7c1353";
+    private String browserstack_accesskey = "nkPSXvCCS4MipNXKECyy";
 
     @Parameters({"useCloudEnv", "cloudEnvName", "os", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
-                      @Optional("windows") String os, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("55")
+                      @Optional("windows") String os, @Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("34")
                               String browserVersion, @Optional("https://www.google.com") String url) throws IOException {
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -97,19 +81,19 @@ public class CommonAPI {
     public WebDriver getCloudDriver(String envName, String envUsername, String envAccessKey, String os, String os_version, String browserName,
                                     String browserVersion) throws IOException {
 
-        DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("browser", browserName);
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("browser", "Chrome");
+        caps.setCapability("browser_version", "62.0");
+        caps.setCapability("os", "Windows");
+        caps.setCapability("os_version", "10");
 
-        cap.setCapability("browser_version", browserVersion);
-        cap.setCapability("os", os);
-        cap.setCapability("os_version", os_version);
         if (envName.equalsIgnoreCase("Saucelabs")) {
             driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
-                    "@ondemand.saucelabs.com:80/wd/hub"), cap);
+                    "@ondemand.saucelabs.com:80/wd/hub"), caps);
         } else if (envName.equalsIgnoreCase("Browserstack")) {
-            cap.setCapability("resolution", "1024x768");
+            caps.setCapability("resolution", "1024x768");
             driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
-                    "@hub-cloud.browserstack.com/wd/hub"), cap);
+                    "@hub-cloud.browserstack.com/wd/hub"), caps);
         }
         return driver;
     }

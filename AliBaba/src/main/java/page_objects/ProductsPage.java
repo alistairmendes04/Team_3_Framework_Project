@@ -47,6 +47,7 @@ public class ProductsPage extends CommonAPI {
         seeMore.click();
         leatherCraftingTools.click();
         freeSamples.click();
+
       /* minOrder.sendKeys("10", Keys.ENTER);
         contactSupplier.click();
         for (String handle : driver.getWindowHandles()) {
