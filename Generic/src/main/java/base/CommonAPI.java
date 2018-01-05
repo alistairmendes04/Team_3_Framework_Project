@@ -26,7 +26,7 @@ public class CommonAPI {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod
+  //  @AfterMethod
     public void closeOut() {
         driver.manage().deleteAllCookies();
         driver.close();

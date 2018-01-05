@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
@@ -38,6 +39,13 @@ public class HomePage extends CommonAPI {
 
     @FindBy(xpath = "//*[@id='container']/div[2]/div[3]/div[1]/div//a/img")
     public static WebElement heroImage;
+
+    @FindBy(xpath="//div[text()='My Account']")
+    public static WebElement myAcctButton;
+
+    @FindBy(xpath = "//*[@id='authSignIn']/a/span")
+    public static WebElement signinLink;
+
 
         //check if the search button is displayed
     public static boolean isSearchButtonDisplay() {
@@ -102,9 +110,13 @@ public class HomePage extends CommonAPI {
     public static void searchProduct(){
         searchBox.sendKeys("i phone", Keys.ENTER);
         System.out.println("Current Title: "+driver.getTitle());
-
     }
 
+    public static void goToLoginPage(){
+        myAcctButton.click();
+        driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+        signinLink.click();
+      }
 
 
 }
