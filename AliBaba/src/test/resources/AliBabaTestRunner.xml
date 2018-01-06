@@ -3,17 +3,20 @@
 
 <suite name="AliBaba Automation Test" parallel="false">
 
-
-    <parameter name="useCloudEnv" value="false"/>
-    <parameter name="os" value="windows"/>
-    <parameter name="browserName" value="chrome"/>
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="62.0"/>
     <parameter name="url" value="https://www.alibaba.com/"/>
 
 
 <test name = "Alibaba Home">
     <classes>
-         <class name="testCases.TestSearchOption"/>
+         <class name="testCases.TestHomePage"/>
     </classes>
+
 </test>
 
 </suite>
