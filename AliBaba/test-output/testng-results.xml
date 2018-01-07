@@ -2,16 +2,16 @@
 <testng-results ignored="10" total="11" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-01-07T16:09:01Z" name="AliBaba Automation Test" finished-at="2018-01-07T16:09:24Z" duration-ms="22434">
+  <suite started-at="2018-01-07T16:26:05Z" name="AliBaba Automation Test" finished-at="2018-01-07T16:26:38Z" duration-ms="33032">
     <groups>
     </groups>
-    <test started-at="2018-01-07T16:09:01Z" name="Alibaba Home" finished-at="2018-01-07T16:09:24Z" duration-ms="22434">
+    <test started-at="2018-01-07T16:26:05Z" name="Alibaba Home" finished-at="2018-01-07T16:26:38Z" duration-ms="33032">
       <class name="testCases.TestHomePage">
-        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestHomePage@2d2ffcb7]" started-at="2018-01-07T11:09:02Z" name="setUp" finished-at="2018-01-07T11:09:20Z" duration-ms="17933" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestHomePage@63070bab]" started-at="2018-01-07T11:26:05Z" name="setUp" finished-at="2018-01-07T11:26:29Z" duration-ms="23815" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[true]]>
               </value>
             </param>
             <param index="1">
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkLogoVisibility()[pri:9, instance:testCases.TestHomePage@2d2ffcb7]" started-at="2018-01-07T11:09:20Z" name="checkLogoVisibility" finished-at="2018-01-07T11:09:21Z" duration-ms="1043" status="PASS">
+        <test-method signature="checkLogoVisibility()[pri:9, instance:testCases.TestHomePage@63070bab]" started-at="2018-01-07T11:26:29Z" name="checkLogoVisibility" finished-at="2018-01-07T11:26:30Z" duration-ms="873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoVisibility -->
-        <test-method is-config="true" signature="closeOut()[pri:0, instance:testCases.TestHomePage@2d2ffcb7]" started-at="2018-01-07T11:09:21Z" name="closeOut" finished-at="2018-01-07T11:09:24Z" duration-ms="3221" status="PASS">
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testCases.TestHomePage@63070bab]" started-at="2018-01-07T11:26:30Z" name="closeOut" finished-at="2018-01-07T11:26:38Z" duration-ms="8158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeOut -->
