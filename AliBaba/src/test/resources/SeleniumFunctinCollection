@@ -1,2 +1,13 @@
-Select dropDown = new Select(driver.findElement(By.id("billing:region_id")));
+1. Select dropDown = new Select(driver.findElement(By.id("billing:region_id")));
         dropDown.selectByIndex(42);
+
+2.       UnhandledAlertException: Modal dialog present : if an alert is present on the web page and you
+         try to access any of the element in the underlying page you will get this exception.
+
+3.        //hover over Categories. Hover in multiple windows.
+                 Actions act = new Actions(driver);
+                 act.moveToElement(categories).moveToElement(machinery).build().perform();
+                 handTools.click();
+                 for (String handle : driver.getWindowHandles()) {
+                     driver.switchTo().window(handle);
+                 }

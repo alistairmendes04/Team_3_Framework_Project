@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 public class CommonAPI {
 
     public static WebDriver driver = null;
-    
+
     private String saucelabs_username = "jahidul2543";
     private String browserstack_username = "mjislam1";
     private String saucelabs_accesskey = "c59131c9-8821-4a81-b468-90769d7c1353";
@@ -266,9 +266,9 @@ public class CommonAPI {
         FileUtils.copyFile(file,new File("screenShots.png"));
     }
     //Synchronization
-    public void waitUntilClickAble(By locator){
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+    public void waitUntilClickAble(WebElement webElement){
+        WebDriverWait wait = new WebDriverWait(driver, 35);
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(webElement));
     }
     public void waitUntilVisible(By locator){
         WebDriverWait wait = new WebDriverWait(driver, 10);

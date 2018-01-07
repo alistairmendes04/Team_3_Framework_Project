@@ -1,11 +1,16 @@
 package page_objects;
 
 import base.CommonAPI;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomePage extends CommonAPI {
 
@@ -54,6 +59,12 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//a[@class='more' and @href='javascript:;']")
     private WebElement seeMore;
 
+    @FindBy (xpath = "//div/a[text()='Alibaba.com']")
+    private WebElement logo;
+
+    @FindBy (xpath = "//a[@data-val='ordericon']")
+    private  WebElement orderProtectionButton;
+
     public void searchProduct() {
         String url = driver.getCurrentUrl();
         org.testng.Assert.assertEquals(url, "https://www.alibaba.com/");
@@ -91,9 +102,13 @@ public class HomePage extends CommonAPI {
         System.out.println("Page titel for Sourcing Solutions: " + driver.getTitle());
     }
 
-    public void clikSignIn() {
+    public void clikSignIn() throws InterruptedException {
         signInButton.click();
+
         //continue in Sign In Page
+        /*for(String handle : driver.getWindowHandles()){
+            driver.switchTo().window(handle);
+        }*/
     }
 
     public void homePageButtonStatus() {
@@ -104,12 +119,44 @@ public class HomePage extends CommonAPI {
     }
 
     public void categories() {
-        //hover over Categories
+        //hover over Categories. Hover in multiple windows.
         Actions act = new Actions(driver);
         act.moveToElement(categories).moveToElement(machinery).build().perform();
         handTools.click();
-
+        for (String handle : driver.getWindowHandles()) {
+            driver.switchTo().window(handle);
+        }
+    }
+   /* public void getListOfCategories(){
+        Select objCategories = new Select(categories);
+        List<WebElement> elementCount = objCategories.getOptions();
+        for( int i=0; i<elementCount.size();i++){
+            String categoriesOption = elementCount.get(i).getText();
+            System.out.println(categoriesOption);
+        }
+    }*/
+     public void clickLogo(){
+       boolean displayed =  logo.isDisplayed();
+         org.testng.Assert.assertEquals(displayed, true);
+         boolean  enabled = logo.isEnabled();
+         Assert.assertEquals(enabled, true);
+     }
+    public void orderProtectionButtonStatus(){
+        boolean displayed =  orderProtectionButton.isDisplayed();
+        org.testng.Assert.assertEquals(displayed, true);
+        boolean  enabled = orderProtectionButton.isEnabled();
+        Assert.assertEquals(enabled, true);
+    }
+    public void categoriesList(){
+        //getTextFromWebElements("//div[class=\"component-list\"]");
+        List<String> sortByOptions = new ArrayList<>();
+        List<WebElement> option = driver.findElements(By.xpath(""));
+        for (WebElement we : option) {
+            sortByOptions.add(we.getText());
+        }
+        for (String st: sortByOptions){
+            System.out.println(st);
+        }
 
     }
-
 }
