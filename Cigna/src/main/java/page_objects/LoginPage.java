@@ -16,7 +16,10 @@ public class LoginPage extends CommonAPI{
     public static WebElement password;
     @FindBy(xpath = ".//*[@id='userForm']/fieldset[2]/div/span/button")
     public static WebElement loginbutton;
-
+    @FindBy(xpath = ".//*[@id='c1353257994291']/div[1]/ul/li[2]//a")
+    public static WebElement how2Regrister;
+    @FindBy(xpath = ".//*[@id='mycigna-learn-register']/div/a[1]")
+    public static WebElement regNow;
 //to work on the newly opened page
     public void enterCredintials(){
         for (String handle:driver.getWindowHandles()){
@@ -27,5 +30,13 @@ public class LoginPage extends CommonAPI{
         password.sendKeys("abcd1234");
         loginbutton.click();
         Assert.assertTrue(driver.findElement(By.xpath(".//*[@id='c1289878640341']/div/p")).isDisplayed(),"The ID and password combination you entered does not match our records.");
+    }
+    public void howToRegrister(){
+        for(String handle:driver.getWindowHandles()){
+            driver.switchTo().window(handle);
+        }
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        how2Regrister.click();
+
     }
 }
