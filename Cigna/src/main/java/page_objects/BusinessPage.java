@@ -10,6 +10,8 @@ import org.openqa.selenium.support.FindBy;
 import java.util.ArrayList;
 import java.util.List;
 
+import static sun.plugin.cache.FileVersion.convertToString;
+
 public class BusinessPage extends CommonAPI {
 
     @FindBy(css = ".business>a>span")
@@ -17,15 +19,10 @@ public class BusinessPage extends CommonAPI {
     @FindBy(xpath = ".//*[@id='login']")
     public static WebElement login1;
 
+
     public static void business() {
-        //Select dropdown = new Select(login1);
-        businesstab.click();
+        businesstab.g
     }
 
 
-        public List<WebElement> getListOfWebElementsByXpath(String locator) {
-            List<WebElement> list = new ArrayList<WebElement>();
-            list = driver.findElements(By.xpath(String.valueOf(login1)));
-            return list;
-        }
 }

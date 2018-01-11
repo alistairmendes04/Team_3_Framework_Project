@@ -53,8 +53,6 @@ public class CommonAPI {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
-
-
     }
 
     public WebDriver getLocalDriver(String browserName, String os) {
@@ -139,7 +137,6 @@ public class CommonAPI {
         for(WebElement web:element){
             text.add(web.getText());
         }
-
         return text;
     }
     public List<WebElement> getListOfWebElementsByCss(String locator) {
@@ -203,9 +200,7 @@ public class CommonAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
-
         }
-
     }
     public void mouseHoverByXpath(String locator){
         try {
@@ -217,9 +212,7 @@ public class CommonAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
-
         }
-
     }
     //handling Alert
     public void okAlert(){
@@ -295,9 +288,4 @@ public class CommonAPI {
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
         return splitString;
     }
-
-
 }
-
-
-
