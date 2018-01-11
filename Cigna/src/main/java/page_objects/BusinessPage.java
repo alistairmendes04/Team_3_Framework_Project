@@ -21,7 +21,7 @@ public class BusinessPage extends CommonAPI {
 
 
     public static void business() {
-        businesstab.g
+       // businesstab.g
     }
 
 
