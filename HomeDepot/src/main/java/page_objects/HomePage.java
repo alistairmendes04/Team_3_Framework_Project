@@ -44,10 +44,6 @@ public class HomePage extends CommonAPI {
 
     //hover over All Department tab and click 1st item and navigate back to home page
     public static void returnbackAfterClickingAllDept(){
-     /*   Actions ac = new Actions(driver);
-        ac.moveToElement(allDepartmentTab).build().perform();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        christDecTab.click();*/
         allDepartmentTab.click();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         christDecTab.click();

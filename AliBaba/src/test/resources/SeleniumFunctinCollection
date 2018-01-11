@@ -11,3 +11,23 @@
                  for (String handle : driver.getWindowHandles()) {
                      driver.switchTo().window(handle);
                  }
+4.     I guess you try to back to original window using driver.switchTo().defaultContent(); ? This is not proper way.
+       You should:
+       store the original window at the beginning of test:
+       String winHandleBefore = driver.getWindowHandle();
+       click button, switch windows, do whatever
+       To back to original window use:
+       driver.switchTo().window(winHandleBefore);
+       Answer based on:https://stackoverflow.com/a/9597714/4855333
+5. For me the problem was a failing test. If you are developing in a test driven stlye than a failing / not implemented test shouldn't break the build. I still want my project to build.
+
+   To solve this I added a configuration to surefire so that it ignores a failing test.
+
+   <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-surefire-plugin</artifactId>
+       <version>2.19.1</version>
+       <configuration>
+           <testFailureIgnore>true</testFailureIgnore>
+       </configuration>
+   </plugin>
