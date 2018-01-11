@@ -1,9 +1,12 @@
 package page_objects;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +17,7 @@ public class LoginPage extends CommonAPI{
     public static WebElement emailBox;
     @FindBy(id="password")
     public static WebElement passwordBox;
-    @FindBy(id="email_id")
+    @FindBy(xpath="//*[@id='accountSignIn']/span")
     public static WebElement signinButton;
     @FindBy(xpath="//span[contains(text(),'your email')]")
     public static WebElement errorEmailMessage;
@@ -22,25 +25,74 @@ public class LoginPage extends CommonAPI{
     public static WebElement errorPasswordMessage;
     @FindBy(xpath="//a[contains(text(),'Forgot')]")
     public static WebElement forgotPasswordLink;
-
     @FindBy(xpath="//*[@id='forgotpasswordEmail']")
     public static WebElement forgotPasswordEmail;
     @FindBy(xpath="//span[text()='Submit']")
     public static WebElement forgotPasswordSubmit;
+    @FindBy (xpath="//*[@id='userLogin']/div/div[5]/a[1]")
+    public static WebElement termsConditionLink;
+    @FindBy (xpath="//*[@id='userLogin']/div/div[5]/a[2]")
+    public static WebElement privacySecurityLink;
+    @FindBy (xpath="//*[@id='container']/div[2]//h1")
+    public static WebElement termsConditionText;
 
-    //Check if Email text box is enabled
-    public void checkEmailBoxEnable() {
-        boolean eb = emailBox.isEnabled();
-        System.out.println("Status of Email Textbox is :" + eb);
+    //T3HOM_LP_TC01 verify Email box status
+    public static boolean checkEmailTextBoxEnable() {
+        boolean bl = emailBox.isEnabled();
+        return bl;
     }
-
-    //Check if password text box is enabled
-    public void checkPasswordBoxEnable(){
+    //T3HOM_LP_TC02 Check if password text box is enabled
+    public static boolean checkPasswordTextBoxEnable(){
         boolean pb = passwordBox.isEnabled();
-        System.out.println("Status of Password Textbox is :" + pb);
+        return pb;
+    }
+    //T3HOM_LP_TC03 Sign-in button disabled if entered wrong email and wrong password
+    public static boolean checkSignInButton(){
+        emailBox.sendKeys("aarti");
+        passwordBox.sendKeys("abcd1234");
+        boolean bl = signinButton.isEnabled();
+        System.out.println(bl);
+        return bl;
+    }
+    //T3HOM_LP_TC04 Invalid email id throw error message
+    public static String invalidEmail() {
+        emailBox.sendKeys("aarti", Keys.ENTER);
+        String str = errorEmailMessage.getText();
+        return str;
+    }
+    //T3HOM_LP_TC05 Blank password throw error message
+    public static String invalidPassword(){
+        passwordBox.sendKeys("", Keys.ENTER);
+        String str = errorPasswordMessage.getText();
+        return str;
+     }
+    //T3HOM_LP_TC06 Verify My Account Terms & Conditions
+    public static String verifyMyAccount() throws InterruptedException {
+
+
+        int con =driver.findElements(By.xpath("//*[@id='userLogin']/div/div[5]/a[1]")).size();
+        driver.findElements(By.xpath("//*[@id='userLogin']/div/div[5]/a[1]")).get(con-1).click();
+
+//        termsConditionLink.click();
+      //  Thread.sleep(6000);
+        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(termsConditionText));
+        String str = termsConditionText.getText();
+        return str;
     }
 
-    //Clearing the text box message after entering text
+
+    //T3HOM_LP_TC06 Verify Forgot Email
+    public void verifyForgotEmail() throws InterruptedException {
+        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(forgotPasswordLink));
+        forgotPasswordLink.click();
+        implicitWait(driver, 40);
+        driver.getWindowHandle();
+        forgotPasswordEmail.sendKeys("aarti@gmail.com");
+        System.out.println("url link " + driver.getCurrentUrl());
+        forgotPasswordSubmit.click();
+        implicitWait(driver, 30);
+        System.out.println("URL of 'Forgot password' page: " + driver.getCurrentUrl());
+    }
     public void checkClearText(){
         emailBox.sendKeys("Aarti Pathania");
         emailBox.clear();
@@ -48,51 +100,4 @@ public class LoginPage extends CommonAPI{
         emailBox.sendKeys("aarti@gmail.com");
         emailBox.clear();
     }
-
-    //Sign-in button disabled if entered wrong email and wrong password
-    public void checkSignInButton(){
-        emailBox.sendKeys("aarti");
-        passwordBox.sendKeys("abcd1234");
-        boolean bl = signinButton.isEnabled();
-        System.out.println("With wrong credentials, SignIn button is disabled: "+bl);
-    }
-
-    //Capture error message when entered wrong email
-    public void captureEmailErrorMessage() {
-        emailBox.clear();
-        emailBox.sendKeys("aarti", Keys.ENTER);
-        String str = errorEmailMessage.getText();
-        System.out.println("Error messsage when wrong email entered: " + str);
-    }
-
-    //Capture error message when entered blank password
-    public void capturePasswordErrorMesssage(){
-        passwordBox.sendKeys("", Keys.ENTER);
-        System.out.println("Error messsage when wrong password entered: " + errorPasswordMessage.getText());
-    }
-
-    //Check Forgot Password link
-    public void checkForgotPasswordLink(){
-        forgotPasswordLink.click();
-        System.out.println("URL of 'Forgot password' page: " + driver.getCurrentUrl());
-    }
-
-    public void checkForgotEmail(){
-        forgotPasswordEmail.sendKeys("aarti@gmail.com");
-        forgotPasswordSubmit.click();
-    }
-
-
-/*
-        for (String handle : driver.getWindowHandles()) {
-            driver.switchTo().window(handle);
-        }
-        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-        emailBox.sendKeys("aarti");
-        passwordBox.sendKeys("abcd");
-        signinButton.click();
-        System.out.println("Status of Email Textbox is :"+ emailBox.isEnabled());
-       // Thread.sleep(4000);
-    }*/
-
 }

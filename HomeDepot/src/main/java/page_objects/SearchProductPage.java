@@ -2,6 +2,7 @@ package page_objects;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -34,48 +35,73 @@ public class SearchProductPage extends CommonAPI {
     public static WebElement topRatedLink;
     @FindBy (xpath="//*[@id='compare205216805']")
     public static WebElement compareButton1;
-   @FindBy(xpath="//*[@id='compare204834499']")
+    @FindBy (xpath="//*[@id='compare204834499']")
     public static WebElement compareButton2;
+    @FindBy (xpath="//a[@id='comp']")
+    public static WebElement compareNow;
+    @FindBy (xpath="//*[@id='products']/div/div[1]//div[5]/a")
+    public static WebElement searchItem1;
+    @FindBy (xpath="//*[@id='products']/div/div[2]//div[3]/a")
+    public static WebElement searchItem2;
+    @FindBy (xpath="//div[@id='PCPProductsContainer']/div[1]/div[2]//div[2]/a")
+    public static WebElement compareItem1;
+    @FindBy (xpath="//div[@id='PCPProductsContainer']/div[1]/div[3]//div[2]/a")
+    public static  WebElement compareItem2;
+    @FindBy (xpath="//*[@id='buybox__quantity']/div/div/div[2]")
+    public static WebElement incrementButton;
+    @FindBy (xpath="//div[@id='calculator-container']//div[2]/div/div[1]/div[1]")
+    public static WebElement quantityDisplayed;
+    @FindBy (xpath="//*[@id='buybox__quantity']/div/div/div[1]")
+    public static WebElement decrementButton;
+    @FindBy (xpath="//*[@id='text_$0 - $10']")
+    public static WebElement priceFilterUnder10;
+    @FindBy (xpath="//*[@id='products']//div[24]//div[6]/span)")
+    public static WebElement pageLastItemPrice;
+    @FindBy (xpath="//div[@id='appliedFilters']/div/span[2]/a/span")
+    public static WebElement priceSelectionCheck;
+    @FindBy (id="toTopBtn")
+    public static WebElement toTopButton;
+    @FindBy (xpath="//footer/div[3]//li[7]/a")
+    public static WebElement bottomLink;
+    @FindBy (xpath="//div[text()='My Account']")
+    public static WebElement myAccountLink;
 
-    //Checking status of BestMatch link under Sort BY dropbox
-   /* Tried clicking the drop box by using Select Class but didn't work as this drop box
-     doesn't have element type- select instead it has span type thatswhy
-     it was throwing the error - UnexpectedTagNameException.*/
-    public static void checkBestMatchSortBy() {
-        sortByButton.click();
+    //T3HOM_SR_TC01 verify Best Match link in Sort by dropbox
+    public static boolean checkBestMatchSortBy() {
+        sortByButton.click();                   //Tried using Select Class but throwing error -Sort by UnexpectedTagNameException
         implicitWait(driver, 40);
-        System.out.println("Under SortBy dropbox 'Best match' link is enabled: " + bestMatchLink.isEnabled());
+        boolean bl = bestMatchLink.isEnabled();
+        return bl;
     }
-
-    //Checking status of TopSeller Link under sort By dropbox
-    public static void checkTopSellerSortBy(){
+    //T3HOM_S_TC02 verify TopSeller Link under sort By dropbox
+    public static boolean checkTopSellerSortBy(){
+        sortByButton.click();
         implicitWait(driver,40);
-        sortByButton.click();
-        System.out.println("Under SortBy dropbox 'Top Seller' link is enabled: "+topSellerLink.isEnabled());
+        boolean bl = topSellerLink.isEnabled();
+        return bl;
     }
-
-    //Checking status of LowToHigh link under sort by dropbox
-    public static void checkLowToHighSortBy() {
+    //T3HOM_SP_TC03 verify LowToHigh link under sort by dropbox
+    public static boolean checkLowToHighSortBy() {
+        sortByButton.click();
         implicitWait(driver, 40);
-        sortByButton.click();
-        System.out.println("Under SortBy dropbox 'Low to High' link is enabled: " + lowToHighLink.isEnabled());
+        boolean bl = lowToHighLink.isDisplayed();
+        return bl;
     }
-
-    //Checking status of HighToLow link under sort by dropbox
-    public static void checkHighToLowSortBy() {
+    //T3HOM_SP_TC04 verify HighToLow link under sort by dropbox
+    public static boolean checkHighToLowSortBy() {
+        sortByButton.click();
         implicitWait(driver, 40);
-        sortByButton.click();
-        System.out.println("Under SortBy dropbox 'High to Low' link is enabled: " + highToLowLink.isEnabled());
+        boolean bl = highToLowLink.isEnabled();
+        return bl;
     }
-
-    //Checking status of HighToLow link under sort by dropbox
-    public static void checkTopRatedSortBy() {
+    //T3HOM_SP_TC05 verify TopRated link under sort by dropbox
+    public static boolean checkTopRatedSortBy() {
+        sortByButton.click();
         implicitWait(driver, 40);
-        sortByButton.click();
-        System.out.println("Under SortBy dropbox 'Top Rated' link is enabled: " + topRatedLink.isEnabled());
+        boolean bl = topRatedLink.isDisplayed();
+        return bl;
     }
-
-    //Get items from Sortby drop box
+    //T3HOM_SP_TC06 Get items from Sortby drop box
     public static void getItemsFromSortBy(){
         sortByButton.click();
         List<String> sortByOptions = new ArrayList<>();
@@ -88,16 +114,52 @@ public class SearchProductPage extends CommonAPI {
         }
       System.out.println("Total number of items in SortBy drop box with size(): "+sortByOptions.size());
     }
-
-    //Click on compare button
-    public static void checkComparebutton(){
-
+    //T3HOM_SP_TC07 verify increment Quantity of the product by clicking increment button
+    public static String verifyIncrementButton(){
+        searchItem1.click();
+        implicitWait(driver, 35);
+        incrementButton.click();
+        String str = quantityDisplayed.getText();
+        return str;
     }
-
-
+    //T3HOM_SP_TC08 verify decrement Quantity of the product by clicking decrement button
+    public static String verifyDecrementButton(){
+        searchItem1.click();
+        implicitWait(driver, 35);
+        incrementButton.click();
+        decrementButton.click();
+        String str = quantityDisplayed.getText();
+        return str;
+    }
+    //T3HOM_SP_TC09 check Price filter under $10 check box
+    public static boolean verifyPriceFilter(){
+        priceFilterUnder10.click();
+        implicitWait(driver, 35);
+        boolean bl = priceFilterUnder10.isSelected();
+        return bl;
+    }
+    //T3HOM_SP_T10 verify Price filter under $10 selection feature
+    public static String goToPriceFilter(){
+        priceFilterUnder10.click();
+        implicitWait(driver, 35);
+        String str = priceSelectionCheck.getText();
+        return str;
+    }
+    //Click add to cart and continue with the next page
     public static void goToCart(){
-        //Click add to cart and continue with the next page
         addToCart.click();
-        System.out.println("Page title of search phone: "+driver.getTitle());
+    }
+    //T3HOM_SP_T11 verify scrollDown
+    public static String checkScrollDown(){
+        searchItem1.click();
+        implicitWait(driver, 35);
+        for(String handle: driver.getWindowHandles()){
+            driver.switchTo().window(handle);
+        }
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+        implicitWait(driver, 30);
+        String str = bottomLink.getAttribute("title");
+        return str;
     }
 }

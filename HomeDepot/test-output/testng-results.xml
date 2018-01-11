@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="10" total="11" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="HomeDepot Automation Test" duration-ms="27119" started-at="2018-01-11T20:48:24Z" finished-at="2018-01-11T20:48:51Z">
+    <groups>
+    </groups>
+    <test name="Home Depot" duration-ms="27119" started-at="2018-01-11T20:48:24Z" finished-at="2018-01-11T20:48:51Z">
+      <class name="testCases.TestSearchPage">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestSearchPage@617faa95]" name="setUp" is-config="true" duration-ms="15351" started-at="2018-01-11T12:48:24Z" finished-at="2018-01-11T12:48:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.homedepot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initializePageObjects()[pri:0, instance:testCases.TestSearchPage@617faa95]" name="initializePageObjects" is-config="true" duration-ms="68" started-at="2018-01-11T12:48:39Z" finished-at="2018-01-11T12:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePageObjects -->
+        <test-method status="PASS" signature="testScrollDown()[pri:11, instance:testCases.TestSearchPage@617faa95]" name="testScrollDown" duration-ms="7752" started-at="2018-01-11T12:48:40Z" finished-at="2018-01-11T12:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollDown -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestSearchPage@617faa95]" name="closeOut" is-config="true" duration-ms="3910" started-at="2018-01-11T12:48:47Z" finished-at="2018-01-11T12:48:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+      </class> <!-- testCases.TestSearchPage -->
+    </test> <!-- Home Depot -->
+  </suite> <!-- HomeDepot Automation Test -->
+</testng-results>
