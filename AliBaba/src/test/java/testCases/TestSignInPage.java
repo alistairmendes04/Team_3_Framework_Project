@@ -30,12 +30,12 @@ public class TestSignInPage extends SignInPage {
         String actual = objOfSignInPage.signIn();
         System.out.println("Actual Error Message: " + actual);
         String expected = "Your account name or password is incorrect.";
-        SoftAssert softAssert =new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(actual.contains(expected));
         //System.out.println("Test Case T3ALI_SI_TC01 Passed");
         // TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     }
-/*
+
     //T3ALI_SI_TC02 Sign In By Mobile Link Status
     @Test(priority = 13, enabled = true)
     public void signInByMobileLinkStatusTest() throws InterruptedException {
@@ -45,11 +45,11 @@ public class TestSignInPage extends SignInPage {
         SignInPage sign = PageFactory.initElements(driver, SignInPage.class);
         objOfSignInPage.switchToSignInForm();
         boolean bl = objOfSignInPage.signInByMobileNumberLink();
-        SoftAssert softAssert =new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(bl, true);
         // Assert.assertEquals(bl, true);
         System.out.println("Test Case T3ALI_SI_TC02 Passed");
-       TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object() {
+        TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
     }
 
@@ -112,7 +112,7 @@ public class TestSignInPage extends SignInPage {
         }
         SignInPage sign = PageFactory.initElements(driver, SignInPage.class);
         sign.switchToSignInForm();
-       boolean bl = sign.signInByGoogleIconStatus();
+        boolean bl = sign.signInByGoogleIconStatus();
         Assert.assertEquals(bl, true);
         System.out.println("Test Case T3ALI_SI_TC07 Passed");
     }
@@ -144,7 +144,7 @@ public class TestSignInPage extends SignInPage {
         }
         SignInPage sign = PageFactory.initElements(driver, SignInPage.class);
         sign.switchToSignInForm();
-       boolean bl = sign.signInByTwiterIconStatus();
+        boolean bl = sign.signInByTwiterIconStatus();
         Assert.assertEquals(bl, true);
         System.out.println("Test Case T3ALI_SI_TC09 Passed");
     }
@@ -160,11 +160,10 @@ public class TestSignInPage extends SignInPage {
         }
         SignInPage sign = PageFactory.initElements(driver, SignInPage.class);
         sign.switchToSignInForm();
-       String actualErrorMessage = sign.signInByInvalidTwitterAccount();
+        String actualErrorMessage = sign.signInByInvalidTwitterAccount();
         String expectedErroMessage = "The email and password you entered did not match our records. Please double-check and try again.";
         Assert.assertEquals(expectedErroMessage, actualErrorMessage);
         System.out.println("Test Case T3ALI_SI_TC10 Passed");
-
     }
 
     // T3ALI_SI_TC11 Sign in by valid Twitter account
@@ -218,6 +217,7 @@ public class TestSignInPage extends SignInPage {
         Assert.assertEquals(expectedMessage, actuaMessage);
         System.out.println("Test Case T3ALI_SI_TC12 Passed");
     }
+
     //T3ALI_SI_TC13 Verify "Get Help Here" option
     @Test(priority = 24, enabled = true)
     public void getHelpHere() {
@@ -228,5 +228,4 @@ public class TestSignInPage extends SignInPage {
         }
         objOfSignInPage.getHlepHere();
     }
-*/
 }
