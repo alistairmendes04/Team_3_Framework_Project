@@ -5,15 +5,21 @@
 
 
     <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="windows"/>
+    <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="62.0"/>
     <parameter name="url" value="https://www.homedepot.com/"/>
 
 
-    <test name = "Home Depot">
+     <test name = "Home Depot">
         <classes>
-         <!--   <class name="testCases.TestSearchPage"/>-->
-            <class name="testCases.TestHomePage"/>
+           <!--  <class name="testCases.TestHomePage"/>-->
+          <!-- <class name ="testCases.TestLoginPage"/>-->
+            <class name="testCases.TestSearchPage"/>
+           <!-- <class name = "testCases.TestFooterPage"/>-->
+         <!--<class name = "testCases.TestAddToCartPage"/>-->
         </classes>
     </test>
 

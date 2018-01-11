@@ -25,7 +25,4 @@
             <artifactId>selenium-server</artifactId>
         </dependency>
     </dependencies>
-
-
-
 </project>
