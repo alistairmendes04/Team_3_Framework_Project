@@ -19,7 +19,7 @@ public class TestPersonalPage extends CommonAPI {
         objOfLoginPage = PageFactory.initElements(driver, LoginPage.class);
     }
 
-    @Test(priority = 0, enabled = false)
+    @Test(priority = 0, enabled = true)
     public void personalPageFunctions() {
         objOfPersonalPage.clickFindDoctor();
         objOfPersonalPage.navigateBack();
