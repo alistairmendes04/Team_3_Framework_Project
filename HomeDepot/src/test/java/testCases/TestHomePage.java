@@ -9,9 +9,9 @@ import page_objects.LoginPage;
 import page_objects.SearchProductPage;
 
 public class TestHomePage extends HomePage {
-    HomePage objHomePage;
-
-    @BeforeMethod
+     HomePage objHomePage;
+   
+  @BeforeMethod
     public void initializePageObjects() {
         objHomePage = PageFactory.initElements(driver, HomePage.class);
     }

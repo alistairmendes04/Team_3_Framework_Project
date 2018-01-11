@@ -11,12 +11,9 @@
     <modules>
         <module>Generic</module>
         <module>AliBaba</module>
-
-        <module>maersk_line_com</module>
-
-        <module>HomeDepot</module>
+        <!-- <module>maersk_line_com</module>-->
         <module>Cigna</module>
-
+        <module>HomeDepot</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -35,6 +32,26 @@
                 <artifactId>selenium-server</artifactId>
                 <version>3.7.1</version>
             </dependency>
+            <dependency>
+                <groupId>com.aventstack</groupId>
+                <artifactId>extentreports</artifactId>
+                <version>3.0.7</version>
+            </dependency>
+            <dependency>
+                <groupId>com.relevantcodes</groupId>
+                <artifactId>extentreports</artifactId>
+                <version>2.41.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>3.17</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -43,6 +60,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
