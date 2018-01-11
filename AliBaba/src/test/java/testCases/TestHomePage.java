@@ -68,6 +68,12 @@ public class TestHomePage extends HomePage {
         Assert.assertTrue(actual.contains(expected));
     }
 
+    @Test
+    public void testCategories() throws InterruptedException {
+        HomePage sr = PageFactory.initElements(driver, HomePage.class);
+        sr.categories();
+    }
+
     // T3ALI_HP_TC07 verify logo displayed on homepage or not
     @Test(priority = 9, enabled = true)
     public void checkLogoVisibility() {
