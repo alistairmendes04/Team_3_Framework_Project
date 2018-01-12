@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [AliBaba Automation Test]" guice-stage="DEVELOPMENT">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="Windows"/>
+  <parameter name="os_version" value="10"/>
+  <parameter name="browserVersion" value="62.0"/>
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="cloudEnvName" value="browserstack"/>
+  <parameter name="url" value="https://www.alibaba.com/"/>
+  <test name="Alibaba Home(failed)">
+    <classes>
+      <class name="testCases.TestHomePage">
+        <methods>
+          <include name="initializationOfElements"/>
+          <include name="afterEachTestMethod"/>
+          <include name="generateReport"/>
+          <include name="testQuotesRequestForm"/>
+          <include name="extentSetup"/>
+          <include name="setUp"/>
+          <include name="startExtent"/>
+          <include name="closeOut"/>
+        </methods>
+      </class> <!-- testCases.TestHomePage -->
+    </classes>
+  </test> <!-- Alibaba Home(failed) -->
+</suite> <!-- Failed suite [AliBaba Automation Test] -->
