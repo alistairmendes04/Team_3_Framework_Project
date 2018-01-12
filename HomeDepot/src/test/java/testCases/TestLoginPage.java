@@ -25,7 +25,7 @@ public class TestLoginPage extends LoginPage {
         System.out.println("testEmailBox test passed");
     }
     //T3HOM_LP_TC02 verify Password box status
-    @Test(priority=2, enabled=false)
+    @Test(priority=2, enabled=true)
     public void testPasswordBox() {
         objHomePage.goToLoginPage();
         boolean actual = objLoginPage.checkPasswordTextBoxEnable();

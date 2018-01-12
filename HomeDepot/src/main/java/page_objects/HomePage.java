@@ -97,6 +97,7 @@ public class HomePage extends CommonAPI {
     //T3HOM_SR_TC01, T3HOM_SR_TC02, T3HOM_SR_TC03, T3HOM_SR_TC04, T3HOM_SR_TC05, T3HOM_SR_TC06,
     // T3HOM_SR_TC07, T3HOM_SR_TC08, T3HOM_SR_TC09, T3HOM_SR_TC10 shows Search product- 'floor tiles'
     public static void goToSearchProductPage() {
+
         searchBox.sendKeys("floor tiles", Keys.ENTER);
     }
     //Go to Login Page
