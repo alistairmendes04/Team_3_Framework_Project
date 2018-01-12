@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 public class GetHelpHerePage extends CommonAPI {
     @FindBy(id = "robot-input")
     public static WebElement messageInputBox;
-    @FindBy(css = "#se-knowledge > p:nth-child(1)")
+    @FindBy(className = "robot-answer")
     public static WebElement reply;
     @FindBy (css = ".btn-submit")
     public static WebElement sendButton;
@@ -20,5 +20,4 @@ public class GetHelpHerePage extends CommonAPI {
           String replyText = reply.getText();
         System.out.println("Reply :" + replyText);
     }
-
 }

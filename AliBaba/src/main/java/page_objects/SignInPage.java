@@ -112,7 +112,7 @@ public class SignInPage extends CommonAPI {
     public String signInByMobileNumber() {
         logInByMobileNumber.click();
         try {
-            wait(driver, 20);
+            wait(driver, 5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -120,7 +120,8 @@ public class SignInPage extends CommonAPI {
         mobileNumberLogInPassword.sendKeys("aaddd");
         staySignedInCheckBox.click();
         submitLoginByMobileNumber.click();
-        implicitWait(driver, 35);
+        implicitWait(driver,5);
+
         String actualArrorMessage = signInErrorMesage.getText();
         System.out.println("Print error message " + actualArrorMessage);
         return actualArrorMessage;
@@ -183,7 +184,8 @@ public class SignInPage extends CommonAPI {
         twitterUserName.sendKeys("testdata.islam@gmail.com");
         twitterPassword.sendKeys("jitu2543");
         twitterSignInButton.click();
-        implicitWait(driver, 35);
+        implicitWait(driver,5);
+
         String actuaMessage = twitterRegistrationCompletionRequestMessage.getText();
         return actuaMessage;
     }
@@ -224,7 +226,6 @@ public class SignInPage extends CommonAPI {
     public void getHlepHere() {
         getHelp.click();
     }
-
     // Send email and password for Google Account
     public String sendGoogleIdAndPassword() {
         System.out.println(driver.getTitle());
@@ -232,6 +233,5 @@ public class SignInPage extends CommonAPI {
         googlePasswordInputBox.sendKeys("testdat" + Keys.ENTER);
         String text = gmailErrorMessage.getText();
         return text;
-
     }
 }

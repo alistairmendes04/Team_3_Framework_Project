@@ -10,25 +10,25 @@ public class ProductsPage extends CommonAPI {
     private WebElement goldSuppliers;
     @FindBy(xpath = "//a[@class='more' and @href='javascript:;']")
     private WebElement seeMore;
-    @FindBy(partialLinkText = "Leather crafting Tools ")
+    @FindBy(partialLinkText = "Leather crafting Tools")
     private WebElement leatherCraftingTools;
     @FindBy(xpath = "//span[text()='Free samples']")
     private WebElement freeSamples;
     @FindBy(xpath = "//input[@id='J-domdot-refine-moqt']")
     private WebElement minOrder;
-    @FindBy (xpath = "//div[2]/div[2]//div[2]/div[2]/div/div/a")
+    @FindBy(xpath = "//div[2]/div[2]//div[2]/div[2]/div/div/a")
     private WebElement okButton;
-    @FindBy(css = "//a[text()='cutting knife leather crafting tools']")
+    @FindBy(xpath = "//*[contains(text(),'cutting knife')]")
     private WebElement selectCuttingKnife;
     @FindBy(xpath = "//a[@title='Click to send an inquiry']")
     private WebElement contactSupplier;
     @FindBy(xpath = "//*[@id=\"tinymce\"]")
     private WebElement messageBox;
-    @FindBy(name = "email")
+    @FindBy(xpath = "//input[@name='email']")
     private WebElement email;
     @FindBy(xpath = "//*[@id=\"inquiry-body\"]//div[5]/div[4]/div/input")
     private WebElement inquiryBody;
-    @FindBy (xpath = "//span[text()='Asia']")
+    @FindBy(xpath = "//span[text()='Asia']")
     private WebElement asiaCheckBox;
 
     public void toolsSearch() throws InterruptedException {
@@ -39,21 +39,29 @@ public class ProductsPage extends CommonAPI {
         seeMore.click();
         waitUntilClickAble(leatherCraftingTools);
         leatherCraftingTools.click();
-       waitUntilClickAble(freeSamples);
+        waitUntilClickAble(freeSamples);
         freeSamples.click();
         waitUntilClickAble(minOrder);
         minOrder.sendKeys("10", Keys.ENTER);
-        waitUntilClickAble(okButton);
+        sleepFor(2);
         okButton.click();
         waitUntilClickAble(asiaCheckBox);
         asiaCheckBox.click();
-        waitUntilClickAble(selectCuttingKnife);
+        sleepFor(2);
         selectCuttingKnife.click();
+        sleepFor(3);
         switchWindow(driver);
         waitUntilClickAble(contactSupplier);
         contactSupplier.click();
-            /* messageBox.sendKeys("Red 4pcs, Blue 6 pcs ");
-            email.sendKeys("testdata@gmail.cm");
-            inquiryBody.click();*/
+        sleepFor(3);
+        switchWindow(driver);
+        driver.switchTo().frame("inquiry-content_ifr");
+        sleepFor(3);
+        messageBox.click();
+        messageBox.sendKeys("Red 4pcs, Blue 6 pcs ");
+        switchWindow(driver);
+        sleepFor(3);
+        email.sendKeys("testdata@gmail.cm");
+        inquiryBody.click();
     }
 }
