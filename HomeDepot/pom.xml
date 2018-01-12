@@ -34,10 +34,6 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFiles>target/test-classes/HomeDepotTestRunner.xml</suiteXmlFiles>
-                <version>2.20.1</version>
-                <configuration>
-                    <suiteXmlFiles>
                         <suitexmlFile>target/test-classes/HomeDepotTestRunner.xml</suitexmlFile>
                     </suiteXmlFiles>
                 </configuration>
@@ -45,3 +41,4 @@
         </plugins>
     </build>
 </project>
+

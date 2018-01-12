@@ -224,7 +224,6 @@ public class SignInPage extends CommonAPI {
     public void getHlepHere() {
         getHelp.click();
     }
-
     // Send email and password for Google Account
     public String sendGoogleIdAndPassword() {
         System.out.println(driver.getTitle());
@@ -232,6 +231,5 @@ public class SignInPage extends CommonAPI {
         googlePasswordInputBox.sendKeys("testdat" + Keys.ENTER);
         String text = gmailErrorMessage.getText();
         return text;
-
     }
 }

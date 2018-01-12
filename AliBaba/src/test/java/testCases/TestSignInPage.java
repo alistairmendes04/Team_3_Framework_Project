@@ -67,7 +67,6 @@ public class TestSignInPage extends SignInPage {
         boolean bl = objOfSignInPage.joinFreeLinkStatus();
         Assert.assertEquals(bl, true);
         System.out.println("Test Case T3ALI_SI_TC03 Passed");
-
     }
 
     // T3ALI_SI_TC05 Sign in By invalid mobile number and password

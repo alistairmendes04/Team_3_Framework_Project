@@ -98,7 +98,6 @@ public class HomePage extends CommonAPI {
         String title = driver.getTitle();
         System.out.println("Get Product Search Page Title: " + title);
         return title;
-
     }
 
     //T3ALI_HP_TC02

@@ -20,5 +20,4 @@ public class GetHelpHerePage extends CommonAPI {
           String replyText = reply.getText();
         System.out.println("Reply :" + replyText);
     }
-
 }
