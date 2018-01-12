@@ -2,13 +2,11 @@ package page_objects;
 
 import base.CommonAPI;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,50 +51,81 @@ public class HomePage extends CommonAPI {
     public static WebElement greetingsToAccountHolder;
     @FindBy(partialLinkText = "My Alibaba")
     public static WebElement myAlibaba;
-    @FindBy (css = ".J-search-text")
+    @FindBy(css = ".J-search-text")
     public static WebElement emailBoxToSubscribeForTradeAlert;
-    @FindBy (css = ".J-btn-search")
+    @FindBy(css = ".J-btn-search")
     public static WebElement tradeAlertSubscriptionButton;
     //Footer
-    @FindBy (xpath = "//*[@id=\"ui-footer\"]//div[1]/dl/dd[1]/a")
+    @FindBy(xpath = "//*[@id=\"ui-footer\"]//div[1]/dl/dd[1]/a")
     public static WebElement helpCenterLink;
-    @FindBy (xpath = "//*[@id=\"J_SC_header\"]/header/div[2]/div[1]/div[1]/a")
+    @FindBy(xpath = "//*[@id=\"J_SC_header\"]/header/div[2]/div[1]/div[1]/a")
     public static WebElement verificationPointHelpCenter;
-    @FindBy (xpath = "//dd/a[contains (text(), 'About Alibaba.com')]")
+    @FindBy(xpath = "//dd/a[contains (text(), 'About Alibaba.com')]")
     public static WebElement aboutAlibabaLink;
-    @FindBy (xpath = "//h2[contains (text(), 'About Alibaba.com')]")
+    @FindBy(xpath = "//h2[contains (text(), 'About Alibaba.com')]")
     public static WebElement verificationPointAboutAlibaba;
-    @FindBy (xpath = "//dd/a[contains (text(),'Wholesaler Market')]")
+    @FindBy(xpath = "//dd/a[contains (text(),'Wholesaler Market')]")
     public static WebElement wholesalerMarket;
     @FindBy (linkText = "Wholesaler Market")
     public static WebElement vaerificationPointAWholesaleMarket;
-
-
+    @FindBy(xpath = "/html/body/div[5]/div/div/i")
+    public static WebElement moveToTopButton;
+    @FindBy(xpath = "//input[@name='rfqName']")
+    public static WebElement productNameForQuotes;
+    @FindBy(xpath = "//input[@name='quantity']")
+    public static WebElement quantity;
+    @FindBy(xpath = "//form/div[3]/div")
+    public static WebElement clickUnit;
+    @FindBy(xpath = "/html/body/div[7]/ul/li[6]/a")
+    public static WebElement selectUnit;
+    @FindBy(css = ".ui2-tag-body")
+    public static WebElement requestPrice;
+    @FindBy(css = ".rfq-submit")
+    public static WebElement requestForQuotation;
+    @FindBy(css = ".control-detail")
+    public static WebElement productDetailedSpecifications;
+    @FindBy(xpath = "//div[@id='post-wrap']//form//button")
+    public static WebElement submitRFQ;
+    @FindBy(css = "#xjoinFirstName")
+    public static WebElement fNamePoPUpSignInWindow;
+    @FindBy(xpath = "//div[@id='thirdPartLogin']/a[2]")
+    public static WebElement googleIconOnPoPUpSignInWindow;
     //T3ALI_HP_TC01 Verify Home Page URL
-    public void searchProduct() {
+    public String searchProduct() {
         String url = driver.getCurrentUrl();
-        org.testng.Assert.assertEquals(url, "https://www.alibaba.com/");
-        // search by product search option
+        System.out.println("Home Page title: " + driver.getTitle());
         searchBox.sendKeys("I phone", Keys.ENTER);
-        System.out.println("Get Product Search Page Title: " + driver.getTitle());
+        String title = driver.getTitle();
+        System.out.println("Get Product Search Page Title: " + title);
+        return title;
+
     }
 
-    public void searchSuppliers() {
+    //T3ALI_HP_TC02
+    public String searchSuppliers() {
         productSearchOption.click();
         suppliersSearchOption.click();
         searchBox.sendKeys("laptop i7");
         searchButton.click();
-        System.out.println("Suppliers Search Page Titel: " + driver.getTitle());
+        switchWindow(driver);
+        String title = driver.getTitle();
+        System.out.println("Suppliers Search Page Titel: " + title);
+        return title;
     }
 
-    public void quotesSearchOption() {
+    //T3ALI_HP_TC03
+    public String quotesSearchOption() {
         productSearchOption.click();
         quotesSearchOptin.click();
         searchBox.sendKeys("laptop bag");
-        System.out.println("Quotes page Title: " + driver.getTitle());
+        switchWindow(driver);
+        String title = driver.getTitle();
+        System.out.println("Quotes page Title: " + title);
+        return title;
     }
 
-    public void sourcingSolutions() {
+    //T3ALI_HP_TC04 Verify by Sourcing Solutions
+    public String sourcingSolutions() {
         //hover Sourcing Solutions
         Actions act = new Actions(driver);
         act.moveToElement(sourcingSolutions).build().perform();
@@ -106,16 +135,20 @@ public class HomePage extends CommonAPI {
         System.out.println("Top Selected Suppliers link status: " + bl);
         System.out.println(topSelectedSuppliers.getText());
         topSelectedSuppliers.click();
-        System.out.println("Page titel for Sourcing Solutions: " + driver.getTitle());
+        switchWindow(driver);
+        String title = driver.getTitle();
+        System.out.println("Page titel for Sourcing Solutions: " + title);
+        return title;
     }
 
     //T3ALI_SI_TC02, T3ALI_SI_TC01
     public void clikSignIn() throws InterruptedException {
-       // waitUntilClickAble(signInButton);
-       try{ signInButton.click();}
-       catch (TimeoutException e){
-           e.getLocalizedMessage();
-       }
+        // waitUntilClickAble(signInButton);
+        try {
+            signInButton.click();
+        } catch (TimeoutException e) {
+            e.getLocalizedMessage();
+        }
     }
 
     //T3ALI_SI_TC13, Get Account Holder Name from My Alibaba
@@ -127,34 +160,38 @@ public class HomePage extends CommonAPI {
         return actuaMessage;
     }
 
-    public void homePageButtonStatus() {
+    //T3ALI_HP_TC05
+    public boolean homePageButtonStatus() {
         System.out.println("Get The App link status: " + getTheAppLink.isEnabled());
         System.out.println("'One Request' link status: " + oneRequestButton.isEnabled());
-        System.out.println("favorite link status: " + favoriteLink.isEnabled());
+        boolean bl = favoriteLink.isEnabled();
+        return bl;
     }
 
-    public void categories() {
+    //T3ALI_HP_TC06
+    public String categories() {
         //hover over Categories. Hover in multiple windows.
         Actions act = new Actions(driver);
         act.moveToElement(categories).moveToElement(machinery).build().perform();
         handTools.click();
-        for (String handle : driver.getWindowHandles()) {
-            driver.switchTo().window(handle);
-        }
+        switchWindow(driver);
+        String url = driver.getCurrentUrl();
+        return url;
     }
 
-    public void clickLogo() {
+    // T3ALI_HP_TC07 verify logo displayed on homepage or not
+    public boolean clickLogo() {
         boolean displayed = logo.isDisplayed();
-        org.testng.Assert.assertEquals(displayed, true);
         boolean enabled = logo.isEnabled();
-        Assert.assertEquals(enabled, true);
+        return enabled;
+
     }
 
-    public void orderProtectionButtonStatus() {
+    // T3ALI_HP_TC08 Verify Order Protection Link
+    public boolean orderProtectionButtonStatus() {
         boolean displayed = orderProtectionButton.isDisplayed();
-        org.testng.Assert.assertEquals(displayed, true);
         boolean enabled = orderProtectionButton.isEnabled();
-        Assert.assertEquals(enabled, true);
+        return enabled;
     }
 
     public void categoriesList() {
@@ -169,6 +206,7 @@ public class HomePage extends CommonAPI {
         }
 
     }
+
     //T3ALI_HP_TC10 Trade Alert Subscription
     public String tradeAlertSubscription() throws InterruptedException {
         emailBoxToSubscribeForTradeAlert.sendKeys("testdata.islam@gmail.com");
@@ -177,24 +215,28 @@ public class HomePage extends CommonAPI {
        String currentUrl = driver.getCurrentUrl();
        return currentUrl;
     }
+
     //T3ALI_HP_TC11 Help Center Link Status
     public String helpCenterLinkStatus() throws InterruptedException {
         helpCenterLink.click();
-        for(String handle : driver.getWindowHandles()){
+        for (String handle : driver.getWindowHandles()) {
             driver.switchTo().window(handle);
         }
        sleepFor(5);
+
         String text = verificationPointHelpCenter.getText();
-        return text ;
+        return text;
     }
+
     //T3ALI_HP_TC12 About ALibaba.com Link Status
     public String aboutAlibabaLinkStatus() throws InterruptedException {
         aboutAlibabaLink.click();
         switchWindow(driver);
         sleepFor(5);
         String text = verificationPointAboutAlibaba.getText();
-        return text ;
+        return text;
     }
+
     //T3ALI_HP_TC13 About Wholesale Market Link Status
     public String wholesaleMarketLinkStatus() throws InterruptedException {
         wholesalerMarket.click();
@@ -202,6 +244,48 @@ public class HomePage extends CommonAPI {
         switchWindow(driver);
         sleepFor(5);
         String text = vaerificationPointAWholesaleMarket.getText();
+
         return text;
+    }
+
+    //T3ALI_HP_TC14 Move to top button functionality check
+    public String topButtonVerification() throws InterruptedException {
+        System.out.println("My Alibab Display Status: " + myAlibaba.isDisplayed());
+        sleepFor(10);
+        System.out.println("Initial location of top button" + moveToTopButton.getLocation());
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("scroll(0, 1000);");
+        System.out.println("My Alibab Display Status: " + myAlibaba.isDisplayed());
+        System.out.println("Location after scroll: " + moveToTopButton.getLocation());
+        moveToTopButton.click();
+        System.out.println("My Alibab Display Status: " + myAlibaba.isDisplayed());
+        System.out.println(moveToTopButton.getLocation());
+        sleepFor(10);
+        String location = "Location after clik to Top Button: " + moveToTopButton.getLocation();
+        return location;
+    }
+
+    //T3ALI_HP_TC14 Quotes request
+    public void quotesRequestForm() {
+        productNameForQuotes.sendKeys("Laptop");
+        quantity.sendKeys("100");
+        clickUnit.click();
+        selectUnit.click();
+        requestPrice.click();
+        requestForQuotation.click();
+        switchWindow(driver);
+        System.out.println("Page Title: " + driver.getTitle());
+    }
+    //RFQ Details
+    public void quotesRequestFormDetails() {
+        implicitWait(driver, 10);
+        productDetailedSpecifications.sendKeys("30 Days");
+        submitRFQ.click();
+    }
+    //PoP Up Sign In
+    public void popUpSignIn(){
+        implicitWait(driver, 15);
+     fNamePoPUpSignInWindow.sendKeys("J Islam");
+     googleIconOnPoPUpSignInWindow.click();
     }
 }

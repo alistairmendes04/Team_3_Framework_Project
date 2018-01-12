@@ -5,16 +5,16 @@
       <![CDATA[Extent Report DirectoryC:\Users\Rabeka\IdeaProjects\Team_3_Framework_Project\AliBaba\test-output\html]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-01-11T05:59:53Z" name="AliBaba Automation Test" finished-at="2018-01-11T06:02:09Z" duration-ms="135672">
+  <suite started-at="2018-01-11T21:20:23Z" name="AliBaba Automation Test" finished-at="2018-01-11T21:22:34Z" duration-ms="131038">
     <groups>
     </groups>
-    <test started-at="2018-01-11T05:59:53Z" name="Alibaba Home" finished-at="2018-01-11T06:02:09Z" duration-ms="135672">
-      <class name="testCases.TestByInputFromExls">
-        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T00:59:45Z" name="extentSetup" finished-at="2018-01-11T00:59:53Z" duration-ms="7861" status="PASS">
+    <test started-at="2018-01-11T21:20:23Z" name="Alibaba Home" finished-at="2018-01-11T21:22:34Z" duration-ms="131038">
+      <class name="testCases.TestHomePage">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:20:16Z" name="extentSetup" finished-at="2018-01-11T16:20:23Z" duration-ms="7067" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@fabb651]]>
+                <![CDATA[org.testng.TestRunner@66f659e6]]>
               </value>
             </param>
           </params>
@@ -24,7 +24,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T00:59:54Z" name="setUp" finished-at="2018-01-11T01:00:51Z" duration-ms="57510" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:20:23Z" name="setUp" finished-at="2018-01-11T16:21:00Z" duration-ms="36602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,45 +65,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T01:00:51Z" name="startExtent" finished-at="2018-01-11T01:00:51Z" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:21:00Z" name="startExtent" finished-at="2018-01-11T16:21:00Z" duration-ms="45" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testCases.TestByInputFromExls.signInWithInvalidIdAndPassword() throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void testCases.TestHomePage.testQuotesRequestForm() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtent -->
-        <test-method is-config="true" signature="initialization()[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T01:00:51Z" name="initialization" finished-at="2018-01-11T01:00:52Z" duration-ms="491" status="PASS">
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:21:00Z" name="initializationOfElements" finished-at="2018-01-11T16:21:00Z" duration-ms="461" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method signature="signInWithInvalidIdAndPassword()[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T01:00:52Z" name="signInWithInvalidIdAndPassword" finished-at="2018-01-11T01:02:01Z" duration-ms="69390" status="PASS">
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="testQuotesRequestForm()[pri:15, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:21:00Z" name="testQuotesRequestForm" finished-at="2018-01-11T16:22:30Z" duration-ms="89813" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signInWithInvalidIdAndPassword -->
-        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T01:02:01Z" name="afterEachTestMethod" finished-at="2018-01-11T01:02:09Z" duration-ms="7850" status="PASS">
+        </test-method> <!-- testQuotesRequestForm -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:22:30Z" name="afterEachTestMethod" finished-at="2018-01-11T16:22:34Z" duration-ms="3733" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signInWithInvalidIdAndPassword status=SUCCESS method=TestByInputFromExls.signInWithInvalidIdAndPassword()[pri:0, instance:testCases.TestByInputFromExls@5136d012] output={null}]]]>
+                <![CDATA[[TestResult name=testQuotesRequestForm status=SUCCESS method=TestHomePage.testQuotesRequestForm()[pri:15, instance:testCases.TestHomePage@3315d2d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
-        <test-method is-config="true" signature="closeOut()[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T01:02:09Z" name="closeOut" finished-at="2018-01-11T01:02:09Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:22:34Z" name="closeOut" finished-at="2018-01-11T16:22:34Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeOut -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:testCases.TestByInputFromExls@5136d012]" started-at="2018-01-11T01:02:09Z" name="generateReport" finished-at="2018-01-11T01:02:10Z" duration-ms="991" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:22:34Z" name="generateReport" finished-at="2018-01-11T16:22:34Z" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- testCases.TestByInputFromExls -->
+      </class> <!-- testCases.TestHomePage -->
     </test> <!-- Alibaba Home -->
   </suite> <!-- AliBaba Automation Test -->
 </testng-results>

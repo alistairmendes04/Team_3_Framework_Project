@@ -86,9 +86,9 @@ public class CommonAPI {
     }
     public static WebDriver driver = null;
     private String saucelabs_username = "jahidul2543";
-    private String browserstack_username = "mjislam1";
+    private String browserstack_username = "aartipathania1";
     private String saucelabs_accesskey = "c59131c9-8821-4a81-b468-90769d7c1353";
-    private String browserstack_accesskey = "nkPSXvCCS4MipNXKECyy";
+    private String browserstack_accesskey = "XRGG5ma4V3g4QzRhpMzr";
 
     @Parameters({"useCloudEnv", "cloudEnvName", "os", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
@@ -191,7 +191,6 @@ public class CommonAPI {
         for(WebElement web:element){
             text.add(web.getText());
         }
-
         return text;
     }
     public List<WebElement> getListOfWebElementsByCss(String locator) {
@@ -256,7 +255,6 @@ public class CommonAPI {
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
         }
-
     }
     public void mouseHoverByXpath(String locator){
         try {
@@ -269,7 +267,6 @@ public class CommonAPI {
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
         }
-
     }
     //handling Alert
     public void okAlert(){
@@ -345,7 +342,8 @@ public class CommonAPI {
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
         return splitString;
     }
-    public void switchWindow(WebDriver driver){
+
+  public void switchWindow(WebDriver driver){
         for (String handle: driver.getWindowHandles()){
             driver.switchTo().window(handle);
         }
@@ -364,9 +362,4 @@ public class CommonAPI {
         String text = webElement.getText();
         return text;
     }
-
-
 }
-
-
-

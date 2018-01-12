@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.security.Key;
 import java.sql.Driver;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
@@ -74,6 +75,8 @@ public class SignInPage extends CommonAPI {
     public static WebElement googlePasswordInputBox;
     @FindBy(css = "#advisory > a:nth-child(2)")
     public static WebElement getHelp;
+    @FindBy(xpath = "//div[@id='password']/div[2]/div[2]")
+    public static WebElement gmailErrorMessage;
 
     //Switch to Sign In form
     public void switchToSignInForm() {
@@ -118,6 +121,7 @@ public class SignInPage extends CommonAPI {
         staySignedInCheckBox.click();
         submitLoginByMobileNumber.click();
         implicitWait(driver,5);
+
         String actualArrorMessage = signInErrorMesage.getText();
         System.out.println("Print error message " + actualArrorMessage);
         return actualArrorMessage;
@@ -133,7 +137,7 @@ public class SignInPage extends CommonAPI {
     //T3ALI_SI_TC07, Sign in by Google icon Status
     public boolean signInByGoogleIconStatus() {
         boolean bl = signInByGoogleIcon.isEnabled();
-        return  true;
+        return true;
     }
 
     //T3ALI_SI_TC08, Sign in by LinkedIn icon Status
@@ -181,6 +185,7 @@ public class SignInPage extends CommonAPI {
         twitterPassword.sendKeys("jitu2543");
         twitterSignInButton.click();
         implicitWait(driver,5);
+
         String actuaMessage = twitterRegistrationCompletionRequestMessage.getText();
         return actuaMessage;
     }
@@ -220,5 +225,15 @@ public class SignInPage extends CommonAPI {
     // Get Help Here option verification
     public void getHlepHere() {
         getHelp.click();
+    }
+
+    // Send email and password for Google Account
+    public String sendGoogleIdAndPassword() {
+        System.out.println(driver.getTitle());
+        googleEmailInputBox.sendKeys("testdata.islam@gmail.com" + Keys.ENTER);
+        googlePasswordInputBox.sendKeys("testdat" + Keys.ENTER);
+        String text = gmailErrorMessage.getText();
+        return text;
+
     }
 }
