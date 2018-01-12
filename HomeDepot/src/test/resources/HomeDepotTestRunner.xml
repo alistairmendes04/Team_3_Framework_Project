@@ -12,7 +12,6 @@
     <parameter name="browserVersion" value="62.0"/>
     <parameter name="url" value="https://www.homedepot.com/"/>
 
-
      <test name = "Home Depot">
         <classes>
            <!--  <class name="testCases.TestHomePage"/>-->

@@ -23,8 +23,11 @@ public class TestByInputFromExls extends ByInputFromExls {
     @Test
     public void signInWithInvalidIdAndPassword() throws IOException, InterruptedException {
         // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-         objOfHomePage.clikSignIn();
+        sleepFor(3);
+        objOfHomePage.clikSignIn();
+         sleepFor(3);
          objOfSignInPage.switchToSignInForm();
+         sleepFor(3);
         String[] expectedItems = objByInput.getAssertData("DataFile.xls");
         String[] actualItems = objByInput.getVerificationValue("DataFile.xls");
         for (int i = 0; i < actualItems.length; i++) {
@@ -32,6 +35,6 @@ public class TestByInputFromExls extends ByInputFromExls {
             System.out.println(expectedItems[i] + ": Test - Passed");
         }
         System.out.println("signInWithInvalidIdAndPassword");
-        implicitWait(driver, 20);
+        //implicitWait(driver, 20);
     }
 }
