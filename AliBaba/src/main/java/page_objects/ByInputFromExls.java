@@ -44,15 +44,16 @@ public class ByInputFromExls extends CommonAPI {
         String[] col3Value = getDataCol3(fileName);
         String[] actual = new String[col2Value.length];
         for (int i = 0; i < col2Value.length; i++) {
-            sleepFor(1);
             inputValueInTextBoxByWebElement(account, col2Value[i]);
+            sleepFor(5);
             inputValueInTextBoxByWebElement(password, col3Value[i]);
-            sleepFor(1);
+            sleepFor(5);
             // actual[i] = getCurrentPageTitle();
             actual[i] = getTextByWebElement(signInErrorMesage);
+            sleepFor(5);
+            System.out.println(actual[i]);
             clearInputBox(account);
             clearInputBox(password);
-            sleepFor(1);
         }
         return actual;
     }
