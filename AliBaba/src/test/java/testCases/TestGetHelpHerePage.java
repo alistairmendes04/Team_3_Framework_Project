@@ -14,6 +14,7 @@ public class TestGetHelpHerePage extends GetHelpHerePage {
     SignInPage objOfSignInPage;
     ProductsPage objOfProductsPage;
     GetHelpHerePage objGetHelpHerePage;
+
     @BeforeMethod
     public void initializationOfElements() {
         objOfHomePage = PageFactory.initElements(driver, HomePage.class);
@@ -33,5 +34,4 @@ public class TestGetHelpHerePage extends GetHelpHerePage {
         switchWindow(driver);
         objGetHelpHerePage.sendTextToAnna();
     }
-
 }

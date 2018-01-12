@@ -5,16 +5,16 @@
       <![CDATA[Extent Report DirectoryC:\Users\Rabeka\IdeaProjects\Team_3_Framework_Project\AliBaba\test-output\html]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-01-11T21:20:23Z" name="AliBaba Automation Test" finished-at="2018-01-11T21:22:34Z" duration-ms="131038">
+  <suite started-at="2018-01-12T07:56:51Z" name="AliBaba Automation Test" finished-at="2018-01-12T07:58:31Z" duration-ms="99447">
     <groups>
     </groups>
-    <test started-at="2018-01-11T21:20:23Z" name="Alibaba Home" finished-at="2018-01-11T21:22:34Z" duration-ms="131038">
-      <class name="testCases.TestHomePage">
-        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:20:16Z" name="extentSetup" finished-at="2018-01-11T16:20:23Z" duration-ms="7067" status="PASS">
+    <test started-at="2018-01-12T07:56:51Z" name="Alibaba Home" finished-at="2018-01-12T07:58:31Z" duration-ms="99447">
+      <class name="testCases.TestGoogleSheetsPage">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:56:46Z" name="extentSetup" finished-at="2018-01-12T02:56:51Z" duration-ms="5481" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@66f659e6]]>
+                <![CDATA[org.testng.TestRunner@3d37203b]]>
               </value>
             </param>
           </params>
@@ -24,7 +24,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:20:23Z" name="setUp" finished-at="2018-01-11T16:21:00Z" duration-ms="36602" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:56:52Z" name="setUp" finished-at="2018-01-12T02:57:25Z" duration-ms="33597" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,45 +65,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:21:00Z" name="startExtent" finished-at="2018-01-11T16:21:00Z" duration-ms="45" status="PASS">
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:57:25Z" name="startExtent" finished-at="2018-01-12T02:57:25Z" duration-ms="22" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testCases.TestHomePage.testQuotesRequestForm() throws java.lang.InterruptedException]]>
+                <![CDATA[public void testCases.TestGoogleSheetsPage.testLogInByInvalidIdPassUsingGoogleSheet() throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtent -->
-        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:21:00Z" name="initializationOfElements" finished-at="2018-01-11T16:21:00Z" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:57:25Z" name="initialization" finished-at="2018-01-12T02:57:26Z" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializationOfElements -->
-        <test-method signature="testQuotesRequestForm()[pri:15, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:21:00Z" name="testQuotesRequestForm" finished-at="2018-01-11T16:22:30Z" duration-ms="89813" status="PASS">
+        </test-method> <!-- initialization -->
+        <test-method signature="testLogInByInvalidIdPassUsingGoogleSheet()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:57:26Z" name="testLogInByInvalidIdPassUsingGoogleSheet" finished-at="2018-01-12T02:58:25Z" duration-ms="59673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuotesRequestForm -->
-        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:22:30Z" name="afterEachTestMethod" finished-at="2018-01-11T16:22:34Z" duration-ms="3733" status="PASS">
+        </test-method> <!-- testLogInByInvalidIdPassUsingGoogleSheet -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:58:25Z" name="afterEachTestMethod" finished-at="2018-01-12T02:58:31Z" duration-ms="5405" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testQuotesRequestForm status=SUCCESS method=TestHomePage.testQuotesRequestForm()[pri:15, instance:testCases.TestHomePage@3315d2d7] output={null}]]]>
+                <![CDATA[[TestResult name=testLogInByInvalidIdPassUsingGoogleSheet status=SUCCESS method=TestGoogleSheetsPage.testLogInByInvalidIdPassUsingGoogleSheet()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
-        <test-method is-config="true" signature="closeOut()[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:22:34Z" name="closeOut" finished-at="2018-01-11T16:22:34Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:58:31Z" name="closeOut" finished-at="2018-01-12T02:58:31Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeOut -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:testCases.TestHomePage@3315d2d7]" started-at="2018-01-11T16:22:34Z" name="generateReport" finished-at="2018-01-11T16:22:34Z" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:58:31Z" name="generateReport" finished-at="2018-01-12T02:58:32Z" duration-ms="759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- testCases.TestHomePage -->
+      </class> <!-- testCases.TestGoogleSheetsPage -->
     </test> <!-- Alibaba Home -->
   </suite> <!-- AliBaba Automation Test -->
 </testng-results>
