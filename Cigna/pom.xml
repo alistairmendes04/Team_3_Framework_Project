@@ -18,7 +18,7 @@
         </dependency>
     </dependencies>
 
-      <build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -35,11 +35,10 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>Cigna/target/classes/CignaTestRunner.xml</suiteXmlFile>
-                        <suitexmlFile>target/classes/CignaTestRunner.xml</suitexmlFile>
+                        <suitexmlFile>target/test-classes/CignaTestRunner.xml</suitexmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
-     </build>
+    </build>
 </project>

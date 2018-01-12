@@ -86,9 +86,9 @@ public class CommonAPI {
     }
     public static WebDriver driver = null;
     private String saucelabs_username = "jahidul2543";
-    private String browserstack_username = "aartipathania1";
+    private String browserstack_username = "mjislam1";
     private String saucelabs_accesskey = "c59131c9-8821-4a81-b468-90769d7c1353";
-    private String browserstack_accesskey = "XRGG5ma4V3g4QzRhpMzr";
+    private String browserstack_accesskey = "nkPSXvCCS4MipNXKECyy";
 
     @Parameters({"useCloudEnv", "cloudEnvName", "os", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
@@ -104,14 +104,10 @@ public class CommonAPI {
         } else {
             getLocalDriver(browserName, os);
         }
-
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
-
-        driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
     }
 
     public WebDriver getLocalDriver(String browserName, String os) {
