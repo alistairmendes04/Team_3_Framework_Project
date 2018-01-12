@@ -35,7 +35,7 @@
                 <version>2.20.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suitexmlFile>target/classes/CignaTestRunner.xml</suitexmlFile>
+                        <suitexmlFile>target/test-classes/CignaTestRunner.xml</suitexmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

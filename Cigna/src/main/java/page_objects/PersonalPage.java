@@ -1,10 +1,11 @@
 package page_objects;
 
+import base.CommonAPI;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PersonalPage {
+public class PersonalPage extends CommonAPI{
 
     @FindBy(id = "login")
     public static WebElement loginButton;

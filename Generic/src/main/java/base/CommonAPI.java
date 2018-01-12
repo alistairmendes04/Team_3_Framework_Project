@@ -104,11 +104,10 @@ public class CommonAPI {
         } else {
             getLocalDriver(browserName, os);
         }
-
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
     }
 
     public WebDriver getLocalDriver(String browserName, String os) {

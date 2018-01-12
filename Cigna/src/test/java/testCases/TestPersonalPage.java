@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import page_objects.LoginPage;
 import page_objects.PersonalPage;
 
-public class TestPersonalPage extends CommonAPI {
+public class TestPersonalPage extends PersonalPage {
 
     @Test
     public void loginButton() {

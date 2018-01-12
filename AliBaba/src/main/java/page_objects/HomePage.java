@@ -68,7 +68,7 @@ public class HomePage extends CommonAPI {
     public static WebElement verificationPointAboutAlibaba;
     @FindBy (xpath = "//dd/a[contains (text(),'Wholesaler Market')]")
     public static WebElement wholesalerMarket;
-    @FindBy (xpath = "//a[contains(text(), 'Wholesaler Market')]")
+    @FindBy (linkText = "Wholesaler Market")
     public static WebElement vaerificationPointAWholesaleMarket;
 
 
@@ -160,7 +160,7 @@ public class HomePage extends CommonAPI {
     public void categoriesList() {
         //getTextFromWebElements("//div[class=\"component-list\"]");
         List<String> sortByOptions = new ArrayList<>();
-        List<WebElement> option = driver.findElements(By.xpath(""));
+        List<WebElement> option = driver.findElements(By.xpath("//ul[@class='component-list']"));
         for (WebElement we : option) {
             sortByOptions.add(we.getText());
         }
@@ -173,7 +173,7 @@ public class HomePage extends CommonAPI {
     public String tradeAlertSubscription() throws InterruptedException {
         emailBoxToSubscribeForTradeAlert.sendKeys("testdata.islam@gmail.com");
         tradeAlertSubscriptionButton.click();
-        sleepFor(20);
+        sleepFor(5);
        String currentUrl = driver.getCurrentUrl();
        return currentUrl;
     }
@@ -183,7 +183,7 @@ public class HomePage extends CommonAPI {
         for(String handle : driver.getWindowHandles()){
             driver.switchTo().window(handle);
         }
-       sleepFor(10);
+       sleepFor(5);
         String text = verificationPointHelpCenter.getText();
         return text ;
     }
@@ -191,15 +191,16 @@ public class HomePage extends CommonAPI {
     public String aboutAlibabaLinkStatus() throws InterruptedException {
         aboutAlibabaLink.click();
         switchWindow(driver);
-        sleepFor(10);
+        sleepFor(5);
         String text = verificationPointAboutAlibaba.getText();
         return text ;
     }
     //T3ALI_HP_TC13 About Wholesale Market Link Status
     public String wholesaleMarketLinkStatus() throws InterruptedException {
         wholesalerMarket.click();
+        sleepFor(5);
         switchWindow(driver);
-        sleepFor(20);
+        sleepFor(5);
         String text = vaerificationPointAWholesaleMarket.getText();
         return text;
     }
