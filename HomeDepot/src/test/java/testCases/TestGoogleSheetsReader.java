@@ -17,7 +17,7 @@ public class TestGoogleSheetsReader extends GoogleSheetsReaderPage {
         objGoogleSheet = PageFactory.initElements(driver, GoogleSheetsReaderPage.class);
     }
     //T3HOM_GS_TC01 Search Product using Googlesheet
-    @Test
+    @Test (enabled = false)
     public void testSearchProductUsingGoogleSheet() throws IOException, InterruptedException {
         sleepFor(3);
         int i = 0;
