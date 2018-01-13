@@ -4,7 +4,7 @@
 <suite name="HomeDepot Automation Test" parallel="false">
 
 
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="windows"/>
     <parameter name="os_version" value="10"/>
@@ -14,11 +14,13 @@
 
      <test name = "Home Depot">
         <classes>
-             <class name="testCases.TestHomePage"/>
-           <class name ="testCases.TestLoginPage"/>
+            <class name="testCases.TestHomePage"/>
+            <class name ="testCases.TestLoginPage"/>
             <class name="testCases.TestSearchPage"/>
             <class name = "testCases.TestFooterPage"/>
             <class name="testCases.TestAddToCartPage"/>
+            <class name="testCases.TestExcelFileReader"/>
+            <class name="testCases.TestGoogleSheetsReader"/>
         </classes>
     </test>
 

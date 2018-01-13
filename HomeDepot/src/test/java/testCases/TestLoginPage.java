@@ -17,7 +17,7 @@ public class TestLoginPage extends LoginPage {
         objLoginPage = PageFactory.initElements(driver, LoginPage.class);
     }
     //T3HOM_LP_TC01 verify Email address box status
-    @Test(priority=1, enabled=false)
+    @Test(priority=1, enabled=true)
     public void testEmailBox() {
         objHomePage.goToLoginPage();
         boolean actual = objLoginPage.checkEmailTextBoxEnable();
@@ -25,7 +25,7 @@ public class TestLoginPage extends LoginPage {
         System.out.println("testEmailBox test passed");
     }
     //T3HOM_LP_TC02 verify Password box status
-    @Test(priority=2, enabled=false)
+    @Test(priority=2, enabled=true)
     public void testPasswordBox() {
         objHomePage.goToLoginPage();
         boolean actual = objLoginPage.checkPasswordTextBoxEnable();
@@ -33,7 +33,7 @@ public class TestLoginPage extends LoginPage {
         System.out.println("testPasswordBox test passed");
     }
     //T3HOM_LP_TC03 Verify SignIn button as with wrong credentials, Signin button is disabled
-    @Test(priority=3, enabled=false)
+    @Test(priority=3, enabled=true)
     public void testSignInButton() {
         objHomePage.goToLoginPage();
         boolean actual = objLoginPage.checkSignInButton();
@@ -41,7 +41,7 @@ public class TestLoginPage extends LoginPage {
         System.out.println("testClearBox test passed");
     }
     //T3HOM_LP_TC04 Invalid email id throw error message
-    @Test(priority=4, enabled=false)
+    @Test(priority=4, enabled=true)
     public void testInvalidEmail() {
         objHomePage.goToLoginPage();
         String actualError = objLoginPage.invalidEmail();
