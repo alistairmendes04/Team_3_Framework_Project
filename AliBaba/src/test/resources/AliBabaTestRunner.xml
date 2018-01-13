@@ -3,7 +3,7 @@
 
 <suite name="AliBaba Automation Test" parallel="false">
 
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
@@ -14,7 +14,12 @@
 
 <test name = "Alibaba Home">
     <classes>
-         <class name="testCases.TestHomePage"/>
+       <!--<class name="testCases.TestHomePage"/>
+        <class name="testCases.TestGetHelpHerePage"/>
+        <class name="testCases.TestSignInPage"/>
+        <class name="testCases.TestProductPage"/>
+        <class name="testCases.TestByInputFromExls"/>-->
+        <class name="testCases.TestGoogleSheetsPage"/>
     </classes>
 
 </test>

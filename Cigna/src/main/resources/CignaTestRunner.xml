@@ -5,8 +5,11 @@
 
 
     <parameter name="useCloudEnv" value="false"/>
-    <parameter name="os" value="windows"/>
-    <parameter name="browserName" value="chrome"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="62.0"/>
     <parameter name="url" value="https://www.cigna.com/"/>
 
     <test name="Cigna">
