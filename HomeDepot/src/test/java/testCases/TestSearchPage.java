@@ -17,7 +17,7 @@ public class TestSearchPage extends SearchProductPage {
         objSearchPage = PageFactory.initElements(driver, SearchProductPage.class);
     }
     //T3HOM_SP_TC01 verify Best Match link in Sort by drop box
-    @Test (priority=1 , enabled=true)
+    @Test (priority=1 , enabled=false)
     public void testSortByBestMatch() {
         objHomePage.goToSearchProductPage();
         boolean bl = objSearchPage.checkBestMatchSortBy();

@@ -54,7 +54,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2018-01-13 14:10:37</span>
+					<span class='suite-started-time'>2018-01-13 18:24:48</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -84,25 +84,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 20m 38s+72ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 22m 4s+623ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 20m 38s+72ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 22m 4s+623ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2018-01-13 13:49:59</span> 
+							<span class='panel-lead suite-started-time'>2018-01-13 18:02:43</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2018-01-13 14:10:37</span> 
+							<span class='panel-lead suite-ended-time'>2018-01-13 18:24:48</span> 
 						</div> 
 					</div>
 				</div>
@@ -291,17 +291,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='0e2e3213-58b9-4978-b0f3-dcfe1567dfbd'>
+										<li class='collection-item test displayed active fail ' extentid='0b36f2f6-be45-4bb0-b914-3db6cdcbc97e'>
 											<div class='test-head'>
 												<span class='test-name'>signInWithInvalidIdAndPassword </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide  testbyinputfromexls'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:50:15</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:51:39</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 23s+494ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:03:01</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:04:24</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 23s+60ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -320,9 +320,43 @@
 														</thead>
 														<tbody>
 																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:51:39</td>
-																	<td class='step-details'>Test Passed</td>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>18:04:24</td>
+																	<td class='step-details'>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at testSignInPageObjects.TestByInputFromExls.signInWithInvalidIdAndPassword(TestByInputFromExls.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)</td>
 																</tr>
 														</tbody>
 													</table>
@@ -331,7 +365,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='e15d2374-bf94-42e6-9164-97f131a17b66'>
+										<li class='collection-item test displayed active pass ' extentid='f4003e66-bcf5-481f-bce1-9852b7e67ae8'>
 											<div class='test-head'>
 												<span class='test-name'>testLogInByInvalidIdPassUsingGoogleSheet </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -339,9 +373,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:51:58</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:52:50</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 52s+181ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:04:44</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:05:38</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 53s+730ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -361,7 +395,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:52:50</td>
+																	<td class='timestamp'>18:05:38</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -371,7 +405,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='83b05754-070c-4c32-9fe4-0380e9d17549'>
+										<li class='collection-item test displayed active pass ' extentid='d35ff1ec-1d31-4313-b15e-9bb76b14596b'>
 											<div class='test-head'>
 												<span class='test-name'>testProductSearch </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -379,9 +413,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:53:04</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:53:14</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+184ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:05:54</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:06:05</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+430ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -401,7 +435,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:53:14</td>
+																	<td class='timestamp'>18:06:05</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -411,7 +445,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='1a51d591-790f-4106-9ccd-314fcbce313c'>
+										<li class='collection-item test displayed active pass ' extentid='c3bd6c81-50df-4724-a985-eb9d66ae9e26'>
 											<div class='test-head'>
 												<span class='test-name'>signInWithInvalidIdTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -419,9 +453,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:53:28</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:53:54</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 25s+712ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:06:23</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:06:54</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 31s+298ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -441,7 +475,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:53:54</td>
+																	<td class='timestamp'>18:06:54</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -451,7 +485,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='e5a8e6cf-1f13-4514-9397-fce8662a793b'>
+										<li class='collection-item test displayed active pass ' extentid='6bb649c9-80b6-4c9d-9bc8-5f30183396ee'>
 											<div class='test-head'>
 												<span class='test-name'>testSupplierSearch </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -459,9 +493,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:54:09</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:54:19</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+885ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:07:12</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:07:25</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 12s+881ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -481,7 +515,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:54:19</td>
+																	<td class='timestamp'>18:07:25</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -491,7 +525,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='8f4a4f31-ef07-4b4d-9a1f-bc9993183cbb'>
+										<li class='collection-item test displayed active pass ' extentid='53060c44-dcca-4710-91e0-bf7b6c29c963'>
 											<div class='test-head'>
 												<span class='test-name'>signInByMobileLinkStatusTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -499,9 +533,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:54:35</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:55:02</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 27s+740ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:07:41</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:08:10</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 28s+413ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -521,12 +555,12 @@
 														<tbody>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>13:55:02</td>
+																	<td class='timestamp'>18:08:10</td>
 																	<td class='step-details'>TestSignInPage: sign In By Mobile Link Status Test<br></td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:55:02</td>
+																	<td class='timestamp'>18:08:10</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -536,7 +570,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='de484ca0-17d6-43ba-8080-5ef9ea5d6f60'>
+										<li class='collection-item test displayed active pass ' extentid='fe46e805-45e3-4b44-a09f-561851523b80'>
 											<div class='test-head'>
 												<span class='test-name'>testQuotesSearch </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -544,9 +578,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:55:18</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:55:19</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+876ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:08:26</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:08:29</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+326ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -566,7 +600,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:55:19</td>
+																	<td class='timestamp'>18:08:29</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -576,7 +610,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='213159ae-55af-4172-b3b6-718d13995183'>
+										<li class='collection-item test displayed active pass ' extentid='ca66037d-5144-423e-ad63-ea95fb573d61'>
 											<div class='test-head'>
 												<span class='test-name'>joinFreeLinkStatusTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -584,9 +618,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:55:36</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:56:01</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 24s+766ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:08:46</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:09:11</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 25s+234ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -606,7 +640,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:56:01</td>
+																	<td class='timestamp'>18:09:11</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -616,7 +650,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='1d0b3c71-1394-42b3-ba8e-eab0723ba07e'>
+										<li class='collection-item test displayed active pass ' extentid='4714bd42-8e50-4052-bc2c-921577829dc3'>
 											<div class='test-head'>
 												<span class='test-name'>testSourcingSolutions </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -624,9 +658,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:56:16</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:56:22</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+541ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:09:27</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:09:35</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+883ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -646,7 +680,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:56:22</td>
+																	<td class='timestamp'>18:09:35</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -656,7 +690,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active fail ' extentid='a653fd38-f6db-4728-bd1d-24dc395c6176'>
+										<li class='collection-item test displayed active fail ' extentid='ae7062c1-6e31-4c4e-8c15-41310cb8b502'>
 											<div class='test-head'>
 												<span class='test-name'>signInByMobileNumberTest </span>
 												<span class='test-status label right outline capitalize fail'>fail</span>
@@ -664,9 +698,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:56:38</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:57:10</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 31s+980ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:09:50</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:10:55</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 4s+815ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -686,7 +720,7 @@
 														<tbody>
 																<tr>
 																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>13:57:10</td>
+																	<td class='timestamp'>18:10:55</td>
 																	<td class='step-details'>java.lang.AssertionError: expected [Your account name or password is incorrect.] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
@@ -732,7 +766,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='183b16b1-b66b-4976-abca-6361a5377957'>
+										<li class='collection-item test displayed active pass ' extentid='d9634123-4d22-4102-abcf-a081c3cac56d'>
 											<div class='test-head'>
 												<span class='test-name'>testHompageButtonStatus </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -740,9 +774,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:57:25</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:57:26</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+145ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:11:20</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:11:21</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+402ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -762,7 +796,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:57:26</td>
+																	<td class='timestamp'>18:11:21</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -772,7 +806,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='e6f09a30-d749-4508-8e46-de2b82ee5737'>
+										<li class='collection-item test displayed active pass ' extentid='dcae3399-0893-4d3f-b57e-a508049a36c7'>
 											<div class='test-head'>
 												<span class='test-name'>facebookLinkStatusTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -780,9 +814,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:57:41</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:58:06</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 24s+278ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:11:40</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:12:09</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 28s+175ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -802,7 +836,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:58:06</td>
+																	<td class='timestamp'>18:12:09</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -812,7 +846,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='2666f747-ec69-4011-a1fc-e367ecf2a348'>
+										<li class='collection-item test displayed active pass ' extentid='1f7c1b74-4265-4adf-9af2-9b7509e283eb'>
 											<div class='test-head'>
 												<span class='test-name'>testOptionsOfCategories </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -820,9 +854,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:58:20</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:58:26</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+544ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:12:25</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:12:33</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+244ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -842,7 +876,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:58:26</td>
+																	<td class='timestamp'>18:12:33</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -852,7 +886,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='d7fbe313-8a5a-41a1-8be9-19328e69db89'>
+										<li class='collection-item test displayed active pass ' extentid='d3bc5fba-81cf-470c-b235-60718a61eb6d'>
 											<div class='test-head'>
 												<span class='test-name'>googleLinkStatusTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -860,9 +894,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:58:43</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:59:08</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 24s+833ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:12:48</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:13:12</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 24s+700ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -882,7 +916,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:59:08</td>
+																	<td class='timestamp'>18:13:12</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -892,7 +926,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='83bba18f-684d-497f-a3e1-b0630b269091'>
+										<li class='collection-item test displayed active pass ' extentid='a882bc3a-317d-43e9-b70a-3efdfd427897'>
 											<div class='test-head'>
 												<span class='test-name'>testCategories </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -900,9 +934,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:59:22</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 13:59:29</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+833ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:13:28</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:13:35</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+319ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -922,7 +956,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>13:59:29</td>
+																	<td class='timestamp'>18:13:35</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -932,7 +966,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='c75451b5-c6ae-456d-a55d-d16e9f9f4a09'>
+										<li class='collection-item test displayed active pass ' extentid='9385024d-e90e-43e4-8b12-1cedd6c7acf6'>
 											<div class='test-head'>
 												<span class='test-name'>linkedInLinkStatusTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -940,9 +974,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 13:59:44</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:00:09</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 24s+783ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:13:51</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:14:19</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 27s+990ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -962,7 +996,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:00:09</td>
+																	<td class='timestamp'>18:14:19</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -972,7 +1006,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='78be2d18-9e99-40c3-8a5c-cb8917854fd0'>
+										<li class='collection-item test displayed active pass ' extentid='818caf13-0919-42da-9cc0-6c7339803523'>
 											<div class='test-head'>
 												<span class='test-name'>checkLogoVisibility </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -980,9 +1014,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:00:24</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:00:25</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+103ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:15:03</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:15:03</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+293ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1002,7 +1036,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:00:25</td>
+																	<td class='timestamp'>18:15:03</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1012,7 +1046,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='4c3f13a2-dbb3-4086-b8e1-6ca0cc1ffedf'>
+										<li class='collection-item test displayed active pass ' extentid='3a7c12f2-fa45-459a-be4f-c3372ad37590'>
 											<div class='test-head'>
 												<span class='test-name'>twitterLinkStatusTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1020,9 +1054,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:00:40</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:01:09</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 29s+66ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:15:18</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:15:43</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 24s+986ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1042,7 +1076,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:01:09</td>
+																	<td class='timestamp'>18:15:43</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1052,7 +1086,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='676264ca-ad22-42ac-a044-7dd249750ff6'>
+										<li class='collection-item test displayed active pass ' extentid='7e99be33-6073-415c-ac3c-1611a06de601'>
 											<div class='test-head'>
 												<span class='test-name'>testOrderProtectionButtonStatus </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1060,9 +1094,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:01:24</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:01:25</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+958ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:16:00</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:16:01</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+965ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1082,7 +1116,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:01:25</td>
+																	<td class='timestamp'>18:16:01</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1092,7 +1126,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='548f0b96-4809-47ce-92ed-4ec5d5768ebf'>
+										<li class='collection-item test displayed active pass ' extentid='09e2bb06-8b7c-44e8-bdf6-f3d9e60c1db2'>
 											<div class='test-head'>
 												<span class='test-name'>signInByInvalidTwitterAccountTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1100,9 +1134,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:01:39</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:02:15</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 35s+411ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:16:16</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:16:51</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 34s+220ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1122,7 +1156,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:02:15</td>
+																	<td class='timestamp'>18:16:51</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1132,7 +1166,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='01e00ba8-54de-46fb-b537-026720e0bc62'>
+										<li class='collection-item test displayed active pass ' extentid='26324678-3314-4c36-9ab3-92124b2556ad'>
 											<div class='test-head'>
 												<span class='test-name'>categoriesList </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1140,9 +1174,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:02:28</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:02:29</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+443ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:17:08</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:17:10</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+307ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1162,7 +1196,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:02:29</td>
+																	<td class='timestamp'>18:17:10</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1172,7 +1206,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='d206ac46-b9f3-4d58-a3fe-813dffb1bf61'>
+										<li class='collection-item test displayed active pass ' extentid='9ef275eb-44d6-4192-9c63-6866ca505b3c'>
 											<div class='test-head'>
 												<span class='test-name'>signInByValidTwitterAccountTest </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1180,9 +1214,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:02:43</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:03:15</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 31s+579ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:17:25</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:18:02</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 37s+517ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1202,7 +1236,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:03:15</td>
+																	<td class='timestamp'>18:18:02</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1212,22 +1246,142 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active fail ' extentid='d179dd70-bad1-4974-835f-b70c064b7756'>
+										<li class='collection-item test displayed active pass ' extentid='5f141520-3be3-4952-a4c2-d38c4a1de79f'>
 											<div class='test-head'>
 												<span class='test-name'>testTradeAlertSubscriptionFunction </span>
-												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
 												<span class='category-assigned hide  testhomepage'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:03:30</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:03:37</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+778ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:18:19</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:18:28</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+929ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
 														<div class='categories'>
 																<span class='category text-white'>TestHomePage</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>18:18:28</td>
+																	<td class='step-details'>Test Passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='f81d00aa-53ed-4eeb-837e-fb8a58b9a9dd'>
+											<div class='test-head'>
+												<span class='test-name'>signInByInvalidFacebookAccountTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  testsigninpage'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:18:43</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:19:49</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 6s+201ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>TestSignInPage</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>18:19:49</td>
+																	<td class='step-details'>Test Passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='552830d0-19db-450b-b7f8-5c879c43bf94'>
+											<div class='test-head'>
+												<span class='test-name'>testHelpCenterLinkStatus </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  testhomepage'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:20:04</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:20:13</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+522ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>TestHomePage</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>18:20:13</td>
+																	<td class='step-details'>Test Passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='d3567813-2c44-4ae6-98af-dfb89215a8b1'>
+											<div class='test-head'>
+												<span class='test-name'>signInByValidGoogleAccountTest </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  testsigninpage'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:20:29</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:21:29</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 59s+360ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>TestSignInPage</span>
 														</div>
 												</div>
 												<div class='test-steps'>
@@ -1242,13 +1396,15 @@
 														<tbody>
 																<tr>
 																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>14:03:37</td>
-																	<td class='step-details'>java.lang.AssertionError: expected [true] but found [false]
+																	<td class='timestamp'>18:21:29</td>
+																	<td class='step-details'>java.lang.AssertionError: expected [] but found [Hi J]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at testHomePageObjects.TestHomePage.testTradeAlertSubscriptionFunction(TestHomePage.java:101)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at testSignInPageObjects.TestSignInPage.signInByValidGoogleAccountTest(TestSignInPage.java:216)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1286,127 +1442,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='d187081b-50b7-4396-9783-8e4b0a3d8fed'>
-											<div class='test-head'>
-												<span class='test-name'>signInByInvalidFacebookAccountTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  testsigninpage'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:03:52</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:04:56</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 4s+80ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>TestSignInPage</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:04:56</td>
-																	<td class='step-details'>Test Passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='86e18afc-73a2-4797-b8b3-59cee11a3fb9'>
-											<div class='test-head'>
-												<span class='test-name'>testHelpCenterLinkStatus </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  testhomepage'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:05:16</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:05:24</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+180ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>TestHomePage</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:05:24</td>
-																	<td class='step-details'>Test Passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='3bb3bd8c-4dc1-462f-9b16-7af28d07f80a'>
-											<div class='test-head'>
-												<span class='test-name'>signInByValidGoogleAccountTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  testsigninpage'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:05:39</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:06:58</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 19s+524ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>TestSignInPage</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:06:58</td>
-																	<td class='step-details'>Test Passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='53fc3db4-459b-4548-8ac6-bf1fa2a27956'>
+										<li class='collection-item test displayed active pass ' extentid='489bbf70-78eb-451a-83bb-985d46330d54'>
 											<div class='test-head'>
 												<span class='test-name'>testAboutAlibabaLinkStatus </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1414,9 +1450,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:07:13</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:07:21</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+882ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:21:45</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:21:54</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+534ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1436,7 +1472,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:07:21</td>
+																	<td class='timestamp'>18:21:54</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1446,7 +1482,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='45724043-7e2d-4079-8270-6505bad644c5'>
+										<li class='collection-item test displayed active pass ' extentid='4733b163-0b92-4f89-b50c-d23f9cd34627'>
 											<div class='test-head'>
 												<span class='test-name'>getHelpHere </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1454,9 +1490,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:07:37</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:08:14</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 37s+183ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:22:11</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:22:20</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+460ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1476,7 +1512,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:08:14</td>
+																	<td class='timestamp'>18:22:20</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1486,7 +1522,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='c1915bea-4495-41d5-9335-eaa03b82573f'>
+										<li class='collection-item test displayed active pass ' extentid='2a92f0f5-6942-4d61-b00a-6a35a1d04915'>
 											<div class='test-head'>
 												<span class='test-name'>testWholesaleMarketLinkStatus </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1494,9 +1530,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:08:28</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:08:42</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 13s+680ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:22:37</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:22:50</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 13s+116ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1516,7 +1552,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:08:42</td>
+																	<td class='timestamp'>18:22:50</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1526,7 +1562,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='a5d0e5fd-6bfa-41ea-a0bd-4fe9cda09b17'>
+										<li class='collection-item test displayed active pass ' extentid='5f82b973-b074-461e-8861-ce836d005bd6'>
 											<div class='test-head'>
 												<span class='test-name'>testTopButtonVerification </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1534,9 +1570,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:08:57</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:09:19</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 22s+213ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:23:05</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:23:28</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 22s+653ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1556,7 +1592,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:09:19</td>
+																	<td class='timestamp'>18:23:28</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1566,7 +1602,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='e48a9eca-51a4-4bd5-8b52-b820be43580d'>
+										<li class='collection-item test displayed active pass ' extentid='ef83bc19-ec5e-4b2c-a578-97beb9d4e1bb'>
 											<div class='test-head'>
 												<span class='test-name'>testQuotesRequestForm </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -1574,9 +1610,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 14:09:34</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 14:10:35</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 0s+957ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2018-01-13 18:23:42</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2018-01-13 18:24:46</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 3s+561ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1596,7 +1632,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:10:35</td>
+																	<td class='timestamp'>18:24:46</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -1658,13 +1694,13 @@
 													<span class='category-name'>TestByInputFromExls</span>
 												</div>
 												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 1</span>
+														<span class='fail label dot'>Fail: 1</span>
 												</div>
 												<div class='cat-body'>
 													<div class='category-status-counts'>
 														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
 															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
 														</div>
 													</div>
@@ -1678,10 +1714,10 @@
 																</tr>
 															</thead>
 															<tbody>
-																	<tr class='pass'>
-																		<td>2018-01-13 13:50:15</td>
-																		<td><span class='category-link linked' extentid='0e2e3213-58b9-4978-b0f3-dcfe1567dfbd'>signInWithInvalidIdAndPassword</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
+																	<tr class='fail'>
+																		<td>2018-01-13 18:03:01</td>
+																		<td><span class='category-link linked' extentid='0b36f2f6-be45-4bb0-b914-3db6cdcbc97e'>signInWithInvalidIdAndPassword</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
 																	</tr>
 															<tbody>
 														</table>
@@ -1714,8 +1750,8 @@
 															</thead>
 															<tbody>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:51:58</td>
-																		<td><span class='category-link linked' extentid='e15d2374-bf94-42e6-9164-97f131a17b66'>testLogInByInvalidIdPassUsingGoogleSheet</span></td>
+																		<td>2018-01-13 18:04:44</td>
+																		<td><span class='category-link linked' extentid='f4003e66-bcf5-481f-bce1-9852b7e67ae8'>testLogInByInvalidIdPassUsingGoogleSheet</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 															<tbody>
@@ -1728,14 +1764,13 @@
 													<span class='category-name'>TestHomePage</span>
 												</div>
 												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 15</span>
-														<span class='fail label dot'>Fail: 1</span>
+														<span class='pass label dot'>Pass: 16</span>
 												</div>
 												<div class='cat-body'>
 													<div class='category-status-counts'>
 														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>15</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>16</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
 															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
 														</div>
 													</div>
@@ -1750,83 +1785,83 @@
 															</thead>
 															<tbody>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:53:04</td>
-																		<td><span class='category-link linked' extentid='83b05754-070c-4c32-9fe4-0380e9d17549'>testProductSearch</span></td>
+																		<td>2018-01-13 18:05:54</td>
+																		<td><span class='category-link linked' extentid='d35ff1ec-1d31-4313-b15e-9bb76b14596b'>testProductSearch</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:54:09</td>
-																		<td><span class='category-link linked' extentid='e5a8e6cf-1f13-4514-9397-fce8662a793b'>testSupplierSearch</span></td>
+																		<td>2018-01-13 18:07:12</td>
+																		<td><span class='category-link linked' extentid='6bb649c9-80b6-4c9d-9bc8-5f30183396ee'>testSupplierSearch</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:55:18</td>
-																		<td><span class='category-link linked' extentid='de484ca0-17d6-43ba-8080-5ef9ea5d6f60'>testQuotesSearch</span></td>
+																		<td>2018-01-13 18:08:26</td>
+																		<td><span class='category-link linked' extentid='fe46e805-45e3-4b44-a09f-561851523b80'>testQuotesSearch</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:56:16</td>
-																		<td><span class='category-link linked' extentid='1d0b3c71-1394-42b3-ba8e-eab0723ba07e'>testSourcingSolutions</span></td>
+																		<td>2018-01-13 18:09:27</td>
+																		<td><span class='category-link linked' extentid='4714bd42-8e50-4052-bc2c-921577829dc3'>testSourcingSolutions</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:57:25</td>
-																		<td><span class='category-link linked' extentid='183b16b1-b66b-4976-abca-6361a5377957'>testHompageButtonStatus</span></td>
+																		<td>2018-01-13 18:11:20</td>
+																		<td><span class='category-link linked' extentid='d9634123-4d22-4102-abcf-a081c3cac56d'>testHompageButtonStatus</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:58:20</td>
-																		<td><span class='category-link linked' extentid='2666f747-ec69-4011-a1fc-e367ecf2a348'>testOptionsOfCategories</span></td>
+																		<td>2018-01-13 18:12:25</td>
+																		<td><span class='category-link linked' extentid='1f7c1b74-4265-4adf-9af2-9b7509e283eb'>testOptionsOfCategories</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:59:22</td>
-																		<td><span class='category-link linked' extentid='83bba18f-684d-497f-a3e1-b0630b269091'>testCategories</span></td>
+																		<td>2018-01-13 18:13:28</td>
+																		<td><span class='category-link linked' extentid='a882bc3a-317d-43e9-b70a-3efdfd427897'>testCategories</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:00:24</td>
-																		<td><span class='category-link linked' extentid='78be2d18-9e99-40c3-8a5c-cb8917854fd0'>checkLogoVisibility</span></td>
+																		<td>2018-01-13 18:15:03</td>
+																		<td><span class='category-link linked' extentid='818caf13-0919-42da-9cc0-6c7339803523'>checkLogoVisibility</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:01:24</td>
-																		<td><span class='category-link linked' extentid='676264ca-ad22-42ac-a044-7dd249750ff6'>testOrderProtectionButtonStatus</span></td>
+																		<td>2018-01-13 18:16:00</td>
+																		<td><span class='category-link linked' extentid='7e99be33-6073-415c-ac3c-1611a06de601'>testOrderProtectionButtonStatus</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:02:28</td>
-																		<td><span class='category-link linked' extentid='01e00ba8-54de-46fb-b537-026720e0bc62'>categoriesList</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-																	<tr class='fail'>
-																		<td>2018-01-13 14:03:30</td>
-																		<td><span class='category-link linked' extentid='d179dd70-bad1-4974-835f-b70c064b7756'>testTradeAlertSubscriptionFunction</span></td>
-																		<td><div class='status label capitalize fail'>fail</div></td>
-																	</tr>
-																	<tr class='pass'>
-																		<td>2018-01-13 14:05:16</td>
-																		<td><span class='category-link linked' extentid='86e18afc-73a2-4797-b8b3-59cee11a3fb9'>testHelpCenterLinkStatus</span></td>
+																		<td>2018-01-13 18:17:08</td>
+																		<td><span class='category-link linked' extentid='26324678-3314-4c36-9ab3-92124b2556ad'>categoriesList</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:07:13</td>
-																		<td><span class='category-link linked' extentid='53fc3db4-459b-4548-8ac6-bf1fa2a27956'>testAboutAlibabaLinkStatus</span></td>
+																		<td>2018-01-13 18:18:19</td>
+																		<td><span class='category-link linked' extentid='5f141520-3be3-4952-a4c2-d38c4a1de79f'>testTradeAlertSubscriptionFunction</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:08:28</td>
-																		<td><span class='category-link linked' extentid='c1915bea-4495-41d5-9335-eaa03b82573f'>testWholesaleMarketLinkStatus</span></td>
+																		<td>2018-01-13 18:20:04</td>
+																		<td><span class='category-link linked' extentid='552830d0-19db-450b-b7f8-5c879c43bf94'>testHelpCenterLinkStatus</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:08:57</td>
-																		<td><span class='category-link linked' extentid='a5d0e5fd-6bfa-41ea-a0bd-4fe9cda09b17'>testTopButtonVerification</span></td>
+																		<td>2018-01-13 18:21:45</td>
+																		<td><span class='category-link linked' extentid='489bbf70-78eb-451a-83bb-985d46330d54'>testAboutAlibabaLinkStatus</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:09:34</td>
-																		<td><span class='category-link linked' extentid='e48a9eca-51a4-4bd5-8b52-b820be43580d'>testQuotesRequestForm</span></td>
+																		<td>2018-01-13 18:22:37</td>
+																		<td><span class='category-link linked' extentid='2a92f0f5-6942-4d61-b00a-6a35a1d04915'>testWholesaleMarketLinkStatus</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2018-01-13 18:23:05</td>
+																		<td><span class='category-link linked' extentid='5f82b973-b074-461e-8861-ce836d005bd6'>testTopButtonVerification</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2018-01-13 18:23:42</td>
+																		<td><span class='category-link linked' extentid='ef83bc19-ec5e-4b2c-a578-97beb9d4e1bb'>testQuotesRequestForm</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 															<tbody>
@@ -1839,14 +1874,14 @@
 													<span class='category-name'>TestSignInPage</span>
 												</div>
 												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 12</span>
-														<span class='fail label dot'>Fail: 1</span>
+														<span class='pass label dot'>Pass: 11</span>
+														<span class='fail label dot'>Fail: 2</span>
 												</div>
 												<div class='cat-body'>
 													<div class='category-status-counts'>
 														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>12</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>11</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>2</span></a>
 															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
 														</div>
 													</div>
@@ -1861,68 +1896,68 @@
 															</thead>
 															<tbody>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:53:28</td>
-																		<td><span class='category-link linked' extentid='1a51d591-790f-4106-9ccd-314fcbce313c'>signInWithInvalidIdTest</span></td>
+																		<td>2018-01-13 18:06:23</td>
+																		<td><span class='category-link linked' extentid='c3bd6c81-50df-4724-a985-eb9d66ae9e26'>signInWithInvalidIdTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:54:35</td>
-																		<td><span class='category-link linked' extentid='8f4a4f31-ef07-4b4d-9a1f-bc9993183cbb'>signInByMobileLinkStatusTest</span></td>
+																		<td>2018-01-13 18:07:41</td>
+																		<td><span class='category-link linked' extentid='53060c44-dcca-4710-91e0-bf7b6c29c963'>signInByMobileLinkStatusTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:55:36</td>
-																		<td><span class='category-link linked' extentid='213159ae-55af-4172-b3b6-718d13995183'>joinFreeLinkStatusTest</span></td>
+																		<td>2018-01-13 18:08:46</td>
+																		<td><span class='category-link linked' extentid='ca66037d-5144-423e-ad63-ea95fb573d61'>joinFreeLinkStatusTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='fail'>
-																		<td>2018-01-13 13:56:38</td>
-																		<td><span class='category-link linked' extentid='a653fd38-f6db-4728-bd1d-24dc395c6176'>signInByMobileNumberTest</span></td>
+																		<td>2018-01-13 18:09:50</td>
+																		<td><span class='category-link linked' extentid='ae7062c1-6e31-4c4e-8c15-41310cb8b502'>signInByMobileNumberTest</span></td>
 																		<td><div class='status label capitalize fail'>fail</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:57:41</td>
-																		<td><span class='category-link linked' extentid='e6f09a30-d749-4508-8e46-de2b82ee5737'>facebookLinkStatusTest</span></td>
+																		<td>2018-01-13 18:11:40</td>
+																		<td><span class='category-link linked' extentid='dcae3399-0893-4d3f-b57e-a508049a36c7'>facebookLinkStatusTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:58:43</td>
-																		<td><span class='category-link linked' extentid='d7fbe313-8a5a-41a1-8be9-19328e69db89'>googleLinkStatusTest</span></td>
+																		<td>2018-01-13 18:12:48</td>
+																		<td><span class='category-link linked' extentid='d3bc5fba-81cf-470c-b235-60718a61eb6d'>googleLinkStatusTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 13:59:44</td>
-																		<td><span class='category-link linked' extentid='c75451b5-c6ae-456d-a55d-d16e9f9f4a09'>linkedInLinkStatusTest</span></td>
+																		<td>2018-01-13 18:13:51</td>
+																		<td><span class='category-link linked' extentid='9385024d-e90e-43e4-8b12-1cedd6c7acf6'>linkedInLinkStatusTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:00:40</td>
-																		<td><span class='category-link linked' extentid='4c3f13a2-dbb3-4086-b8e1-6ca0cc1ffedf'>twitterLinkStatusTest</span></td>
+																		<td>2018-01-13 18:15:18</td>
+																		<td><span class='category-link linked' extentid='3a7c12f2-fa45-459a-be4f-c3372ad37590'>twitterLinkStatusTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:01:39</td>
-																		<td><span class='category-link linked' extentid='548f0b96-4809-47ce-92ed-4ec5d5768ebf'>signInByInvalidTwitterAccountTest</span></td>
+																		<td>2018-01-13 18:16:16</td>
+																		<td><span class='category-link linked' extentid='09e2bb06-8b7c-44e8-bdf6-f3d9e60c1db2'>signInByInvalidTwitterAccountTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:02:43</td>
-																		<td><span class='category-link linked' extentid='d206ac46-b9f3-4d58-a3fe-813dffb1bf61'>signInByValidTwitterAccountTest</span></td>
+																		<td>2018-01-13 18:17:25</td>
+																		<td><span class='category-link linked' extentid='9ef275eb-44d6-4192-9c63-6866ca505b3c'>signInByValidTwitterAccountTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:03:52</td>
-																		<td><span class='category-link linked' extentid='d187081b-50b7-4396-9783-8e4b0a3d8fed'>signInByInvalidFacebookAccountTest</span></td>
+																		<td>2018-01-13 18:18:43</td>
+																		<td><span class='category-link linked' extentid='f81d00aa-53ed-4eeb-837e-fb8a58b9a9dd'>signInByInvalidFacebookAccountTest</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
-																	<tr class='pass'>
-																		<td>2018-01-13 14:05:39</td>
-																		<td><span class='category-link linked' extentid='3bb3bd8c-4dc1-462f-9b16-7af28d07f80a'>signInByValidGoogleAccountTest</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
+																	<tr class='fail'>
+																		<td>2018-01-13 18:20:29</td>
+																		<td><span class='category-link linked' extentid='d3567813-2c44-4ae6-98af-dfb89215a8b1'>signInByValidGoogleAccountTest</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
 																	</tr>
 																	<tr class='pass'>
-																		<td>2018-01-13 14:07:37</td>
-																		<td><span class='category-link linked' extentid='45724043-7e2d-4079-8270-6505bad644c5'>getHelpHere</span></td>
+																		<td>2018-01-13 18:22:11</td>
+																		<td><span class='category-link linked' extentid='4733b163-0b92-4f89-b50c-d23f9cd34627'>getHelpHere</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 															<tbody>
