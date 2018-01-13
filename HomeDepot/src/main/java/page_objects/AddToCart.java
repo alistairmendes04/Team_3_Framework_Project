@@ -18,7 +18,7 @@ public class AddToCart extends CommonAPI {
         for (String handle : driver.getWindowHandles()) {
             driver.switchTo().window(handle);
         }
-        checkoutButton.click();
+        //checkoutButton.click();
         String str = driver.getCurrentUrl();
         return str;
     }

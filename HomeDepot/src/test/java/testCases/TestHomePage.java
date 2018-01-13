@@ -23,7 +23,7 @@ public class TestHomePage extends HomePage {
         System.out.println("VerifySearchButton test passed");
     }
     //T3HOM_HP_TC02  Go to Appliance tab and get title of the page
-    @Test (priority=2, enabled=false)
+    @Test (priority=2, enabled=true)
     public void verifyApplianceTitle(){
         String actual = objHomePage.goToAppliances();
         String expected = "Appliances at The Home Depot";
@@ -31,7 +31,7 @@ public class TestHomePage extends HomePage {
         System.out.println("VerifyApplianceTitle test passed");
     }
     //T3HOM_HP_TC03  Navigate back to Home page after clicking AllDepartment tab
-    @Test (priority=3, enabled=false)
+    @Test (priority=3, enabled=true)
     public void verifyBackToHomePage() {
         String actual = objHomePage.returnBackAllDept();
         String expected = "The Home Depot";
@@ -39,7 +39,7 @@ public class TestHomePage extends HomePage {
         System.out.println("VerifyBackToHomePage test passed");
     }
     //T3HOM_HP_TC04 Go to Bathroom image link under Shop Room tab and get title of the page
-    @Test (priority=4, enabled=false)
+    @Test (priority=4, enabled=true)
     public void verifyShopRoomImgLink() {
         String actual = objHomePage.goToBathroomUsingImg();
         String expected = "Bathrooms — Shop by Room at The Home Depot";
@@ -47,7 +47,7 @@ public class TestHomePage extends HomePage {
         System.out.println("VerifyShopRoomImageLink test is passed");
     }
     //T3HOM_HP_TC05 Go to Bathroom text link under Shop Room tab and get title of the page
-    @Test (priority=5, enabled=false)
+    @Test (priority=5, enabled=true)
     public void verifyShopRoomtextLink() {
         String actual = objHomePage.goToBathroomUsingTxt();
         String expected = "Bathrooms — Shop by Room at The Home Depot";
@@ -55,7 +55,7 @@ public class TestHomePage extends HomePage {
         System.out.println("VerifyShopRoomTextLink test passed");
     }
     //T3HOM_HP_TC06 Compare the text and image link to check if it takes to same page
-    @Test (priority=6, enabled=false)
+    @Test (priority=6, enabled=true)
     public void compareImageTextLink() {
         String str1 = objHomePage.goToBathroomUsingTxt();
         String str2 = objHomePage.goToBathroomUsingTxt();
@@ -63,7 +63,7 @@ public class TestHomePage extends HomePage {
         System.out.println("CompareImageTextLink test passed");
     }
     //T3HOM_HP_TC07 capture the text of hero image
-    @Test (priority=7, enabled=false)
+    @Test (priority=7, enabled=true)
     public void testHeroImage() {
         String actual = objHomePage.captureTextHeroImage();
         String expected = "Up to 30% off select storage solutions";

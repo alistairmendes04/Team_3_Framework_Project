@@ -17,7 +17,7 @@ import static org.openqa.selenium.support.How.XPATH;
 public class GoogleSheetsReaderPage extends CommonAPI {
     @FindBy(how = ID, using = "headerSearch")
     public static WebElement searchBox;
-    @FindBy(how = XPATH, using = "//h1[@class='h1-style-tag']")
+    @FindBy(xpath = "//*[@id='topnavCore']/div/h1")
     public static WebElement resultText;
 
     public List<List<Object>> getSpreadSheetRecords(String spreadsheetId, String range) throws IOException {
@@ -33,19 +33,17 @@ public class GoogleSheetsReaderPage extends CommonAPI {
             return values;
         }
     }
-
-    //  Search using Googlesheet data
+    //T3HOM_GS_TC01 Search using Googlesheet data
     public List<String> searchProduct(String spreadsheetId, String range) throws IOException, InterruptedException {
-
         List<List<Object>> col2Value = getSpreadSheetRecords(spreadsheetId, range);
         List<String> actual = new ArrayList<>();
         for (List row : col2Value) {
             sleepFor(1);
             inputValueInTextBoxByWebElement(searchBox, row.get(1).toString());
-            sleepFor(1);
-            //actual.add(getCurrentPageTitle());
-            actual.add(getTextByWebElement(resultText));
-            System.out.println(getTextByWebElement(resultText));
+            sleepFor(2);
+            actual.add(driver.getTitle());
+           // actual.add(getTextByWebElement(resultText));
+            System.out.println(actual.add(driver.getTitle()));
             clearInputBox(searchBox);
             sleepFor(1);
         }

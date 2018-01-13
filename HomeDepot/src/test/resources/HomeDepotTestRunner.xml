@@ -14,11 +14,13 @@
 
      <test name = "Home Depot">
         <classes>
-            <class name="testCases.TestHomePage"/>
+         <!--   <class name="testCases.TestHomePage"/>
             <class name ="testCases.TestLoginPage"/>
             <class name="testCases.TestSearchPage"/>
             <class name = "testCases.TestFooterPage"/>
             <class name = "testCases.TestAddToCartPage"/>
+            <class name = "testCases.TestExcelFileReader"/>-->
+            <class name = "testCases.TestGoogleSheetsReader"/>
         </classes>
     </test>
 
