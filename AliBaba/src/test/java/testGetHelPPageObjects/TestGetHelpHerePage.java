@@ -22,7 +22,7 @@ public class TestGetHelpHerePage extends GetHelpHerePage {
     }
 
     //T3ALI_TC_01 Verify User able to send message to Anna
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void messageToAnna() {
         try {
             objOfHomePage.clikSignIn();
