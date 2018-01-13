@@ -17,7 +17,7 @@ public class TestSearchPage extends SearchProductPage {
         objSearchPage = PageFactory.initElements(driver, SearchProductPage.class);
     }
     //T3HOM_SP_TC01 verify Best Match link in Sort by drop box
-    @Test (priority=1 , enabled=false)
+    @Test (priority=1 , enabled=true)
     public void testSortByBestMatch() {
         objHomePage.goToSearchProductPage();
         boolean bl = objSearchPage.checkBestMatchSortBy();
@@ -25,7 +25,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testSortByBestMatch test passed");
     }
     //T3HOM_SP_TC02 verify TopSeller Link under sort By dropbox
-    @Test (priority=2 , enabled=false)
+    @Test (priority=2 , enabled=true)
     public void testSortByTopSeller(){
         objHomePage.goToSearchProductPage();
         boolean bl = objSearchPage.checkTopSellerSortBy();
@@ -33,7 +33,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testSortByTopSeller test passed");
     }
     //T3HOM_SP_TC03 verify LowToHigh link under sort by dropbox
-    @Test (priority=3 , enabled=false)
+    @Test (priority=3 , enabled=true)
     public void testSortByLowToHigh(){
         objHomePage.goToSearchProductPage();
         boolean bl = objSearchPage.checkLowToHighSortBy();
@@ -41,7 +41,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testSortByLowToHigh test passed");
     }
     //T3HOM_SP_TC04 verify HighToLow link under sort by dropbox
-    @Test (priority=4 , enabled=false)
+    @Test (priority=4 , enabled=true)
     public void testSortByHighToLow(){
         objHomePage.goToSearchProductPage();
         boolean bl = objSearchPage.checkHighToLowSortBy();
@@ -49,7 +49,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testSortByHighToLow test passed");
     }
     //T3HOM_SP_TC05 verify TopRated link under sort by dropbox
-    @Test (priority=5 , enabled=false)
+    @Test (priority=5 , enabled=true)
     public void testSortByTopRated(){
         objHomePage.goToSearchProductPage();
         boolean bl = objSearchPage.checkTopRatedSortBy();
@@ -57,14 +57,14 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testSortByTopRated test passed");
     }
     //T3HOM_SP_TC06 Get items from Sortby drop box
-    @Test (priority=6 , enabled=false)
+    @Test (priority=6 , enabled=true)
     public void testListSortBy(){
         objHomePage.goToSearchProductPage();
         objSearchPage.getItemsFromSortBy();
         System.out.println("testListSortBy test passed");
     }
     //T3HOM_SP_TC07 verify increment Quantity of the product by clicking increment button
-    @Test (priority=7 , enabled=false)
+    @Test (priority=7 , enabled=true)
     public void testIncrementQuantityBox(){
         objHomePage.goToSearchProductPage();
         String actual = objSearchPage.verifyIncrementButton();
@@ -73,7 +73,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testIncrementQuantity test passed");
     }
     //T3HOM_SP_TC08 verify decrement Quantity of the product by clicking decrement button
-    @Test (priority=8 , enabled=false)
+    @Test (priority=8 , enabled=true)
     public void testDecrementQuantityBox(){
         objHomePage.goToSearchProductPage();
         String actual = objSearchPage.verifyDecrementButton();
@@ -82,7 +82,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testIncrementQuantity test passed");
     }
     //T3HOM_SP_TC09 check Price filter under $10 check box
-    @Test (priority=9 , enabled=false)
+    @Test (priority=9 , enabled=true)
     public void testPriceFilterBox(){
         objHomePage.goToSearchProductPage();
         boolean actual = objSearchPage.verifyPriceFilter();
@@ -90,7 +90,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testPriceFilter test passed");
     }
     //T3HOM_SP_T10 verify Price filter under $10 selection feature
-    @Test (priority=10 , enabled=false)
+    @Test (priority=10 , enabled=true)
     public void testPriceFilterFeature(){
         objHomePage.goToSearchProductPage();
         String actual = objSearchPage.goToPriceFilter();
