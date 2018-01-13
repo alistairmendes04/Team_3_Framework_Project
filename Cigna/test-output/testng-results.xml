@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Cigna Automation Test" duration-ms="32261" started-at="2018-01-13T14:04:14Z" finished-at="2018-01-13T14:04:46Z">
+    <groups>
+    </groups>
+    <test name="Cigna" duration-ms="32261" started-at="2018-01-13T14:04:14Z" finished-at="2018-01-13T14:04:46Z">
+      <class name="testCases.TestLoginPage">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestLoginPage@1e127982]" name="setUp" is-config="true" duration-ms="14458" started-at="2018-01-13T09:04:14Z" finished-at="2018-01-13T09:04:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestLoginPage@1e127982]" name="initilizationOfObject" is-config="true" duration-ms="64" started-at="2018-01-13T09:04:29Z" finished-at="2018-01-13T09:04:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="loginButton()[pri:0, instance:testCases.TestLoginPage@1e127982]" name="loginButton" duration-ms="12332" started-at="2018-01-13T09:04:29Z" finished-at="2018-01-13T09:04:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginButton -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestLoginPage@1e127982]" name="closeOut" is-config="true" duration-ms="5335" started-at="2018-01-13T09:04:41Z" finished-at="2018-01-13T09:04:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+      </class> <!-- testCases.TestLoginPage -->
+    </test> <!-- Cigna -->
+  </suite> <!-- Cigna Automation Test -->
+</testng-results>
