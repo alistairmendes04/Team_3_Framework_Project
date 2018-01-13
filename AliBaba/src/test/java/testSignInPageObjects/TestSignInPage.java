@@ -1,13 +1,13 @@
-package testCases;
+package testSignInPageObjects;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import page_objects.HomePage;
-import page_objects.ProductsPage;
-import page_objects.SignInPage;
+import homePageObjects.HomePage;
+import productsPageObjects.ProductsPage;
+import signInPageObjects.SignInPage;
 import reporting.TestLogger;
 
 public class TestSignInPage extends SignInPage {
@@ -23,7 +23,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC01 Sign in with invalid id and invalid password
-    @Test(priority = 12, enabled = true)
+    @Test(priority = 1, enabled = true)
     public void signInWithInvalidIdTest() throws InterruptedException {
         objOfHomePage.clikSignIn();
         objOfSignInPage.switchToSignInForm();
@@ -37,7 +37,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     //T3ALI_SI_TC02 Sign In By Mobile Link Status
-    @Test(priority = 13, enabled = true)
+    @Test(priority = 2, enabled = true)
     public void signInByMobileLinkStatusTest() throws InterruptedException {
         // TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object() {
         //}.getClass().getEnclosingMethod().getName()));
@@ -54,7 +54,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     //T3ALI_SI_TC03 Join Free Link status
-    @Test(priority = 14, enabled = true)
+    @Test(priority = 3, enabled = true)
     public void joinFreeLinkStatusTest() throws InterruptedException {
         // HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -70,7 +70,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC05 Sign in By invalid mobile number and password
-    @Test(priority = 15, enabled = false)
+    @Test(priority = 4, enabled = true)
     public void signInByMobileNumberTest() throws InterruptedException {
         try {
             objOfHomePage.clikSignIn();
@@ -85,7 +85,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC06 Sign In By Facebook Link status
-    @Test(priority = 16, enabled = true)
+    @Test(priority = 5, enabled = true)
     public void facebookLinkStatusTest() throws InterruptedException {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -101,7 +101,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC07 Sign In By Google Link status
-    @Test(priority = 17, enabled = true)
+    @Test(priority = 6, enabled = true)
     public void googleLinkStatusTest() throws InterruptedException {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -117,7 +117,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     //T3ALI_SI_TC08 Sign In By LinkedIn Link status
-    @Test(priority = 18, enabled = true)
+    @Test(priority = 7, enabled = true)
     public void linkedInLinkStatusTest() throws InterruptedException {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -133,7 +133,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     //T3ALI_SI_TC09 Sign In By Twitter Link status
-    @Test(priority = 19, enabled = true)
+    @Test(priority = 8, enabled = true)
     public void twitterLinkStatusTest() throws InterruptedException {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -149,7 +149,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     //T3ALI_SI_TC10 Sign in by invalid(email & password) Twitter account
-    @Test(priority = 20, enabled = true)
+    @Test(priority = 9, enabled = true)
     public void signInByInvalidTwitterAccountTest() {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -166,7 +166,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC11 Sign in by valid Twitter account
-    @Test(priority = 21, enabled = true)
+    @Test(priority = 10, enabled = true)
     public void signInByValidTwitterAccountTest() {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -183,7 +183,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC12 Sign in by invalid facebook account
-    @Test(priority = 22, enabled = true)
+    @Test(priority = 11, enabled = true)
     public void signInByInvalidFacebookAccountTest() {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         try {
@@ -200,7 +200,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC13 Sign in by valid Twitter account
-    @Test(priority = 23, enabled = true)
+    @Test(priority = 12, enabled = true)
     public void signInByValidGoogleAccountTest() {
         String winHandleBefore = driver.getWindowHandle();
         try {
@@ -217,8 +217,8 @@ public class TestSignInPage extends SignInPage {
         System.out.println("Test Case T3ALI_SI_TC12 Passed");
     }
 
-    //T3ALI_SI_TC13 Verify "Get Help Here" option
-    @Test(priority = 24, enabled = true)
+    //T3ALI_SI_TC14 Verify "Get Help Here" option
+    @Test(priority = 13, enabled = true)
     public void getHelpHere() {
         try {
             objOfHomePage.clikSignIn();

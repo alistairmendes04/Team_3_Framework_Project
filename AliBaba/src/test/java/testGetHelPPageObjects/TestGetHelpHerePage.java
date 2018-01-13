@@ -1,13 +1,12 @@
-package testCases;
+package testGetHelPPageObjects;
 
-import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page_objects.GetHelpHerePage;
-import page_objects.HomePage;
-import page_objects.ProductsPage;
-import page_objects.SignInPage;
+import getHelpPageObjects.GetHelpHerePage;
+import homePageObjects.HomePage;
+import productsPageObjects.ProductsPage;
+import signInPageObjects.SignInPage;
 
 public class TestGetHelpHerePage extends GetHelpHerePage {
     HomePage objOfHomePage;
