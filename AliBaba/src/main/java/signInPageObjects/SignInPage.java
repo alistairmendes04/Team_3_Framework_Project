@@ -1,4 +1,4 @@
-package page_objects;
+package signInPageObjects;
 
 import base.CommonAPI;
 import org.openqa.selenium.JavascriptExecutor;
@@ -99,7 +99,6 @@ public class SignInPage extends CommonAPI {
     public boolean signInByMobileNumberLink() {
         boolean bl = logInByMobileNumber.isEnabled();
         return bl;
-
     }
 
     //Sign Join Free link status

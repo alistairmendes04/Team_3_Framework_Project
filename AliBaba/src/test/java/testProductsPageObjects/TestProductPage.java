@@ -1,11 +1,10 @@
-package testCases;
+package testProductsPageObjects;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page_objects.HomePage;
-import page_objects.ProductsPage;
-import page_objects.SignInPage;
+import homePageObjects.HomePage;
+import productsPageObjects.ProductsPage;
 
 public class TestProductPage extends ProductsPage {
     HomePage objOfHomePage;

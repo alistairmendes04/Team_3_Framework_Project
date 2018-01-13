@@ -1,13 +1,12 @@
-package testCases;
+package testGetHelPPageObjects;
 
-import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page_objects.GetHelpHerePage;
-import page_objects.HomePage;
-import page_objects.ProductsPage;
-import page_objects.SignInPage;
+import getHelpPageObjects.GetHelpHerePage;
+import homePageObjects.HomePage;
+import productsPageObjects.ProductsPage;
+import signInPageObjects.SignInPage;
 
 public class TestGetHelpHerePage extends GetHelpHerePage {
     HomePage objOfHomePage;
@@ -23,7 +22,7 @@ public class TestGetHelpHerePage extends GetHelpHerePage {
     }
 
     //T3ALI_TC_01 Verify User able to send message to Anna
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void messageToAnna() {
         try {
             objOfHomePage.clikSignIn();

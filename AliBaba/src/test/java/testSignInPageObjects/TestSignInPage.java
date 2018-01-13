@@ -1,13 +1,13 @@
-package testCases;
+package testSignInPageObjects;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import page_objects.HomePage;
-import page_objects.ProductsPage;
-import page_objects.SignInPage;
+import homePageObjects.HomePage;
+import productsPageObjects.ProductsPage;
+import signInPageObjects.SignInPage;
 import reporting.TestLogger;
 
 public class TestSignInPage extends SignInPage {

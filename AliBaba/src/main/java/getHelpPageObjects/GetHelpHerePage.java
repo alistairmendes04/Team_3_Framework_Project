@@ -1,4 +1,4 @@
-package page_objects;
+package getHelpPageObjects;
 
 import base.CommonAPI;
 import org.openqa.selenium.Keys;
