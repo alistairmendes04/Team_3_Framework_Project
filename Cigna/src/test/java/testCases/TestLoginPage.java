@@ -18,7 +18,7 @@ public class TestLoginPage extends CommonAPI{
         objOfLoginPage = PageFactory.initElements(driver, LoginPage.class);
     }
 
-    @Test(priority = 0, enabled = true)
+    @Test(priority = 1, enabled = true)
     public void loginButton() {
         objOfPersonalPage.clickLoginButton();
         String actualErrorMsg = objOfLoginPage.enterCredintials();
