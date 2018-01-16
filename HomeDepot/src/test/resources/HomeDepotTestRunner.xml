@@ -20,7 +20,7 @@
             <class name = "testCases.TestFooterPage"/>
             <class name = "testCases.TestAddToCartPage"/>
             <class name = "testCases.TestExcelFileReader"/>
-            <class name = "testCases.TestGoogleSheetsReader"/>
+           <!-- <class name = "testCases.TestGoogleSheetsReader"/>-->
             <class name="testKeyword.TestFeatures"/>
         </classes>
     </test>
