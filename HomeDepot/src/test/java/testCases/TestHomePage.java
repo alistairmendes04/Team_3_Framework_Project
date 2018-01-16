@@ -63,7 +63,7 @@ public class TestHomePage extends HomePage {
         System.out.println("CompareImageTextLink test passed");
     }
     //T3HOM_HP_TC07 capture the text of hero image
-    @Test (priority=7, enabled=true)
+    @Test (priority=7, enabled=false)
     public void testHeroImage() {
         String actual = objHomePage.captureTextHeroImage();
         String expected = "Up to 30% off select storage solutions";

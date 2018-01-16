@@ -55,6 +55,7 @@ public class LoginPage extends CommonAPI{
         return bl;
     }
     //T3HOM_LP_TC04 Invalid email id throw error message
+    //add click on password box
     public static String invalidEmail() {
         emailBox.sendKeys("aarti", Keys.ENTER);
         String str = errorEmailMessage.getText();
@@ -99,5 +100,12 @@ public class LoginPage extends CommonAPI{
         driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
         emailBox.sendKeys("aarti@gmail.com");
         emailBox.clear();
+    }
+    //invalid email id throw error message
+    public void enterInvalidEmail() {
+        emailBox.sendKeys("aarti", Keys.ENTER);
+        passwordBox.click();
+        String str = errorEmailMessage.getText();
+
     }
 }
