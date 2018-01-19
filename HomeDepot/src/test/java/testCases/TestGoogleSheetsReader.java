@@ -27,7 +27,7 @@ public class TestGoogleSheetsReader extends GoogleSheetsReaderPage {
         List<List<Object>> expectedSearchItem = objGoogleSheet.getSpreadSheetRecords(spreadsheetId, range);
         for (List row : expectedSearchItem) {
             Assert.assertTrue(actualSearchItem.get(i).contains(row.get(2).toString()));
-           // System.out.println("actual"+actualSearchItem.get(i));
+            System.out.println("actual"+actualSearchItem.get(i));
             System.out.println(expectedSearchItem.get(i) + ": Search - Passed");
             i++;
         }
