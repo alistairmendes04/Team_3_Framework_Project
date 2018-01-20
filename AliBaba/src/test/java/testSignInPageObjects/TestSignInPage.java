@@ -70,7 +70,7 @@ public class TestSignInPage extends SignInPage {
     }
 
     // T3ALI_SI_TC05 Sign in By invalid mobile number and password
-    @Test(priority = 4, enabled = true)
+    @Test(priority = 4, enabled = false)
     public void signInByMobileNumberTest() throws InterruptedException {
         try {
             objOfHomePage.clikSignIn();
