@@ -75,4 +75,3 @@ References
 * Working with GoogleSheet
   - [GoogleSheet reference Document](https://developers.google.com/sheets/api/quickstart/java)
   
-

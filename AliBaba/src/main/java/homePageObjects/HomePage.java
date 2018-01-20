@@ -1,4 +1,4 @@
-package page_objects;
+package homePageObjects;
 
 import base.CommonAPI;
 

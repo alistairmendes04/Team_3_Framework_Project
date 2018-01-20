@@ -1,4 +1,4 @@
-package page_objects;
+package productsPageObjects;
 
 import base.CommonAPI;
 import org.openqa.selenium.Keys;

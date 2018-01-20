@@ -15,7 +15,7 @@
     <test name="Cigna">
         <classes>
             <class name="testCases.TestPersonalPage"/>
-           <!-- <class name="testCases.TestLoginPage"/>-->
+            <class name="testCases.TestLoginPage"/>
         </classes>
     </test>
 

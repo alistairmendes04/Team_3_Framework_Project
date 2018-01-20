@@ -10,7 +10,7 @@
   <parameter name="url" value="https://www.alibaba.com/"/>
   <test name="Alibaba Home(failed)">
     <classes>
-      <class name="testCases.TestGoogleSheetsPage">
+      <class name="testSignInPageObjects.TestGoogleSheetsPage">
         <methods>
           <include name="initialization"/>
           <include name="afterEachTestMethod"/>
@@ -21,7 +21,7 @@
           <include name="testLogInByInvalidIdPassUsingGoogleSheet"/>
           <include name="closeOut"/>
         </methods>
-      </class> <!-- testCases.TestGoogleSheetsPage -->
+      </class> <!-- testSignInPageObjects.TestGoogleSheetsPage -->
     </classes>
   </test> <!-- Alibaba Home(failed) -->
 </suite> <!-- Failed suite [AliBaba Automation Test] -->
