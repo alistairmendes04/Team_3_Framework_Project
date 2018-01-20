@@ -80,7 +80,6 @@ public class SignInPage extends CommonAPI {
 
     //Switch to Sign In form
     public void switchToSignInForm() {
-
         driver.switchTo().frame("alibaba-login-box");
     }
 
