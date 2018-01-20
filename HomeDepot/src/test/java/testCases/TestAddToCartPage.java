@@ -20,7 +20,7 @@ public class TestAddToCartPage extends AddToCart{
         objAddToCartPage = PageFactory.initElements(driver, AddToCart.class);
     }
     //T3HOM_AP_TC01 verify CheckOut Now
-    @Test(priority=1, enabled=false)
+    @Test(enabled=false)
     public void testCheckOut(){
         objHomePage.goToSearchProductPage();
         objSearchPage.goToCart();
