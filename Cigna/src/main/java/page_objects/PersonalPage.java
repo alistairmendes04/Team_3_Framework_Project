@@ -193,7 +193,7 @@ public class PersonalPage extends CommonAPI{
         System.out.println("Find A Doctor: " + fad);
     }
 
-    public static void informedOnRepormL() {
+    public static void informedOnReportL() {
         boolean ior = informedOnReform.isDisplayed();
         System.out.println("Informed On Report: " + ior);
     }

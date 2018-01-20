@@ -1,12 +1,12 @@
-package testCases;
+package testSignInPageObjects;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page_objects.ByInputFromExls;
-import page_objects.HomePage;
-import page_objects.SignInPage;
+import signInPageObjects.ByInputFromExls;
+import homePageObjects.HomePage;
+import signInPageObjects.SignInPage;
 import java.io.IOException;
 
 public class TestByInputFromExls extends ByInputFromExls {
@@ -31,7 +31,7 @@ public class TestByInputFromExls extends ByInputFromExls {
         String[] expectedItems = objByInput.getAssertData("DataFile.xls");
         String[] actualItems = objByInput.getVerificationValue("DataFile.xls");
         for (int i = 0; i < actualItems.length; i++) {
-            Assert.assertTrue(actualItems[i].contains(expectedItems[i]));
+           Assert.assertTrue(actualItems[i].contains(expectedItems[i]));
             System.out.println(expectedItems[i] + ": Test - Passed");
         }
         System.out.println("signInWithInvalidIdAndPassword");

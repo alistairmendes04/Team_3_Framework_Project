@@ -1,12 +1,12 @@
-package testCases;
+package testHomePageObjects;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page_objects.HomePage;
-import page_objects.ProductsPage;
-import page_objects.SignInPage;
+import homePageObjects.HomePage;
+import productsPageObjects.ProductsPage;
+import signInPageObjects.SignInPage;
 
 public class TestHomePage extends HomePage {
     HomePage objOfHomePage;
@@ -53,48 +53,48 @@ public class TestHomePage extends HomePage {
     }
 
     //T3ALI_HP_TC05 Verify by Home Page Links Status
-    @Test(priority = 6, enabled = true)
+    @Test(priority = 5, enabled = true)
     public void testHompageButtonStatus() {
         boolean bl = objOfHomePage.homePageButtonStatus();
         Assert.assertTrue(bl);
     }
 
     ////T3ALI_HP_TC06 Verify Options Of Categories
-    @Test(priority = 8, enabled = true)
+    @Test(priority = 6, enabled = true)
     public void testOptionsOfCategories() {
         String actual = objOfHomePage.categories();
         String expected = "Hand-Tools";
         Assert.assertTrue(actual.contains(expected));
     }
 
-    @Test
+    @Test (priority = 7, enabled = true)
     public void testCategories() throws InterruptedException {
         HomePage sr = PageFactory.initElements(driver, HomePage.class);
         sr.categories();
     }
 
     // T3ALI_HP_TC07 verify logo displayed on homepage or not
-    @Test(priority = 9, enabled = true)
+    @Test(priority = 8, enabled = true)
     public void checkLogoVisibility() {
         boolean enabled = objOfHomePage.clickLogo();
         Assert.assertEquals(enabled, true);
     }
 
     // T3ALI_HP_TC08 Verify Order Protection Link
-    @Test(priority = 10, enabled = true)
+    @Test(priority = 9, enabled = true)
     public void testOrderProtectionButtonStatus() {
         boolean enabled = objOfHomePage.orderProtectionButtonStatus();
         Assert.assertEquals(enabled, true);
     }
 
     // T3ALI_HP_TC09
-    @Test(priority = 11, enabled = false)
+    @Test(priority = 10, enabled = true)
     public void categoriesList() {
         objOfHomePage.categoriesList();
     }
 
     //T3ALI_HP_TC10 Verify Trade Alert Subscription is functional
-    @Test(enabled = true)
+    @Test(priority = 11, enabled = true)
     public void testTradeAlertSubscriptionFunction() throws InterruptedException {
         String actual = objOfHomePage.tradeAlertSubscription();
         String expected = "https://login.alibaba.com";
@@ -102,7 +102,7 @@ public class TestHomePage extends HomePage {
     }
 
     //T3ALI_HP_TC11 Help Center Link Status
-    @Test(enabled = true)
+    @Test(priority = 12, enabled = true)
     public void testHelpCenterLinkStatus() throws InterruptedException {
         String actual = objOfHomePage.helpCenterLinkStatus();
         String expected = "Help Center";
@@ -110,28 +110,28 @@ public class TestHomePage extends HomePage {
     }
 
     //T3ALI_HP_TC12 About Alibaba Link Status
-    @Test(enabled = true)
+    @Test(priority = 13, enabled = true)
     public void testAboutAlibabaLinkStatus() throws InterruptedException {
         String actual = objOfHomePage.aboutAlibabaLinkStatus();
         String expected = "About Alibaba.com";
         Assert.assertTrue(actual.contains(expected));
     }
     //T3ALI_HP_TC13 About Wholesale Market Link Status
-    @Test(priority = 13 , enabled = true)
+    @Test(priority = 14 , enabled = true)
     public void testWholesaleMarketLinkStatus() throws InterruptedException {
         String actual = objOfHomePage.wholesaleMarketLinkStatus();
         String expected = "Wholesaler Market";
         Assert.assertTrue(actual.contains(expected));
     }
     //T3ALI_HP_TC14 Move to top button functionality check
-    @Test (priority = 14, enabled = true)
+    @Test (priority = 15, enabled = true)
     public void testTopButtonVerification() throws InterruptedException {
         String actual = objOfHomePage.topButtonVerification();
         String expected = "(1299, 542)";
        // Assert.assertTrue(actual.contains(expected));
     }
     ////T3ALI_HP_TC14 Quotes request
-    @Test(priority = 15, enabled = true)
+    @Test(priority = 16, enabled = true)
     public void testQuotesRequestForm() throws InterruptedException {
       objOfHomePage.quotesRequestForm();
       objOfHomePage.quotesRequestFormDetails();

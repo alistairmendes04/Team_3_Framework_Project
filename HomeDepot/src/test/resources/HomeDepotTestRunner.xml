@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="HomeDepot Automation Test" parallel="false">
-
+<suite name="AliBaba Automation Test" parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
-    <parameter name="os" value="windows"/>
+    <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
-    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserName" value="Chrome"/>
     <parameter name="browserVersion" value="62.0"/>
     <parameter name="url" value="https://www.homedepot.com/"/>
 
@@ -41,6 +40,7 @@
         <classes>
             <class name = "testCases.TestGoogleSheetsReader"/>
         </classes>
+
     </test>
     <test name = "Home Depot 7" preserve-order="true">
         <classes>

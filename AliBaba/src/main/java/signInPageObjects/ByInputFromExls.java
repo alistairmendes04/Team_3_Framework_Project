@@ -1,4 +1,4 @@
-package page_objects;
+package signInPageObjects;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;

@@ -107,5 +107,4 @@ public class TestSearchPage extends SearchProductPage {
         Assert.assertTrue(actual.contains(expected));
         System.out.println("testScrollDown test passed");
     }
-
 }

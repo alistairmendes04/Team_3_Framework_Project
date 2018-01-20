@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="13" passed="12" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Extent Report DirectoryC:\Users\Rabeka\IdeaProjects\Team_3_Framework_Project\AliBaba\test-output\html]]>
     </line>
+    <line>
+      <![CDATA[TestSignInPage: sign In By Mobile Link Status Test]]>
+    </line>
   </reporter-output>
-  <suite started-at="2018-01-12T07:56:51Z" name="AliBaba Automation Test" finished-at="2018-01-12T07:58:31Z" duration-ms="99447">
+  <suite started-at="2018-01-12T16:08:25Z" name="AliBaba Automation Test" finished-at="2018-01-12T16:17:01Z" duration-ms="516571">
     <groups>
     </groups>
-    <test started-at="2018-01-12T07:56:51Z" name="Alibaba Home" finished-at="2018-01-12T07:58:31Z" duration-ms="99447">
-      <class name="testCases.TestGoogleSheetsPage">
-        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:56:46Z" name="extentSetup" finished-at="2018-01-12T02:56:51Z" duration-ms="5481" status="PASS">
+    <test started-at="2018-01-12T16:08:25Z" name="Alibaba Home" finished-at="2018-01-12T16:17:01Z" duration-ms="516571">
+      <class name="testSignInPageObjects.TestSignInPage">
+        <test-method is-config="true" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:08:21Z" name="extentSetup" finished-at="2018-01-12T11:08:25Z" duration-ms="3132" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3d37203b]]>
+                <![CDATA[org.testng.TestRunner@46d567cb]]>
               </value>
             </param>
           </params>
@@ -24,7 +27,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:56:52Z" name="setUp" finished-at="2018-01-12T02:57:25Z" duration-ms="33597" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:08:25Z" name="setUp" finished-at="2018-01-12T11:08:42Z" duration-ms="17721" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,45 +68,873 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:57:25Z" name="startExtent" finished-at="2018-01-12T02:57:25Z" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:08:42Z" name="startExtent" finished-at="2018-01-12T11:08:42Z" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testCases.TestGoogleSheetsPage.testLogInByInvalidIdPassUsingGoogleSheet() throws java.io.IOException,java.lang.InterruptedException]]>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.signInWithInvalidIdTest() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtent -->
-        <test-method is-config="true" signature="initialization()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:57:25Z" name="initialization" finished-at="2018-01-12T02:57:26Z" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:08:42Z" name="initializationOfElements" finished-at="2018-01-12T11:08:43Z" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method signature="testLogInByInvalidIdPassUsingGoogleSheet()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:57:26Z" name="testLogInByInvalidIdPassUsingGoogleSheet" finished-at="2018-01-12T02:58:25Z" duration-ms="59673" status="PASS">
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="signInWithInvalidIdTest()[pri:12, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:08:43Z" name="signInWithInvalidIdTest" finished-at="2018-01-12T11:09:12Z" duration-ms="29239" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogInByInvalidIdPassUsingGoogleSheet -->
-        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:58:25Z" name="afterEachTestMethod" finished-at="2018-01-12T02:58:31Z" duration-ms="5405" status="PASS">
+        </test-method> <!-- signInWithInvalidIdTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:12Z" name="afterEachTestMethod" finished-at="2018-01-12T11:09:14Z" duration-ms="2164" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogInByInvalidIdPassUsingGoogleSheet status=SUCCESS method=TestGoogleSheetsPage.testLogInByInvalidIdPassUsingGoogleSheet()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44] output={null}]]]>
+                <![CDATA[[TestResult name=signInWithInvalidIdTest status=SUCCESS method=TestSignInPage.signInWithInvalidIdTest()[pri:12, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
-        <test-method is-config="true" signature="closeOut()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:58:31Z" name="closeOut" finished-at="2018-01-12T02:58:31Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:14Z" name="closeOut" finished-at="2018-01-12T11:09:14Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeOut -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:testCases.TestGoogleSheetsPage@55b53d44]" started-at="2018-01-12T02:58:31Z" name="generateReport" finished-at="2018-01-12T02:58:32Z" duration-ms="759" status="PASS">
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:14Z" name="setUp" finished-at="2018-01-12T11:09:29Z" duration-ms="14612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:29Z" name="startExtent" finished-at="2018-01-12T11:09:29Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.signInByMobileLinkStatusTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:29Z" name="initializationOfElements" finished-at="2018-01-12T11:09:29Z" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="signInByMobileLinkStatusTest()[pri:13, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:29Z" name="signInByMobileLinkStatusTest" finished-at="2018-01-12T11:09:54Z" duration-ms="24874" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestSignInPage: sign In By Mobile Link Status Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInByMobileLinkStatusTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:54Z" name="afterEachTestMethod" finished-at="2018-01-12T11:09:55Z" duration-ms="1621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signInByMobileLinkStatusTest status=SUCCESS method=TestSignInPage.signInByMobileLinkStatusTest()[pri:13, instance:testSignInPageObjects.TestSignInPage@49dc7102] output=TestSignInPage: sign In By Mobile Link Status Test]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:55Z" name="setUp" finished-at="2018-01-12T11:10:10Z" duration-ms="14530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:09:55Z" name="closeOut" finished-at="2018-01-12T11:09:55Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:10Z" name="startExtent" finished-at="2018-01-12T11:10:10Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.joinFreeLinkStatusTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:10Z" name="initializationOfElements" finished-at="2018-01-12T11:10:10Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="joinFreeLinkStatusTest()[pri:14, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:10Z" name="joinFreeLinkStatusTest" finished-at="2018-01-12T11:10:34Z" duration-ms="24499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinFreeLinkStatusTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:34Z" name="afterEachTestMethod" finished-at="2018-01-12T11:10:36Z" duration-ms="1474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=joinFreeLinkStatusTest status=SUCCESS method=TestSignInPage.joinFreeLinkStatusTest()[pri:14, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:36Z" name="closeOut" finished-at="2018-01-12T11:10:36Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:36Z" name="setUp" finished-at="2018-01-12T11:10:52Z" duration-ms="16533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:52Z" name="initializationOfElements" finished-at="2018-01-12T11:10:52Z" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:52Z" name="startExtent" finished-at="2018-01-12T11:10:52Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.facebookLinkStatusTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="facebookLinkStatusTest()[pri:16, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:10:52Z" name="facebookLinkStatusTest" finished-at="2018-01-12T11:11:17Z" duration-ms="25089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookLinkStatusTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:17Z" name="afterEachTestMethod" finished-at="2018-01-12T11:11:19Z" duration-ms="1223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=facebookLinkStatusTest status=SUCCESS method=TestSignInPage.facebookLinkStatusTest()[pri:16, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:19Z" name="setUp" finished-at="2018-01-12T11:11:32Z" duration-ms="13594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:19Z" name="closeOut" finished-at="2018-01-12T11:11:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:32Z" name="startExtent" finished-at="2018-01-12T11:11:32Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.googleLinkStatusTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:32Z" name="initializationOfElements" finished-at="2018-01-12T11:11:32Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="googleLinkStatusTest()[pri:17, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:32Z" name="googleLinkStatusTest" finished-at="2018-01-12T11:11:57Z" duration-ms="24753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleLinkStatusTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:57Z" name="afterEachTestMethod" finished-at="2018-01-12T11:11:58Z" duration-ms="1460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=googleLinkStatusTest status=SUCCESS method=TestSignInPage.googleLinkStatusTest()[pri:17, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:58Z" name="setUp" finished-at="2018-01-12T11:12:12Z" duration-ms="13579" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:11:58Z" name="closeOut" finished-at="2018-01-12T11:11:58Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:12Z" name="startExtent" finished-at="2018-01-12T11:12:12Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.linkedInLinkStatusTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:12Z" name="initializationOfElements" finished-at="2018-01-12T11:12:12Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="linkedInLinkStatusTest()[pri:18, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:12Z" name="linkedInLinkStatusTest" finished-at="2018-01-12T11:12:41Z" duration-ms="29107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkedInLinkStatusTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:41Z" name="afterEachTestMethod" finished-at="2018-01-12T11:12:43Z" duration-ms="1773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=linkedInLinkStatusTest status=SUCCESS method=TestSignInPage.linkedInLinkStatusTest()[pri:18, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:43Z" name="closeOut" finished-at="2018-01-12T11:12:43Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:43Z" name="setUp" finished-at="2018-01-12T11:12:57Z" duration-ms="13762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:57Z" name="startExtent" finished-at="2018-01-12T11:12:57Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.twitterLinkStatusTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:57Z" name="initializationOfElements" finished-at="2018-01-12T11:12:57Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="twitterLinkStatusTest()[pri:19, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:12:57Z" name="twitterLinkStatusTest" finished-at="2018-01-12T11:13:21Z" duration-ms="24487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- twitterLinkStatusTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:13:21Z" name="afterEachTestMethod" finished-at="2018-01-12T11:13:22Z" duration-ms="1363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=twitterLinkStatusTest status=SUCCESS method=TestSignInPage.twitterLinkStatusTest()[pri:19, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:13:22Z" name="setUp" finished-at="2018-01-12T11:13:36Z" duration-ms="13274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:13:22Z" name="closeOut" finished-at="2018-01-12T11:13:22Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:13:36Z" name="startExtent" finished-at="2018-01-12T11:13:36Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.signInByInvalidTwitterAccountTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:13:36Z" name="initializationOfElements" finished-at="2018-01-12T11:13:36Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="signInByInvalidTwitterAccountTest()[pri:20, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:13:36Z" name="signInByInvalidTwitterAccountTest" finished-at="2018-01-12T11:14:07Z" duration-ms="30852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInByInvalidTwitterAccountTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:07Z" name="afterEachTestMethod" finished-at="2018-01-12T11:14:08Z" duration-ms="1400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signInByInvalidTwitterAccountTest status=SUCCESS method=TestSignInPage.signInByInvalidTwitterAccountTest()[pri:20, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:08Z" name="setUp" finished-at="2018-01-12T11:14:20Z" duration-ms="12131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:08Z" name="closeOut" finished-at="2018-01-12T11:14:08Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:20Z" name="startExtent" finished-at="2018-01-12T11:14:20Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.signInByValidTwitterAccountTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:20Z" name="initializationOfElements" finished-at="2018-01-12T11:14:20Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="signInByValidTwitterAccountTest()[pri:21, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:20Z" name="signInByValidTwitterAccountTest" finished-at="2018-01-12T11:14:52Z" duration-ms="32007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInByValidTwitterAccountTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:52Z" name="afterEachTestMethod" finished-at="2018-01-12T11:14:54Z" duration-ms="1553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signInByValidTwitterAccountTest status=SUCCESS method=TestSignInPage.signInByValidTwitterAccountTest()[pri:21, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:54Z" name="closeOut" finished-at="2018-01-12T11:14:54Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:14:54Z" name="setUp" finished-at="2018-01-12T11:15:07Z" duration-ms="13343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:07Z" name="initializationOfElements" finished-at="2018-01-12T11:15:07Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:07Z" name="startExtent" finished-at="2018-01-12T11:15:07Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.signInByInvalidFacebookAccountTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method signature="signInByInvalidFacebookAccountTest()[pri:22, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:07Z" name="signInByInvalidFacebookAccountTest" finished-at="2018-01-12T11:15:39Z" duration-ms="31718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInByInvalidFacebookAccountTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:39Z" name="afterEachTestMethod" finished-at="2018-01-12T11:15:40Z" duration-ms="1386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signInByInvalidFacebookAccountTest status=SUCCESS method=TestSignInPage.signInByInvalidFacebookAccountTest()[pri:22, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:40Z" name="closeOut" finished-at="2018-01-12T11:15:40Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:40Z" name="setUp" finished-at="2018-01-12T11:15:52Z" duration-ms="11834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:52Z" name="startExtent" finished-at="2018-01-12T11:15:52Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.signInByValidGoogleAccountTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:52Z" name="initializationOfElements" finished-at="2018-01-12T11:15:52Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="signInByValidGoogleAccountTest()[pri:23, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:15:52Z" name="signInByValidGoogleAccountTest" finished-at="2018-01-12T11:16:41Z" duration-ms="49076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInByValidGoogleAccountTest -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:16:41Z" name="afterEachTestMethod" finished-at="2018-01-12T11:16:43Z" duration-ms="1437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signInByValidGoogleAccountTest status=SUCCESS method=TestSignInPage.signInByValidGoogleAccountTest()[pri:23, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:16:43Z" name="closeOut" finished-at="2018-01-12T11:16:43Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:16:43Z" name="setUp" finished-at="2018-01-12T11:16:55Z" duration-ms="12765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.alibaba.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:16:55Z" name="startExtent" finished-at="2018-01-12T11:16:55Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testSignInPageObjects.TestSignInPage.getHelpHere()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method is-config="true" signature="initializationOfElements()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:16:55Z" name="initializationOfElements" finished-at="2018-01-12T11:16:55Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializationOfElements -->
+        <test-method signature="getHelpHere()[pri:24, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:16:55Z" name="getHelpHere" finished-at="2018-01-12T11:16:59Z" duration-ms="4187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHelpHere -->
+        <test-method is-config="true" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:16:59Z" name="afterEachTestMethod" finished-at="2018-01-12T11:17:01Z" duration-ms="1622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getHelpHere status=SUCCESS method=TestSignInPage.getHelpHere()[pri:24, instance:testSignInPageObjects.TestSignInPage@49dc7102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method is-config="true" signature="closeOut()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:17:01Z" name="closeOut" finished-at="2018-01-12T11:17:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:testSignInPageObjects.TestSignInPage@49dc7102]" started-at="2018-01-12T11:17:01Z" name="generateReport" finished-at="2018-01-12T11:17:01Z" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- testCases.TestGoogleSheetsPage -->
+      </class> <!-- testSignInPageObjects.TestSignInPage -->
     </test> <!-- Alibaba Home -->
   </suite> <!-- AliBaba Automation Test -->
 </testng-results>
