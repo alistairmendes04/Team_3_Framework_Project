@@ -12,7 +12,7 @@
     <parameter name="browserVersion" value="62.0"/>
     <parameter name="url" value="https://www.homedepot.com/"/>
 
-<!--     <test name = "Home Depot 1" preserve-order="true">
+     <test name = "Home Depot 1" preserve-order="true">
         <classes>
              <class name="testCases.TestHomePage"/>
         </classes>
@@ -34,23 +34,18 @@
     </test>
     <test name = "Home Depot 5" preserve-order="true">
         <classes>
-            <class name = "testCases.TestAddToCartPage"/>
+            <class name = "testCases.TestExcelFileReader"/>
         </classes>
     </test>
     <test name = "Home Depot 6" preserve-order="true">
         <classes>
-            <class name = "testCases.TestExcelFileReader"/>
-        </classes>
-    </test>-->
-    <test name = "Home Depot 7" preserve-order="true">
-        <classes>
             <class name = "testCases.TestGoogleSheetsReader"/>
         </classes>
     </test>
-<!--    <test name = "Home Depot 8" preserve-order="true">
+    <test name = "Home Depot 7" preserve-order="true">
         <classes>
             <class name="testKeyword.TestFeatures"/>
         </classes>
-    </test>-->
+    </test>
 
 </suite>
