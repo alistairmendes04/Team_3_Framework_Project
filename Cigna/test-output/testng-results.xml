@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="35" passed="34">
   <reporter-output>
+    <line>
+      <![CDATA[Extent Report DirectoryC:\Users\Ali\Team_3_Framework_Project\Cigna\test-output\html]]>
+    </line>
   </reporter-output>
-  <suite name="Cigna Automation Test" duration-ms="32261" started-at="2018-01-13T14:04:14Z" finished-at="2018-01-13T14:04:46Z">
+  <suite name="Cigna Automation Test" duration-ms="667642" started-at="2018-01-22T22:31:36Z" finished-at="2018-01-22T22:42:43Z">
     <groups>
     </groups>
-    <test name="Cigna" duration-ms="32261" started-at="2018-01-13T14:04:14Z" finished-at="2018-01-13T14:04:46Z">
-      <class name="testCases.TestLoginPage">
-        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestLoginPage@1e127982]" name="setUp" is-config="true" duration-ms="14458" started-at="2018-01-13T09:04:14Z" finished-at="2018-01-13T09:04:29Z">
+    <test name="Cigna" duration-ms="667642" started-at="2018-01-22T22:31:36Z" finished-at="2018-01-22T22:42:43Z">
+      <class name="testCases.TestPersonalPage">
+        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="extentSetup" is-config="true" duration-ms="1842" started-at="2018-01-22T17:31:34Z" finished-at="2018-01-22T17:31:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[org.testng.TestRunner@b91d8c4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Extent Report DirectoryC:\Users\Ali\Team_3_Framework_Project\Cigna\test-output\html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="11704" started-at="2018-01-22T17:31:36Z" finished-at="2018-01-22T17:31:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[browserstack]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[windows]]>
+                <![CDATA[Windows]]>
               </value>
             </param>
             <param index="3">
@@ -31,12 +48,12 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[34]]>
+                <![CDATA[62.0]]>
               </value>
             </param>
             <param index="6">
@@ -48,19 +65,2603 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestLoginPage@1e127982]" name="initilizationOfObject" is-config="true" duration-ms="64" started-at="2018-01-13T09:04:29Z" finished-at="2018-01-13T09:04:29Z">
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="6" started-at="2018-01-22T17:31:47Z" finished-at="2018-01-22T17:31:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testFindDoctor()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="69" started-at="2018-01-22T17:31:47Z" finished-at="2018-01-22T17:31:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizationOfObject -->
-        <test-method status="PASS" signature="loginButton()[pri:0, instance:testCases.TestLoginPage@1e127982]" name="loginButton" duration-ms="12332" started-at="2018-01-13T09:04:29Z" finished-at="2018-01-13T09:04:41Z">
+        <test-method status="PASS" signature="testFindDoctor()[pri:1, instance:testCases.TestPersonalPage@48503868]" name="testFindDoctor" duration-ms="2077" started-at="2018-01-22T17:31:47Z" finished-at="2018-01-22T17:31:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginButton -->
-        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestLoginPage@1e127982]" name="closeOut" is-config="true" duration-ms="5335" started-at="2018-01-13T09:04:41Z" finished-at="2018-01-13T09:04:46Z">
+        </test-method> <!-- testFindDoctor -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="9874" started-at="2018-01-22T17:31:49Z" finished-at="2018-01-22T17:31:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFindDoctor status=SUCCESS method=TestPersonalPage.testFindDoctor()[pri:1, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:31:59Z" finished-at="2018-01-22T17:31:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeOut -->
-      </class> <!-- testCases.TestLoginPage -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9238" started-at="2018-01-22T17:31:59Z" finished-at="2018-01-22T17:32:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:32:09Z" finished-at="2018-01-22T17:32:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testIndividualFamilyPlan()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="3" started-at="2018-01-22T17:32:09Z" finished-at="2018-01-22T17:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testIndividualFamilyPlan()[pri:2, instance:testCases.TestPersonalPage@48503868]" name="testIndividualFamilyPlan" duration-ms="194" started-at="2018-01-22T17:32:09Z" finished-at="2018-01-22T17:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndividualFamilyPlan -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4850" started-at="2018-01-22T17:32:09Z" finished-at="2018-01-22T17:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testIndividualFamilyPlan status=SUCCESS method=TestPersonalPage.testIndividualFamilyPlan()[pri:2, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:32:14Z" finished-at="2018-01-22T17:32:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9434" started-at="2018-01-22T17:32:14Z" finished-at="2018-01-22T17:32:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:32:23Z" finished-at="2018-01-22T17:32:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testSearchBar()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="4" started-at="2018-01-22T17:32:23Z" finished-at="2018-01-22T17:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testSearchBar()[pri:3, instance:testCases.TestPersonalPage@48503868]" name="testSearchBar" duration-ms="2564" started-at="2018-01-22T17:32:23Z" finished-at="2018-01-22T17:32:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchBar -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="12583" started-at="2018-01-22T17:32:26Z" finished-at="2018-01-22T17:32:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchBar status=SUCCESS method=TestPersonalPage.testSearchBar()[pri:3, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:32:38Z" finished-at="2018-01-22T17:32:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9563" started-at="2018-01-22T17:32:38Z" finished-at="2018-01-22T17:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="5" started-at="2018-01-22T17:32:48Z" finished-at="2018-01-22T17:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:32:48Z" finished-at="2018-01-22T17:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testCignaMedicare()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testCignaMedicare()[pri:4, instance:testCases.TestPersonalPage@48503868]" name="testCignaMedicare" duration-ms="171" started-at="2018-01-22T17:32:48Z" finished-at="2018-01-22T17:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCignaMedicare -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="9132" started-at="2018-01-22T17:32:48Z" finished-at="2018-01-22T17:32:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCignaMedicare status=SUCCESS method=TestPersonalPage.testCignaMedicare()[pri:4, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:32:57Z" finished-at="2018-01-22T17:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="8830" started-at="2018-01-22T17:32:57Z" finished-at="2018-01-22T17:33:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:33:06Z" finished-at="2018-01-22T17:33:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testInternationalIndividualPlan()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:33:06Z" finished-at="2018-01-22T17:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testInternationalIndividualPlan()[pri:5, instance:testCases.TestPersonalPage@48503868]" name="testInternationalIndividualPlan" duration-ms="166" started-at="2018-01-22T17:33:06Z" finished-at="2018-01-22T17:33:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInternationalIndividualPlan -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4536" started-at="2018-01-22T17:33:06Z" finished-at="2018-01-22T17:33:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInternationalIndividualPlan status=SUCCESS method=TestPersonalPage.testInternationalIndividualPlan()[pri:5, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:33:11Z" finished-at="2018-01-22T17:33:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10717" started-at="2018-01-22T17:33:11Z" finished-at="2018-01-22T17:33:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:33:21Z" finished-at="2018-01-22T17:33:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testOfferCignaThroughWork()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:33:21Z" finished-at="2018-01-22T17:33:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testOfferCignaThroughWork()[pri:6, instance:testCases.TestPersonalPage@48503868]" name="testOfferCignaThroughWork" duration-ms="386" started-at="2018-01-22T17:33:21Z" finished-at="2018-01-22T17:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOfferCignaThroughWork -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4694" started-at="2018-01-22T17:33:22Z" finished-at="2018-01-22T17:33:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOfferCignaThroughWork status=SUCCESS method=TestPersonalPage.testOfferCignaThroughWork()[pri:6, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:33:26Z" finished-at="2018-01-22T17:33:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="15628" started-at="2018-01-22T17:33:26Z" finished-at="2018-01-22T17:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:33:42Z" finished-at="2018-01-22T17:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testHealthWellness()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:33:42Z" finished-at="2018-01-22T17:33:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testHealthWellness()[pri:7, instance:testCases.TestPersonalPage@48503868]" name="testHealthWellness" duration-ms="169" started-at="2018-01-22T17:33:42Z" finished-at="2018-01-22T17:33:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHealthWellness -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5134" started-at="2018-01-22T17:33:42Z" finished-at="2018-01-22T17:33:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHealthWellness status=SUCCESS method=TestPersonalPage.testHealthWellness()[pri:7, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:33:47Z" finished-at="2018-01-22T17:33:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="14809" started-at="2018-01-22T17:33:47Z" finished-at="2018-01-22T17:34:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:34:02Z" finished-at="2018-01-22T17:34:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testMainLogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:34:02Z" finished-at="2018-01-22T17:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testMainLogo()[pri:8, instance:testCases.TestPersonalPage@48503868]" name="testMainLogo" duration-ms="248" started-at="2018-01-22T17:34:02Z" finished-at="2018-01-22T17:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMainLogo -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="13278" started-at="2018-01-22T17:34:02Z" finished-at="2018-01-22T17:34:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMainLogo status=SUCCESS method=TestPersonalPage.testMainLogo()[pri:8, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:34:16Z" finished-at="2018-01-22T17:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9919" started-at="2018-01-22T17:34:16Z" finished-at="2018-01-22T17:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:34:26Z" finished-at="2018-01-22T17:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testMoreInformation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:34:26Z" finished-at="2018-01-22T17:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testMoreInformation()[pri:9, instance:testCases.TestPersonalPage@48503868]" name="testMoreInformation" duration-ms="191" started-at="2018-01-22T17:34:26Z" finished-at="2018-01-22T17:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoreInformation -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="8966" started-at="2018-01-22T17:34:26Z" finished-at="2018-01-22T17:34:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMoreInformation status=SUCCESS method=TestPersonalPage.testMoreInformation()[pri:9, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:34:35Z" finished-at="2018-01-22T17:34:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="13953" started-at="2018-01-22T17:34:35Z" finished-at="2018-01-22T17:34:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:34:49Z" finished-at="2018-01-22T17:34:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testViewDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:34:49Z" finished-at="2018-01-22T17:34:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testViewDetails()[pri:10, instance:testCases.TestPersonalPage@48503868]" name="testViewDetails" duration-ms="202" started-at="2018-01-22T17:34:49Z" finished-at="2018-01-22T17:34:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewDetails -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5734" started-at="2018-01-22T17:34:49Z" finished-at="2018-01-22T17:34:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testViewDetails status=SUCCESS method=TestPersonalPage.testViewDetails()[pri:10, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:34:55Z" finished-at="2018-01-22T17:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="16416" started-at="2018-01-22T17:34:55Z" finished-at="2018-01-22T17:35:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:35:11Z" finished-at="2018-01-22T17:35:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testSeeVideo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:35:11Z" finished-at="2018-01-22T17:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="FAIL" signature="testSeeVideo()[pri:11, instance:testCases.TestPersonalPage@48503868]" name="testSeeVideo" duration-ms="3365" started-at="2018-01-22T17:35:11Z" finished-at="2018-01-22T17:35:14Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document  (Session info: chrome=62.0.3202.62)  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 13 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.htmlBuild info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'System info: host: '199-7-164-39', ip: '199.7.164.39', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_151'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Windows\proxy\scoped_dir2104_12806}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]Session ID: 95dd72d7be4b404b488c70dfcdd28df5Command duration or timeout: 0 milliseconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document  (Session info: chrome=62.0.3202.62)  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 13 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.htmlBuild info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'System info: host: '199-7-164-39', ip: '199.7.164.39', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_151'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Windows\proxy\scoped_dir2104_12806}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]Session ID: 95dd72d7be4b404b488c70dfcdd28df5Command duration or timeout: 0 millisecondsat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)at page_objects.PersonalPage.seeV(PersonalPage.java:148)at testCases.TestPersonalPage.testSeeVideo(TestPersonalPage.java:66)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been takenat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)... 39 moreCaused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document  (Session info: chrome=62.0.3202.62)  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 13 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.htmlBuild info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'System info: host: '199-7-164-39', ip: '199.7.164.39', os.name: 'windows', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_151'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Windows\proxy\scoped_dir2104_12806}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]Session ID: 95dd72d7be4b404b488c70dfcdd28df5For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.htmlBuild info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'System info: host: 'ALISTAIR', ip: '192.168.74.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_144'Driver info: driver.version: RemoteWebDriverat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:368)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)at com.sun.proxy.$Proxy2.isDisplayed(Unknown Source)at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.isDisplayed(EventFiringWebDriver.java:389)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)at com.sun.proxy.$Proxy3.isDisplayed(Unknown Source)at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:32)at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:1)at java.util.concurrent.FutureTask.run(Unknown Source)at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)at java.lang.Thread.run(Unknown Source)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeeVideo -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5849" started-at="2018-01-22T17:35:14Z" finished-at="2018-01-22T17:35:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSeeVideo status=FAILURE method=TestPersonalPage.testSeeVideo()[pri:11, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:35:20Z" finished-at="2018-01-22T17:35:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="13646" started-at="2018-01-22T17:35:20Z" finished-at="2018-01-22T17:35:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:35:34Z" finished-at="2018-01-22T17:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:35:34Z" finished-at="2018-01-22T17:35:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testHearWhatYouNeed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testHearWhatYouNeed()[pri:12, instance:testCases.TestPersonalPage@48503868]" name="testHearWhatYouNeed" duration-ms="287" started-at="2018-01-22T17:35:34Z" finished-at="2018-01-22T17:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHearWhatYouNeed -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="6672" started-at="2018-01-22T17:35:34Z" finished-at="2018-01-22T17:35:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHearWhatYouNeed status=SUCCESS method=TestPersonalPage.testHearWhatYouNeed()[pri:12, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:35:41Z" finished-at="2018-01-22T17:35:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10734" started-at="2018-01-22T17:35:41Z" finished-at="2018-01-22T17:35:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:35:52Z" finished-at="2018-01-22T17:35:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:35:52Z" finished-at="2018-01-22T17:35:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testDownloadAPP()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testDownloadAPP()[pri:13, instance:testCases.TestPersonalPage@48503868]" name="testDownloadAPP" duration-ms="155" started-at="2018-01-22T17:35:52Z" finished-at="2018-01-22T17:35:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDownloadAPP -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5805" started-at="2018-01-22T17:35:52Z" finished-at="2018-01-22T17:35:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDownloadAPP status=SUCCESS method=TestPersonalPage.testDownloadAPP()[pri:13, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:35:58Z" finished-at="2018-01-22T17:35:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="18978" started-at="2018-01-22T17:35:58Z" finished-at="2018-01-22T17:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:36:17Z" finished-at="2018-01-22T17:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testListenNow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:36:17Z" finished-at="2018-01-22T17:36:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testListenNow()[pri:14, instance:testCases.TestPersonalPage@48503868]" name="testListenNow" duration-ms="268" started-at="2018-01-22T17:36:17Z" finished-at="2018-01-22T17:36:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListenNow -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="11165" started-at="2018-01-22T17:36:17Z" finished-at="2018-01-22T17:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testListenNow status=SUCCESS method=TestPersonalPage.testListenNow()[pri:14, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:36:28Z" finished-at="2018-01-22T17:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="14259" started-at="2018-01-22T17:36:28Z" finished-at="2018-01-22T17:36:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:36:42Z" finished-at="2018-01-22T17:36:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testReadMore()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:36:42Z" finished-at="2018-01-22T17:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testReadMore()[pri:15, instance:testCases.TestPersonalPage@48503868]" name="testReadMore" duration-ms="202" started-at="2018-01-22T17:36:42Z" finished-at="2018-01-22T17:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadMore -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4524" started-at="2018-01-22T17:36:42Z" finished-at="2018-01-22T17:36:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testReadMore status=SUCCESS method=TestPersonalPage.testReadMore()[pri:15, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="11310" started-at="2018-01-22T17:36:47Z" finished-at="2018-01-22T17:36:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:36:47Z" finished-at="2018-01-22T17:36:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:36:58Z" finished-at="2018-01-22T17:36:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testNews()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:36:58Z" finished-at="2018-01-22T17:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testNews()[pri:16, instance:testCases.TestPersonalPage@48503868]" name="testNews" duration-ms="300" started-at="2018-01-22T17:36:58Z" finished-at="2018-01-22T17:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNews -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5496" started-at="2018-01-22T17:36:59Z" finished-at="2018-01-22T17:37:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNews status=SUCCESS method=TestPersonalPage.testNews()[pri:16, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:37:04Z" finished-at="2018-01-22T17:37:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="14531" started-at="2018-01-22T17:37:04Z" finished-at="2018-01-22T17:37:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:37:19Z" finished-at="2018-01-22T17:37:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testInvestors()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:37:19Z" finished-at="2018-01-22T17:37:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testInvestors()[pri:17, instance:testCases.TestPersonalPage@48503868]" name="testInvestors" duration-ms="155" started-at="2018-01-22T17:37:19Z" finished-at="2018-01-22T17:37:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvestors -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="10253" started-at="2018-01-22T17:37:19Z" finished-at="2018-01-22T17:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvestors status=SUCCESS method=TestPersonalPage.testInvestors()[pri:17, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:37:29Z" finished-at="2018-01-22T17:37:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="8711" started-at="2018-01-22T17:37:29Z" finished-at="2018-01-22T17:37:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:37:38Z" finished-at="2018-01-22T17:37:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testCoperate()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:37:38Z" finished-at="2018-01-22T17:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testCoperate()[pri:18, instance:testCases.TestPersonalPage@48503868]" name="testCoperate" duration-ms="183" started-at="2018-01-22T17:37:38Z" finished-at="2018-01-22T17:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCoperate -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4369" started-at="2018-01-22T17:37:38Z" finished-at="2018-01-22T17:37:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCoperate status=SUCCESS method=TestPersonalPage.testCoperate()[pri:18, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:37:42Z" finished-at="2018-01-22T17:37:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10385" started-at="2018-01-22T17:37:42Z" finished-at="2018-01-22T17:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:37:53Z" finished-at="2018-01-22T17:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testFindADoctor()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:37:53Z" finished-at="2018-01-22T17:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testFindADoctor()[pri:19, instance:testCases.TestPersonalPage@48503868]" name="testFindADoctor" duration-ms="408" started-at="2018-01-22T17:37:53Z" finished-at="2018-01-22T17:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindADoctor -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5623" started-at="2018-01-22T17:37:53Z" finished-at="2018-01-22T17:37:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFindADoctor status=SUCCESS method=TestPersonalPage.testFindADoctor()[pri:19, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:37:59Z" finished-at="2018-01-22T17:37:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9577" started-at="2018-01-22T17:37:59Z" finished-at="2018-01-22T17:38:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:38:08Z" finished-at="2018-01-22T17:38:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:38:08Z" finished-at="2018-01-22T17:38:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testInformedOnReport()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testInformedOnReport()[pri:20, instance:testCases.TestPersonalPage@48503868]" name="testInformedOnReport" duration-ms="223" started-at="2018-01-22T17:38:08Z" finished-at="2018-01-22T17:38:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInformedOnReport -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="7127" started-at="2018-01-22T17:38:09Z" finished-at="2018-01-22T17:38:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInformedOnReport status=SUCCESS method=TestPersonalPage.testInformedOnReport()[pri:20, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:38:16Z" finished-at="2018-01-22T17:38:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10191" started-at="2018-01-22T17:38:16Z" finished-at="2018-01-22T17:38:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:38:26Z" finished-at="2018-01-22T17:38:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testMopileApp()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:38:26Z" finished-at="2018-01-22T17:38:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testMopileApp()[pri:21, instance:testCases.TestPersonalPage@48503868]" name="testMopileApp" duration-ms="165" started-at="2018-01-22T17:38:26Z" finished-at="2018-01-22T17:38:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMopileApp -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4364" started-at="2018-01-22T17:38:26Z" finished-at="2018-01-22T17:38:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMopileApp status=SUCCESS method=TestPersonalPage.testMopileApp()[pri:21, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:38:30Z" finished-at="2018-01-22T17:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="14940" started-at="2018-01-22T17:38:30Z" finished-at="2018-01-22T17:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:38:45Z" finished-at="2018-01-22T17:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testContactAs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:38:45Z" finished-at="2018-01-22T17:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testContactAs()[pri:22, instance:testCases.TestPersonalPage@48503868]" name="testContactAs" duration-ms="185" started-at="2018-01-22T17:38:45Z" finished-at="2018-01-22T17:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactAs -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4418" started-at="2018-01-22T17:38:45Z" finished-at="2018-01-22T17:38:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactAs status=SUCCESS method=TestPersonalPage.testContactAs()[pri:22, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10005" started-at="2018-01-22T17:38:50Z" finished-at="2018-01-22T17:39:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:38:50Z" finished-at="2018-01-22T17:38:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:39:00Z" finished-at="2018-01-22T17:39:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testFeedback()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:39:00Z" finished-at="2018-01-22T17:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testFeedback()[pri:23, instance:testCases.TestPersonalPage@48503868]" name="testFeedback" duration-ms="181" started-at="2018-01-22T17:39:00Z" finished-at="2018-01-22T17:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedback -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4845" started-at="2018-01-22T17:39:00Z" finished-at="2018-01-22T17:39:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFeedback status=SUCCESS method=TestPersonalPage.testFeedback()[pri:23, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10920" started-at="2018-01-22T17:39:05Z" finished-at="2018-01-22T17:39:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:39:05Z" finished-at="2018-01-22T17:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:39:16Z" finished-at="2018-01-22T17:39:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:39:16Z" finished-at="2018-01-22T17:39:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testLinkedin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testLinkedin()[pri:24, instance:testCases.TestPersonalPage@48503868]" name="testLinkedin" duration-ms="310" started-at="2018-01-22T17:39:16Z" finished-at="2018-01-22T17:39:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinkedin -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4720" started-at="2018-01-22T17:39:16Z" finished-at="2018-01-22T17:39:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLinkedin status=SUCCESS method=TestPersonalPage.testLinkedin()[pri:24, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:39:21Z" finished-at="2018-01-22T17:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10655" started-at="2018-01-22T17:39:21Z" finished-at="2018-01-22T17:39:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:39:32Z" finished-at="2018-01-22T17:39:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testFacebook()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:39:32Z" finished-at="2018-01-22T17:39:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testFacebook()[pri:25, instance:testCases.TestPersonalPage@48503868]" name="testFacebook" duration-ms="286" started-at="2018-01-22T17:39:32Z" finished-at="2018-01-22T17:39:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFacebook -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4668" started-at="2018-01-22T17:39:32Z" finished-at="2018-01-22T17:39:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFacebook status=SUCCESS method=TestPersonalPage.testFacebook()[pri:25, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:39:37Z" finished-at="2018-01-22T17:39:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="10812" started-at="2018-01-22T17:39:37Z" finished-at="2018-01-22T17:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="2" started-at="2018-01-22T17:39:47Z" finished-at="2018-01-22T17:39:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:39:47Z" finished-at="2018-01-22T17:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testTwitter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testTwitter()[pri:26, instance:testCases.TestPersonalPage@48503868]" name="testTwitter" duration-ms="193" started-at="2018-01-22T17:39:47Z" finished-at="2018-01-22T17:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwitter -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4606" started-at="2018-01-22T17:39:48Z" finished-at="2018-01-22T17:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTwitter status=SUCCESS method=TestPersonalPage.testTwitter()[pri:26, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:39:52Z" finished-at="2018-01-22T17:39:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9922" started-at="2018-01-22T17:39:52Z" finished-at="2018-01-22T17:40:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:40:02Z" finished-at="2018-01-22T17:40:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testYoutube()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:40:02Z" finished-at="2018-01-22T17:40:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testYoutube()[pri:27, instance:testCases.TestPersonalPage@48503868]" name="testYoutube" duration-ms="224" started-at="2018-01-22T17:40:02Z" finished-at="2018-01-22T17:40:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testYoutube -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4599" started-at="2018-01-22T17:40:02Z" finished-at="2018-01-22T17:40:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testYoutube status=SUCCESS method=TestPersonalPage.testYoutube()[pri:27, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:40:07Z" finished-at="2018-01-22T17:40:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="27594" started-at="2018-01-22T17:40:07Z" finished-at="2018-01-22T17:40:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:40:34Z" finished-at="2018-01-22T17:40:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:40:34Z" finished-at="2018-01-22T17:40:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testGoogle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testGoogle()[pri:28, instance:testCases.TestPersonalPage@48503868]" name="testGoogle" duration-ms="302" started-at="2018-01-22T17:40:34Z" finished-at="2018-01-22T17:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5246" started-at="2018-01-22T17:40:35Z" finished-at="2018-01-22T17:40:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGoogle status=SUCCESS method=TestPersonalPage.testGoogle()[pri:28, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9886" started-at="2018-01-22T17:40:40Z" finished-at="2018-01-22T17:40:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:40:40Z" finished-at="2018-01-22T17:40:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:40:50Z" finished-at="2018-01-22T17:40:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testPinIntrest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:40:50Z" finished-at="2018-01-22T17:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testPinIntrest()[pri:29, instance:testCases.TestPersonalPage@48503868]" name="testPinIntrest" duration-ms="200" started-at="2018-01-22T17:40:50Z" finished-at="2018-01-22T17:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPinIntrest -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4781" started-at="2018-01-22T17:40:50Z" finished-at="2018-01-22T17:40:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPinIntrest status=SUCCESS method=TestPersonalPage.testPinIntrest()[pri:29, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="1" started-at="2018-01-22T17:40:55Z" finished-at="2018-01-22T17:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="12230" started-at="2018-01-22T17:40:55Z" finished-at="2018-01-22T17:41:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:41:07Z" finished-at="2018-01-22T17:41:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testWeibo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:41:07Z" finished-at="2018-01-22T17:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testWeibo()[pri:30, instance:testCases.TestPersonalPage@48503868]" name="testWeibo" duration-ms="155" started-at="2018-01-22T17:41:07Z" finished-at="2018-01-22T17:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWeibo -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5104" started-at="2018-01-22T17:41:07Z" finished-at="2018-01-22T17:41:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWeibo status=SUCCESS method=TestPersonalPage.testWeibo()[pri:30, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:41:12Z" finished-at="2018-01-22T17:41:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9017" started-at="2018-01-22T17:41:12Z" finished-at="2018-01-22T17:41:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:41:21Z" finished-at="2018-01-22T17:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:41:21Z" finished-at="2018-01-22T17:41:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testInstragram()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testInstragram()[pri:31, instance:testCases.TestPersonalPage@48503868]" name="testInstragram" duration-ms="169" started-at="2018-01-22T17:41:21Z" finished-at="2018-01-22T17:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInstragram -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4500" started-at="2018-01-22T17:41:22Z" finished-at="2018-01-22T17:41:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInstragram status=SUCCESS method=TestPersonalPage.testInstragram()[pri:31, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:41:26Z" finished-at="2018-01-22T17:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="13619" started-at="2018-01-22T17:41:26Z" finished-at="2018-01-22T17:41:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:41:40Z" finished-at="2018-01-22T17:41:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testViewAll()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:41:40Z" finished-at="2018-01-22T17:41:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testViewAll()[pri:32, instance:testCases.TestPersonalPage@48503868]" name="testViewAll" duration-ms="194" started-at="2018-01-22T17:41:40Z" finished-at="2018-01-22T17:41:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewAll -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="5226" started-at="2018-01-22T17:41:40Z" finished-at="2018-01-22T17:41:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testViewAll status=SUCCESS method=TestPersonalPage.testViewAll()[pri:32, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:41:45Z" finished-at="2018-01-22T17:41:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9820" started-at="2018-01-22T17:41:45Z" finished-at="2018-01-22T17:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="1" started-at="2018-01-22T17:41:55Z" finished-at="2018-01-22T17:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testNorton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:41:55Z" finished-at="2018-01-22T17:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="testNorton()[pri:33, instance:testCases.TestPersonalPage@48503868]" name="testNorton" duration-ms="163" started-at="2018-01-22T17:41:55Z" finished-at="2018-01-22T17:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNorton -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4709" started-at="2018-01-22T17:41:55Z" finished-at="2018-01-22T17:42:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNorton status=SUCCESS method=TestPersonalPage.testNorton()[pri:33, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:42:00Z" finished-at="2018-01-22T17:42:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="14412" started-at="2018-01-22T17:42:00Z" finished-at="2018-01-22T17:42:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:42:14Z" finished-at="2018-01-22T17:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:42:14Z" finished-at="2018-01-22T17:42:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testFeedbackSideLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testFeedbackSideLink()[pri:34, instance:testCases.TestPersonalPage@48503868]" name="testFeedbackSideLink" duration-ms="276" started-at="2018-01-22T17:42:14Z" finished-at="2018-01-22T17:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFeedbackSideLink -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="13995" started-at="2018-01-22T17:42:14Z" finished-at="2018-01-22T17:42:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFeedbackSideLink status=SUCCESS method=TestPersonalPage.testFeedbackSideLink()[pri:34, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="setUp" is-config="true" duration-ms="9939" started-at="2018-01-22T17:42:28Z" finished-at="2018-01-22T17:42:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[62.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.cigna.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:42:28Z" finished-at="2018-01-22T17:42:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="initilizationOfObject()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="initilizationOfObject" is-config="true" duration-ms="1" started-at="2018-01-22T17:42:38Z" finished-at="2018-01-22T17:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizationOfObject -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="startExtent" is-config="true" duration-ms="0" started-at="2018-01-22T17:42:38Z" finished-at="2018-01-22T17:42:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.TestPersonalPage.testSign()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testSign()[pri:35, instance:testCases.TestPersonalPage@48503868]" name="testSign" duration-ms="168" started-at="2018-01-22T17:42:38Z" finished-at="2018-01-22T17:42:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSign -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:testCases.TestPersonalPage@48503868]" name="afterEachTestMethod" is-config="true" duration-ms="4566" started-at="2018-01-22T17:42:39Z" finished-at="2018-01-22T17:42:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSign status=SUCCESS method=TestPersonalPage.testSign()[pri:35, instance:testCases.TestPersonalPage@48503868] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="closeOut()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="closeOut" is-config="true" duration-ms="0" started-at="2018-01-22T17:42:43Z" finished-at="2018-01-22T17:42:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOut -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:testCases.TestPersonalPage@48503868]" name="generateReport" is-config="true" duration-ms="66" started-at="2018-01-22T17:42:43Z" finished-at="2018-01-22T17:42:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- testCases.TestPersonalPage -->
     </test> <!-- Cigna -->
   </suite> <!-- Cigna Automation Test -->
 </testng-results>

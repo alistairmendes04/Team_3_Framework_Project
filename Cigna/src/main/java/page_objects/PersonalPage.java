@@ -96,6 +96,7 @@ public class PersonalPage extends CommonAPI{
     public static void searchBar() {
         //click and search
         search.sendKeys("location", Keys.ENTER);
+
     }
 
     public static void individualFamilyPlan() {
