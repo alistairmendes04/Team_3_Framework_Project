@@ -42,7 +42,6 @@ public class GoogleSheetsReaderPage extends CommonAPI {
             inputValueInTextBoxByWebElement(searchBox, row.get(1).toString());
             sleepFor(2);
             actual.add(driver.getTitle());
-           // actual.add(getTextByWebElement(resultText));
             System.out.println(actual.add(driver.getTitle()));
             clearInputBox(searchBox);
             sleepFor(1);

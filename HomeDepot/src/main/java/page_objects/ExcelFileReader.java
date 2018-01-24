@@ -46,4 +46,10 @@ public class ExcelFileReader extends CommonAPI {
         }
         return actual;
     }
+    // Search feature using Excel data
+    public String[] getDatafromExcelFileForFeatureChoice(String fileName) throws IOException {
+        String path = "../HomeDepot/data/" + fileName;
+        String[] output = dtr.colReader(path, 2);
+        return output;
+    }
 }

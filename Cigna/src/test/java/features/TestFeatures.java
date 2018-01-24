@@ -1,16 +1,24 @@
-/*
 package features;
 
-import com.sun.org.apache.xalan.internal.utils.FeatureManager;
+import base.CommonAPI;
 import com.sun.xml.internal.fastinfoset.sax.Features;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
+public class TestFeatures {
 
-public class FeatureTest extends Features {
+    public class FeatureTest extends CommonAPI {
+        Features features;
 
-    @Test
-    public void testFeatures()throws IOException{
-        //selectFeatures();
+        @BeforeMethod
+        public void initilizationOfObject() {
+            features= PageFactory.initElements(driver, Features.class);
+        }
+
+        @Test
+        public void testFeatures(){
+            features
+        }
     }
-}*/
+}

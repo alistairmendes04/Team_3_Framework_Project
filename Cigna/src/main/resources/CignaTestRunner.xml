@@ -3,7 +3,6 @@
 
 <suite name="Cigna Automation Test" parallel="false">
 
-
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
@@ -14,11 +13,10 @@
 
     <test name="Cigna">
         <classes>
-            <class name="testCases.TestFeatures"/>
-            <class name="testCases.TestPersonalPage"/>
+            <!--<class name="features.TestFeatures"/>-->
+            <!--<class name="testCases.TestPersonalPage"/>-->
            <!--<class name="testCases.TestLoginPage"/>-->
             <!--<class name="googleSheetPages.TestGoogleSheetPages"/>-->
         </classes>
     </test>
-
 </suite>

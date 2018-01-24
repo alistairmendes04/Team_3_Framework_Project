@@ -16,7 +16,7 @@ public class TestProductPage extends ProductsPage {
         objOfProductsPage = PageFactory.initElements(driver, ProductsPage.class);
     }
      //// T3ALI_PP_TC01 Select tols and filter search
-    @Test(priority = 1, enabled = true)
+    @Test(priority = 1, enabled =false)
     public void testCategories() throws InterruptedException {
         objOfHomePage.categories();
         //ProductsPage productsPage = PageFactory.initElements(driver, ProductsPage.class);

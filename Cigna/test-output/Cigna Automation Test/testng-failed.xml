@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Cigna Automation Test]">
-  <parameter name="useCloudEnv" value="true"/>
+  <parameter name="useCloudEnv" value="false"/>
   <parameter name="os" value="Windows"/>
   <parameter name="os_version" value="10"/>
   <parameter name="browserVersion" value="62.0"/>
@@ -10,18 +10,18 @@
   <parameter name="url" value="https://www.cigna.com/"/>
   <test name="Cigna(failed)">
     <classes>
-      <class name="testCases.TestPersonalPage">
+      <class name="testCases.TestLoginPage">
         <methods>
-          <include name="testSeeVideo"/>
-          <include name="initilizationOfObject"/>
+          <include name="regrister1"/>
           <include name="afterEachTestMethod"/>
           <include name="generateReport"/>
           <include name="extentSetup"/>
           <include name="setUp"/>
           <include name="startExtent"/>
+          <include name="initilizationOfObject"/>
           <include name="closeOut"/>
         </methods>
-      </class> <!-- testCases.TestPersonalPage -->
+      </class> <!-- testCases.TestLoginPage -->
     </classes>
   </test> <!-- Cigna(failed) -->
 </suite> <!-- Failed suite [Cigna Automation Test] -->
