@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import getHelpPageObjects.GetHelpHerePage;
-import homePageObjects.HomePage;
+import testHomePageObjects.HomePage;
 import productsPageObjects.ProductsPage;
 import signInPageObjects.SignInPage;
 

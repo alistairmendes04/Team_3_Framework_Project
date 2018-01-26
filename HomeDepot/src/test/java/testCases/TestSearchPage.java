@@ -82,7 +82,7 @@ public class TestSearchPage extends SearchProductPage {
         System.out.println("testIncrementQuantity test passed");
     }
     //T3HOM_SP_TC09 check Price filter under $10 check box
-    @Test (enabled=true)
+    @Test (enabled=false)
     public void testPriceFilterBox(){
         objHomePage.goToSearchProductPage();
         boolean actual = objSearchPage.verifyPriceFilter();

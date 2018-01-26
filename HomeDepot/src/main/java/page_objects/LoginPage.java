@@ -69,19 +69,12 @@ public class LoginPage extends CommonAPI{
      }
     //T3HOM_LP_TC06 Verify My Account Terms & Conditions
     public static String verifyMyAccount() throws InterruptedException {
-
-
         int con =driver.findElements(By.xpath("//*[@id='userLogin']/div/div[5]/a[1]")).size();
         driver.findElements(By.xpath("//*[@id='userLogin']/div/div[5]/a[1]")).get(con-1).click();
-
-//        termsConditionLink.click();
-      //  Thread.sleep(6000);
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(termsConditionText));
         String str = termsConditionText.getText();
         return str;
     }
-
-
     //T3HOM_LP_TC06 Verify Forgot Email
     public void verifyForgotEmail() throws InterruptedException {
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(forgotPasswordLink));
@@ -103,9 +96,6 @@ public class LoginPage extends CommonAPI{
     }
     //invalid email id throw error message
     public void enterInvalidEmail() {
-        emailBox.sendKeys("aarti", Keys.ENTER);
-        passwordBox.click();
-        String str = errorEmailMessage.getText();
-
+        passwordBox.sendKeys("", Keys.ENTER);
     }
 }

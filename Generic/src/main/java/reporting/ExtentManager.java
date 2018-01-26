@@ -15,7 +15,7 @@ public class ExtentManager {
         if(extent == null){
             File outputDirectory = new File(context.getOutputDirectory());
             File resultDirectory = new File(outputDirectory.getParentFile(),"html");
-            extent = new ExtentReports(System.getProperty("user.dir")+"Extent-Report/ExtentReport.html", true);
+            extent = new ExtentReports(System.getProperty("user.dir")+"/Extent-Report/ExtentReport.html", true);
             Reporter.log("Extent Report Directory"+ resultDirectory, true);
             extent.addSystemInfo("Host Name", "PNT_Team_Three").addSystemInfo("Environment","QA")
                     .addSystemInfo("User Name", "Team_Three");
