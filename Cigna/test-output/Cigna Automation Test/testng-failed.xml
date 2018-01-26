@@ -10,18 +10,18 @@
   <parameter name="url" value="https://www.cigna.com/"/>
   <test name="Cigna(failed)">
     <classes>
-      <class name="testCases.TestLoginPage">
+      <class name="testCases.TestExcelReader">
         <methods>
-          <include name="regrister1"/>
+          <include name="searchProductUsingExcel"/>
           <include name="afterEachTestMethod"/>
+          <include name="initialization"/>
           <include name="generateReport"/>
           <include name="extentSetup"/>
           <include name="setUp"/>
           <include name="startExtent"/>
-          <include name="initilizationOfObject"/>
           <include name="closeOut"/>
         </methods>
-      </class> <!-- testCases.TestLoginPage -->
+      </class> <!-- testCases.TestExcelReader -->
     </classes>
   </test> <!-- Cigna(failed) -->
 </suite> <!-- Failed suite [Cigna Automation Test] -->

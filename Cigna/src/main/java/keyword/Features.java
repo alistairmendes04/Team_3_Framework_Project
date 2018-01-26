@@ -3,6 +3,7 @@ package keyword;
 import base.CommonAPI;
 import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.support.PageFactory;
+import page_objects.InputFromExcel;
 import page_objects.LoginPage;
 import page_objects.PersonalPage;
 import search.IteamsToBeSearched;
@@ -14,6 +15,7 @@ import static javafx.beans.binding.Bindings.select;
 public class Features extends CommonAPI{
     LoginPage objOfLoginPage= PageFactory.initElements(driver,LoginPage.class);
     PersonalPage objOfPersonalPage= PageFactory.initElements(driver, PersonalPage.class);
+    InputFromExcel objOfinputFromExcel=PageFactory.initElements(driver, InputFromExcel.class);
 
     public void Login() {
         objOfLoginPage.enterCredintials();
@@ -29,7 +31,7 @@ public class Features extends CommonAPI{
         System.out.println("Search");
     }
 
-    public void selectAction(String featureName) throws IOException, InterruptedException {
+    public void selectAction(String featureName) throws IOException {
         switch (featureName) {
             case "Login":
                 Login();
@@ -46,10 +48,9 @@ public class Features extends CommonAPI{
     }
 
     public void selectFeatures() throws IOException, InterruptedException {
-        IteamsToBeSearched itemsToBeSearched = new IteamsToBeSearched();
-        String [] testSteps = itemsToBeSearched.getDataFromExcelFileForFeaturesChoice();
-        for(int i=0; i<testSteps.length; i++) {
-            select(testSteps[i]);
+        String[] keyword = objOfinputFromExcel.getDataFromSignInKeyword("Key.xls");
+        for (int i = 0; i < keyword.length; i++) {
+            selectAction(keyword[i]);
         }
     }
 }

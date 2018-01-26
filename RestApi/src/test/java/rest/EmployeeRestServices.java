@@ -16,8 +16,7 @@ public class EmployeeRestServices {
     }
     @Test
     public static void apiCallResponseSingle() {
-        Response response = given().when().get("http://info.venturepulse.org:8080/service-webapp/api" +
-                "/SingleEmployeeResources/59ac2f43c09dea2660451c9d").
+        Response response = given().when().get("http://info.venturepulse.org:8080/service-webapp/api" + "/SingleEmployeeResources/59ac2f43c09dea2660451c9d").
                 then().statusCode(200).extract().response();
         String status = response.getStatusLine();
         String body = response.getBody().print();

@@ -1,24 +1,17 @@
 package features;
 
-import base.CommonAPI;
-import com.sun.xml.internal.fastinfoset.sax.Features;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.BeforeMethod;
+import keyword.Features;
 import org.testng.annotations.Test;
 
-public class TestFeatures {
+import java.io.IOException;
 
-    public class FeatureTest extends CommonAPI {
-        Features features;
-
-        @BeforeMethod
-        public void initilizationOfObject() {
-            features= PageFactory.initElements(driver, Features.class);
-        }
-
+public class TestFeatures extends Features{
+    
         @Test
-        public void testFeatures(){
-            features
+        public void testFeatures() throws IOException, InterruptedException {
+            selectAction("Login");
+            //selectFeatures();
         }
-    }
+
 }
+

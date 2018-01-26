@@ -5,9 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
-public class PersonalPage extends CommonAPI{
-
+public class PersonalPage extends CommonAPI {
     @FindBy(id = "login")
     public static WebElement loginButton;
     @FindBy(id = "find-doc")
@@ -96,7 +94,6 @@ public class PersonalPage extends CommonAPI{
     public static void searchBar() {
         //click and search
         search.sendKeys("location", Keys.ENTER);
-
     }
 
     public static void individualFamilyPlan() {
