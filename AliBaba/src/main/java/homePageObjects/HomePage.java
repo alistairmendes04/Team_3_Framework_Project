@@ -26,7 +26,7 @@ public class HomePage extends CommonAPI {
     public static WebElement sourcingSolutions;
     @FindBy(partialLinkText = "Top Selected")
     public static WebElement topSelectedSuppliers;
-    @FindBy(partialLinkText = "Sign")
+    @FindBy(partialLinkText = "Sign In")
     public static WebElement signInButton;
     @FindBy(partialLinkText = "Get the App")
     public static WebElement getTheAppLink;
@@ -66,7 +66,7 @@ public class HomePage extends CommonAPI {
     public static WebElement verificationPointAboutAlibaba;
     @FindBy(xpath = "//dd/a[contains (text(),'Wholesaler Market')]")
     public static WebElement wholesalerMarket;
-    @FindBy (linkText = "Wholesaler Market")
+    @FindBy(linkText = "Wholesaler Market")
     public static WebElement vaerificationPointAWholesaleMarket;
     @FindBy(xpath = "/html/body/div[5]/div/div/i")
     public static WebElement moveToTopButton;
@@ -90,6 +90,7 @@ public class HomePage extends CommonAPI {
     public static WebElement fNamePoPUpSignInWindow;
     @FindBy(xpath = "//div[@id='thirdPartLogin']/a[2]")
     public static WebElement googleIconOnPoPUpSignInWindow;
+
     //T3ALI_HP_TC01 Verify Home Page URL
     public String searchProduct() {
         String url = driver.getCurrentUrl();
@@ -142,12 +143,8 @@ public class HomePage extends CommonAPI {
 
     //T3ALI_SI_TC02, T3ALI_SI_TC01
     public void clikSignIn() throws InterruptedException {
-        // waitUntilClickAble(signInButton);
-        try {
-            signInButton.click();
-        } catch (TimeoutException e) {
-            e.getLocalizedMessage();
-        }
+        sleepFor(4);
+        signInButton.click();
     }
 
     //T3ALI_SI_TC13, Get Account Holder Name from My Alibaba
@@ -211,8 +208,8 @@ public class HomePage extends CommonAPI {
         emailBoxToSubscribeForTradeAlert.sendKeys("testdata.islam@gmail.com");
         tradeAlertSubscriptionButton.click();
         sleepFor(5);
-       String currentUrl = driver.getCurrentUrl();
-       return currentUrl;
+        String currentUrl = driver.getCurrentUrl();
+        return currentUrl;
     }
 
     //T3ALI_HP_TC11 Help Center Link Status
@@ -221,7 +218,7 @@ public class HomePage extends CommonAPI {
         for (String handle : driver.getWindowHandles()) {
             driver.switchTo().window(handle);
         }
-       sleepFor(5);
+        sleepFor(5);
 
         String text = verificationPointHelpCenter.getText();
         return text;
@@ -275,16 +272,18 @@ public class HomePage extends CommonAPI {
         switchWindow(driver);
         System.out.println("Page Title: " + driver.getTitle());
     }
+
     //RFQ Details
     public void quotesRequestFormDetails() {
         implicitWait(driver, 10);
         productDetailedSpecifications.sendKeys("30 Days");
         submitRFQ.click();
     }
+
     //PoP Up Sign In
-    public void popUpSignIn(){
+    public void popUpSignIn() {
         implicitWait(driver, 15);
-     fNamePoPUpSignInWindow.sendKeys("J Islam");
-     googleIconOnPoPUpSignInWindow.click();
+        fNamePoPUpSignInWindow.sendKeys("J Islam");
+        googleIconOnPoPUpSignInWindow.click();
     }
 }

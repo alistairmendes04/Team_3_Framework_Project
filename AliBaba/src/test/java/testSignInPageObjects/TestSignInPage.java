@@ -32,7 +32,7 @@ public class TestSignInPage extends SignInPage {
         String expected = "Your account name or password is incorrect.";
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(actual.contains(expected));
-        //System.out.println("Test Case T3ALI_SI_TC01 Passed");
+        //System.out.println("Test Case signInWithInvalidIdTest Passed");
         // TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     }
 
@@ -48,7 +48,7 @@ public class TestSignInPage extends SignInPage {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(bl, true);
         // Assert.assertEquals(bl, true);
-        System.out.println("Test Case T3ALI_SI_TC02 Passed");
+        System.out.println("Test Case signInByMobileLinkStatusTest Passed");
         TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
     }
@@ -66,11 +66,11 @@ public class TestSignInPage extends SignInPage {
         objOfSignInPage.switchToSignInForm();
         boolean bl = objOfSignInPage.joinFreeLinkStatus();
         Assert.assertEquals(bl, true);
-        System.out.println("Test Case T3ALI_SI_TC03 Passed");
+        System.out.println("Test Case joinFreeLinkStatusTest Passed");
     }
 
     // T3ALI_SI_TC05 Sign in By invalid mobile number and password
-    @Test(priority = 4, enabled = true)
+    @Test(priority = 4, enabled = false)
     public void signInByMobileNumberTest() throws InterruptedException {
         try {
             objOfHomePage.clikSignIn();
@@ -81,7 +81,7 @@ public class TestSignInPage extends SignInPage {
         String actualErrorMessage = objOfSignInPage.signInByMobileNumber();
         String expectdErrorMessage = "Your account name or password is incorrect.";
         Assert.assertEquals(actualErrorMessage, expectdErrorMessage);
-        System.out.println("Test Case T3ALI_SI_TC05 Passed");
+        System.out.println("Test Case signInByMobileNumberTest Passed");
     }
 
     // T3ALI_SI_TC06 Sign In By Facebook Link status
@@ -97,7 +97,7 @@ public class TestSignInPage extends SignInPage {
         sign.switchToSignInForm();
         boolean bl = sign.signInByFacebookIconStatus();
         Assert.assertEquals(bl, true);
-        System.out.println("Test Case T3ALI_SI_TC06 Passed");
+        System.out.println("Test Case facebookLinkStatusTest Passed");
     }
 
     // T3ALI_SI_TC07 Sign In By Google Link status
@@ -113,7 +113,7 @@ public class TestSignInPage extends SignInPage {
         sign.switchToSignInForm();
         boolean bl = sign.signInByGoogleIconStatus();
         Assert.assertEquals(bl, true);
-        System.out.println("Test Case T3ALI_SI_TC07 Passed");
+        System.out.println("Test Case googleLinkStatusTest Passed");
     }
 
     //T3ALI_SI_TC08 Sign In By LinkedIn Link status
@@ -129,7 +129,7 @@ public class TestSignInPage extends SignInPage {
         sign.switchToSignInForm();
         boolean bl = sign.signInByLinkInIconStatus();
         Assert.assertEquals(bl, true);
-        System.out.println("Test Case T3ALI_SI_TC08 Passed");
+        System.out.println("Test Case linkedInLinkStatusTest Passed");
     }
 
     //T3ALI_SI_TC09 Sign In By Twitter Link status
@@ -145,7 +145,7 @@ public class TestSignInPage extends SignInPage {
         sign.switchToSignInForm();
         boolean bl = sign.signInByTwiterIconStatus();
         Assert.assertEquals(bl, true);
-        System.out.println("Test Case T3ALI_SI_TC09 Passed");
+        System.out.println("Test Case twitterLinkStatusTest Passed");
     }
 
     //T3ALI_SI_TC10 Sign in by invalid(email & password) Twitter account
@@ -162,7 +162,7 @@ public class TestSignInPage extends SignInPage {
         String actualErrorMessage = sign.signInByInvalidTwitterAccount();
         String expectedErroMessage = "The email and password you entered did not match our records. Please double-check and try again.";
         Assert.assertEquals(expectedErroMessage, actualErrorMessage);
-        System.out.println("Test Case T3ALI_SI_TC10 Passed");
+        System.out.println("Test Case signInByInvalidTwitterAccountTest Passed");
     }
 
     // T3ALI_SI_TC11 Sign in by valid Twitter account
@@ -179,7 +179,7 @@ public class TestSignInPage extends SignInPage {
         String actuaMessage = sign.signInByValidTwitterAccount();
         String expectedMessage = "Please enter the following details to complete your registration.";
         Assert.assertTrue(actuaMessage.contains(expectedMessage));
-        System.out.println("Test Case T3ALI_SI_TC11 Passed");
+        System.out.println("Test Case signInByValidTwitterAccountTest Passed");
     }
 
     // T3ALI_SI_TC12 Sign in by invalid facebook account
@@ -196,7 +196,7 @@ public class TestSignInPage extends SignInPage {
         String actualErrorMessage = sign.signInByInvalidFacebookAccount();
         String expectedErroMessage = "Incorrect Email";
         Assert.assertEquals(expectedErroMessage, actualErrorMessage);
-        System.out.println("Test Case T3ALI_SI_TC12 Passed");
+        System.out.println("Test Case signInByInvalidFacebookAccountTest Passed");
     }
 
     // T3ALI_SI_TC13 Sign in by valid Twitter account
@@ -214,7 +214,7 @@ public class TestSignInPage extends SignInPage {
         String actuaMessage = objOfHomePage.hoverOverMyAccount();
         String expectedMessage = "Hi J";
         Assert.assertEquals(expectedMessage, actuaMessage);
-        System.out.println("Test Case T3ALI_SI_TC12 Passed");
+        System.out.println("Test Case signInByValidGoogleAccountTest Passed");
     }
 
     //T3ALI_SI_TC14 Verify "Get Help Here" option

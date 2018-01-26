@@ -57,4 +57,9 @@ public class ByInputFromExls extends CommonAPI {
         }
         return actual;
     }
+    public String[] getDataFromSignInKeyword(String fileName) throws IOException {
+        String path = "../AliBaba/data/" + fileName;
+        String[] output = dtr.colReader(path, 2); //col 2 = email
+        return output;
+    }
 }
