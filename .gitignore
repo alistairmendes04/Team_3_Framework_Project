@@ -145,7 +145,6 @@ AliBaba/target/
 Cigna/Cigna.iml
 Cigna/target/
 Dice/Extent-Report/
-Dice/data/
 *screenshots
 Dice/src/main/resources/
 Dice/src/test/java/testHomePageObjects/
