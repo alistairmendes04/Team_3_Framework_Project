@@ -16,6 +16,7 @@
         <module>HomeDepot</module>
         <module>RestApi</module>
         <module>Dice</module>
+        <module>Twitter</module>
     </modules>
     <dependencyManagement>
         <dependencies>

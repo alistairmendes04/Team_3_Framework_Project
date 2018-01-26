@@ -106,7 +106,7 @@ public class TestFooterPage extends FooterPage {
         System.out.println("testGoToHomeDepotCanadaLinks test passed");
     }
     //T3HOM_FP_TC14 verify FooterEmail function
-    @Test(enabled=true)
+    @Test(enabled=false)
     public void testFooterEmail() {
         String actual = objFooterPage.enterFooterEmail();
         String expected = "Thank you for signing up.";

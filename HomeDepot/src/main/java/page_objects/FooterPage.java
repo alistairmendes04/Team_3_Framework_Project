@@ -169,6 +169,7 @@ public class FooterPage extends CommonAPI {
         for (String handle : driver.getWindowHandles()) {
             driver.switchTo().window(handle);          //switch to child window
         }
+        implicitWait(driver,20);
         String str = driver.getTitle();
         driver.switchTo().window(parentWindowHandle);  //switch back to parent window
         return str;
