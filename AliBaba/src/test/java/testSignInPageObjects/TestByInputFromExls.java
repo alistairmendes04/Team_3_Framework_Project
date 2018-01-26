@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import signInPageObjects.ByInputFromExls;
-import homePageObjects.HomePage;
+import testHomePageObjects.HomePage;
 import signInPageObjects.SignInPage;
 import java.io.IOException;
 

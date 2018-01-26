@@ -362,4 +362,5 @@ public class CommonAPI {
         String text = webElement.getText();
         return text;
     }
+
 }

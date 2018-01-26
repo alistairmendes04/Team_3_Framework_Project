@@ -1,7 +1,7 @@
 package KeyWordDriven;
 
 import base.CommonAPI;
-import homePageObjects.HomePage;
+import testHomePageObjects.HomePage;
 import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.support.PageFactory;
 import signInPageObjects.ByInputFromExls;
