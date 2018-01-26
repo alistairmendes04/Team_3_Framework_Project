@@ -13,7 +13,8 @@ public class TestHomePage extends HomePage {
    
   @BeforeMethod
     public void initializePageObjects() {
-        objHomePage = PageFactory.initElements(driver, HomePage.class);
+
+      objHomePage = PageFactory.initElements(driver, HomePage.class);
     }
     //T3HOM_HP_TC01 Verify Search button, if it is displayed
     @Test (enabled=true)
@@ -42,7 +43,7 @@ public class TestHomePage extends HomePage {
     @Test (enabled=true)
     public void verifyShopRoomImgLink() {
         String actual = objHomePage.goToBathroomUsingImg();
-        String expected = "Bathrooms — Shop by Room at The Home Depot";
+        String expected = "Shop by Room at The Home Depot";
         Assert.assertTrue(actual.contains(expected));
         System.out.println("VerifyShopRoomImageLink test is passed");
     }
@@ -50,8 +51,8 @@ public class TestHomePage extends HomePage {
     @Test (enabled=true)
     public void verifyShopRoomtextLink() {
         String actual = objHomePage.goToBathroomUsingTxt();
-        String expected = "Bathrooms — Shop by Room at The Home Depot";
-        Assert.assertEquals(actual,expected);
+        String expected = "Shop by Room at The Home Depot";
+        Assert.assertTrue(actual.contains(expected));
         System.out.println("VerifyShopRoomTextLink test passed");
     }
     //T3HOM_HP_TC06 Compare the text and image link to check if it takes to same page

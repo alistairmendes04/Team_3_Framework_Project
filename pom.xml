@@ -14,6 +14,7 @@
         <!-- <module>maersk_line_com</module>-->
         <module>Cigna</module>
         <module>HomeDepot</module>
+        <module>Twitter</module>
     </modules>
     <dependencyManagement>
         <dependencies>

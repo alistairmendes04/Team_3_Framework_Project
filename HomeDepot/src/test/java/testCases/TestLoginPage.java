@@ -41,7 +41,7 @@ public class TestLoginPage extends LoginPage {
         System.out.println("testClearBox test passed");
     }
     //T3HOM_LP_TC04 Invalid email id throw error message
-    @Test(enabled=true)
+    @Test(enabled=false)
     public void testInvalidEmail() {
         objHomePage.goToLoginPage();
         String actualError = objLoginPage.invalidEmail();
